@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reyferjobs</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="style/style.css" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css"
+        integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+    <!-- Owl Carousel CSS files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- slick carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+
+    <link rel="stylesheet" href="style/dashboard.css">
+</head>
+
+<body>
+
+
+    <!--Header start-->
+
+    <header class="fixed-top ">
+
+
+        <!-- first nav -->
+
+        <nav style="background-color: white;" class="navbar navbar-expand-lg py-3 section header">
+            <div class="container-fluid px-0">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                        <li class="nav-item active me-3">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link " href="#">About</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link " href="#">Services</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link " href="#">Term & Condition</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link " href="#">Help</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="btn text-white rounded-5 px-3 post-now">
+                            Post Now
+                        </button>
+                        <div class="px-3">
+                            <span style="width: 40px; height: 40px;">
+                                <i class="fa-solid fa-user border border-black rounded-circle px-2 py-2 mx-1"></i>
+                            </span>
+                            <span style="width: 40px; height: 40px;">
+                                <i
+                                    class="fa-regular fa-bell border border-black rounded-circle px-2 py-2 mx-1  position-relative">
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
+                                        <span class="visually-hidden">New alerts</span>
+                                    </span>
+                                </i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- second nav -->
+
+        <div class="search-click header">
+
+            <nav class="navbar d-flex justify-content-lg-center navbar-expand-lg py-3 second-navbar section">
+                <div class="container-fluid px-0">
+                    <div></div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse second-nav" id="navbarTogglerDemo02">
+                        <div class="mx-auto">
+                            <div class="d-lg-flex ">
+                                <ul class="navbar-nav mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="user-dashboard.html">Dashboard
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="#">Seek
+                                            jobs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="#">Refer
+                                            jobs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="user-profile.html">Profile Section</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="#">Memberships</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="searchbar first-search">
+                                <input id="first-search-input" class="search_input" type="text" name
+                                    placeholder="Search Job Here" />
+                                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div>
+                <div class="secon-nav-search">
+                    <div class="bg-white second-search hidden">
+                        <div class="d-flex flex-wrap">
+                            <div class="col-md-4">
+                                <div class="search-1 ps-5"> <i class="fas fa-search ps-3" style="color: #6666;"></i>
+                                    <input class="search_input" type="text" name
+                                        placeholder="Search job title or keyword" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="search-1 ps-5"> <i class="fa-solid fa-location-dot ps-3"
+                                        style="color: #6666;"></i>
+                                    <input class="search_input" type="text" name placeholder="Location" />
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div>
+                                    <div class="search-2 ps-5"><i class="fa-solid fa-suitcase ps-3"
+                                            style="color: #6666;"></i>
+                                        <input class="search_input" type="text" name placeholder="Experience" />
+                                        <button type="sub" id="search-jobs" class="btn rounded-pill btn-primary">Search
+                                            jobs</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Responsive Header -->
+
+        <div class="search-click-res navbar-res">
+            <nav class="logo">
+                <img src="image/logo.png" class="d-flex justify-items-center m-auto" alt="">
+            </nav>
+            <div>
+                <nav style="background-color: white;" class="navbar navbar-expand-lg py-3 section  ">
+                    <div class="container-fluid px-0">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                                <li class="nav-item active me-3">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link " href="#">About</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link " href="#">Services</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link " href="#">Term & Condition</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link " href="#">Help</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between nav-right">
+                            <div class="search-res">
+                                <div class="searchbar first-search-res">
+                                    <input id="first-search-input-res" class="search_input" type="text" name
+                                        placeholder="Search Job Here" />
+                                    <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                            <button type="button" class="btn text-white rounded-5 px-sm-3 mx-sm-0 mx-1 post-now">
+                                Post Now
+                            </button>
+                            <div class="px-sm-3">
+                                <span style="width: 40px; height: 40px;">
+                                    <i
+                                        class="fa-solid fa-user border border-black rounded-circle px-sm-2 py-sm-2 px-1 py-1 mx-sm-1"></i>
+                                </span>
+                                <span style="width: 40px; height: 40px;" class="me-sm-0 me-2">
+                                    <i
+                                        class="fa-regular fa-bell border border-black rounded-circle px-sm-2 py-sm-2 px-1 py-1 mx-sm-1  position-relative">
+                                        <span
+                                            class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
+                                            <span class="visually-hidden">New alerts</span>
+                                        </span>
+                                    </i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+                <div>
+                    <div class="secon-nav-search">
+                        <div class="bg-white second-search-res hidden">
+                            <div class="d-flex">
+                                <div class="col-md-4">
+                                    <div class="search-1 search-input-text"> <i class="fas fa-search ps-3"
+                                            style="color: #6666;"></i>
+                                        <input class="search_input" type="text" name
+                                            placeholder="Search job title or keyword" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="search-1 search-input-text"> <i class="fa-solid fa-location-dot ps-3"
+                                            style="color: #6666;"></i>
+                                        <input class="search_input" type="text" name placeholder="Location" />
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div>
+                                        <div class="search-2 search-input-text"><i class="fa-solid fa-suitcase ps-3"
+                                                style="color: #6666;"></i>
+                                            <input class="search_input" type="text" name placeholder="Experience" />
+                                            <button type="sub" id="search-jobs"
+                                                class="btn rounded-pill btn-primary">Search
+                                                jobs</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!--Header end-->
+
+    <!--dashboard main Content -->
+
+
+    <main class="dashboard-main-section section">
+        <button type="button" class="btn home-navigation-btn"><i class="fa-solid fa-arrow-left"></i> &nbsp; Back to Home</button>
+
+        <!-- dashboard main containter -->
+        <div class="dashboard-main-container">
+            <div class="dashboard-left-panel-container">
+                <!-- user Profile container start -->
+                <div class="user-profile-main-container">
+                    <div class="user-img-container">
+                        <img src="image/Avtar-1.jpg" alt="user image">
+                        <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                    </div>
+
+                    <div class="user-name-container"><h3 class="user-name"><a href="#">Revanth Danduboina</a></h3></div>
+                    
+                    <div class="user-workstatus-container">
+                        <p>Web Developer</p>
+                        <p>@Reyfer Jobs pvt.lmd</p>
+                    </div>
+
+                    <div class="verify-now-container">
+                        <a href="#">Verify Now</a>
+                    </div>
+
+                    <div class="view-profile-btn-container">
+                        <button class="btn btn-primary">View Profile</button>
+                    </div>
+                </div>
+                <!-- profile container end -->
+                <div class="dotted-border-line"></div>
+
+                <!-- skills container start -->
+                <div class="user-skills-main-container">
+                    <h5 class="title">Skills</h5>
+                    <div class="skills-container">
+                        <div class="skills-item">Skill one</div>
+                        <div class="skills-item">Skill two.....</div>
+                        <div class="skills-item">Skill three</div>
+                        <div class="skills-item">Skill four</div>
+                        <div class="skills-item">Skill five</div>
+                        <div class="skills-item">Skill six</div>
+                        <div id="show-more-skills-button" >+ Show More</div>
+                    </div>
+
+                    <button class="btn add-more-button">Add More</button>
+                </div>
+
+                <!-- user resume container -->
+                <div class="user-resume-container">
+                    <h5 class="title">Upload Resume</h5>
+                    <form action="#">
+                        <input type="file">
+                        <div class="btn-container">
+                            <button class="submit-btn" type="submit">Upload</button>
+                            <button class="cancle-btn" type="reset">Cancle</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- profile progress bar -->
+                <div class="user-profile-progessbar-container">
+                    <h4 class="title"><span>85</span>%</h4> 
+                    <!-- changeing the value will direclty change the progress bar width -->
+                    <div class="progressbar-container">
+                        <div class="progressbar"></div>
+                    </div>
+                    <p class="progressbar-status">Profile Incomplete</p>
+                    <button class="btn edit-profile-btn">Edit Profile</button>
+                </div>
+
+                <!-- membership plan container -->
+                <div class="membership-plan-container">
+                    <div class="title-container">
+                        <h4 class="title">Membership Plans</h4>
+                    </div>
+                    <div class="membership-details-container">
+                        <table class="membership-plan-table">
+                            <tbody>
+                                <tr class="title">
+                                    <td colspan="3">Current Plan</td>
+                                </tr>
+                                <tr>
+                                    <td>Free Plan</td>
+                                    <td>:</td>
+                                    <td>INR 0.00</td>
+                                </tr>
+                                <tr class="title">
+                                    <td colspan="3">Payment History</td>
+                                </tr>
+                                <tr>
+                                    <td>Amount</td>
+                                    <td>:</td>
+                                    <td>INR 0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Start Date</td>
+                                    <td>:</td>
+                                    <td>Sep 30, 2023</td>
+                                </tr>
+                                <tr>
+                                    <td>End Date</td>
+                                    <td>:</td>
+                                    <td>Nov 30, 2023</td>
+                                </tr>
+                                <tr class="title">
+                                    <td colspan="3">Credit History</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Credits</td>
+                                    <td>:</td>
+                                    <td>40</td>
+                                </tr>
+                                
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- dashboard left panel close -->
+
+
+            <div class="dashboard-details-container">
+                <div class="job-post-main-container">
+                    <h1 class="title">Manage your Job Postings</h1>
+                    <div class="job-post-inner-container">
+                        <div class="job-post-history-container">
+                            <div class="job-post-title-container">
+                                <h4 class="title">Jobs posted by you <span>(Latest 3 posted jobs)</span></h4>
+                                <a href="#">+ Create Jobs</a>
+                            </div>
+
+                            <table class="job-post-table">
+                                <thead>
+                                    <tr>
+                                        <th>Job Title</th>
+                                        <th>Status</th>
+                                        <th>Posted Date</th>
+                                        <th>Candidates</th>
+                                        <th>Notified Cadidates</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- lasted job posted 1 -->
+                                    <tr class="job-post-table-row-1" style="border: 0;">
+                                        <td class="job-title">
+                                            <input type="radio" name="latest-job-posted" checked onclick="showJobPostDetails('latestJobPosted1',1)"> 
+                                            <p class="job-title">Senior Developer</p> 
+                                        </td>
+                                        <td class="job-status">
+                                            <p class="status">Active</p>
+                                            <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="job-posted-date">
+                                            <p>17th Jan, 2023</p>
+                                        </td>
+                                        <td class="candidates">
+                                            <div><p>All</p><p>:</p> <p>70</p>
+                                                <p>New</p><p>:</p> <p>10</p>
+                                            </div>
+                                        </td>
+                                        <td class="notified-candidates">
+                                            <p>80</p>
+                                        </td>
+                                        <td class="action">
+                                            <button>Manage <i class="fa-solid fa-chevron-right"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr id="latestJobPosted1" class="job-post-hidden-details" style="display: contents;">
+                                        <td colspan="6">
+                                            <div class="job-post-statistics-container">
+                                                <div class="doughnut-chart-container">
+                                                    <canvas id="jobPostDoughnutChart1">
+                                                        
+                                                    </canvas>
+                                                </div>
+                                                <div class="doughnut-chart-details">
+                                                    <div class="chart-details-item">
+                                                        <div class="chart-details-inner-items">
+                                                            <i class="fa-solid fa-file-lines"></i>
+                                                            <h6>Applications</h6>
+                                                        </div>
+                                                        <h6>100</h6>
+                                                    </div>
+
+                                                    <div class="chart-details-item">
+                                                        <div class="chart-details-inner-items">
+                                                            <i class="fa-solid fa-bookmark"></i>
+                                                            <h6>Shortlisted</h6>
+                                                        </div>
+                                                        <h6>20</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="vertical-division-line"></div>
+                                                <div class="doughnut-chart-details doughnut-chart-details-2">
+                                                    <div class="chart-details-item">
+                                                        <div class="chart-details-inner-items">
+                                                            <i class="fa-solid fa-eye"></i>
+                                                            <h6>Job Views</h6>
+                                                        </div>
+                                                        <h6>60</h6>
+                                                    </div>
+
+                                                    <div class="chart-details-item">
+                                                        <div class="chart-details-inner-items">
+                                                            <i class="fa-solid fa-user-group"></i>
+                                                            <h6>Save Candidates</h6>
+                                                        </div>
+                                                        <h6>20</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <!-- lasted job posted 2 -->
+                                    <tr  class="job-post-table-row-2">
+                                        <td class="job-title">
+                                            <input type="radio" name="latest-job-posted"  onclick="showJobPostDetails('latestJobPosted2',2)"> 
+                                            <p class="job-title">Senior Developer</p> 
+                                        </td>
+                                        <td class="job-status">
+                                            <p class="status">Active</p>
+                                            <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="job-posted-date">
+                                            <p>17th Jan, 2023</p>
+                                        </td>
+                                        <td class="candidates">
+                                            <div>
+                                                <p>All</p><p>:</p> <p>70</p>
+                                                <p>New</p><p>:</p> <p>10</p>
+                                            </div>
+                                        </td>
+                                        <td class="notified-candidates">
+                                            <p>80</p>
+                                        </td>
+                                        <td class="action">
+                                            <button>Manage <i class="fa-solid fa-chevron-right"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr id="latestJobPosted2"  class="job-post-hidden-details">
+                                        <td colspan="6">
+                                            <div class="job-post-statistics-container">
+                                                <div class="doughnut-chart-container">
+                                                    <canvas id="jobPostDoughnutChart2">
+                                                        
+                                                    </canvas>
+                                                </div>
+                                                <div class="doughnut-chart-details">
+                                                    <div class="chart-details-item">
+                                                        <div class="chart-details-inner-items">
+                                                            <i class="fa-solid fa-file-lines"></i>
+                                                            <h6>Applications</h6>
+                                                        </div>
+                                                        <h6>100</h6>
+                                                    </div>
+
+                                                    <div class="chart-details-item">
+                                                        <div class="chart-details-inner-items">
+                                                            <i class="fa-solid fa-bookmark"></i>
+                                                            <h6>Shortlisted</h6>
+                                                        </div>
+                                                        <h6>20</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="vertical-division-line"></div>
+                                                <div class="doughnut-chart-details doughnut-chart-details-2">
+                                                    <div class="chart-details-item">
+                                                        <div class="chart-details-inner-items">
+                                                            <i class="fa-solid fa-eye"></i>
+                                                            <h6>Job Views</h6>
+                                                        </div>
+                                                        <h6>60</h6>
+                                                    </div>
+
+                                                    <div class="chart-details-item">
+                                                        <div class="chart-details-inner-items">
+                                                            <i class="fa-solid fa-user-group"></i>
+                                                            <h6>Save Candidates</h6>
+                                                        </div>
+                                                        <h6>20</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <!-- lasted job posted 3 -->
+                                    <tr class="job-post-table-row-3">
+                                        <td class="job-title">
+                                            <input type="radio" name="latest-job-posted" onclick="showJobPostDetails('latestJobPosted3',3)"> 
+                                            <p class="job-title">Senior Developer</p> 
+                                        </td>
+                                        <td class="job-status">
+                                            <p class="status">Active</p>
+                                            <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="job-posted-date">
+                                            <p>17th Jan, 2023</p>
+                                        </td>
+                                        <td class="candidates">
+                                            <div>
+                                                <p>All</p><p>:</p> <p>70</p>
+                                                <p>New</p><p>:</p> <p>10</p>
+                                            </div>
+                                        </td>
+                                        <td class="notified-candidates">
+                                            <p>80</p>
+                                        </td>
+                                        <td class="action">
+                                            <button>Manage <i class="fa-solid fa-chevron-right"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr id="latestJobPosted3" class="job-post-hidden-details">
+                                        <td colspan="6">
+                                            <div class="job-post-statistics-container">
+                                                <div class="doughnut-chart-container">
+                                                    <canvas id="jobPostDoughnutChart3">
+
+                                                    </canvas>
+                                                </div>
+                                                <div class="doughnut-chart-details">
+                                                    <div class="chart-details-item">
+                                                        <div class="chart-details-inner-items">
+                                                            <i class="fa-solid fa-file-lines"></i>
+                                                            <h6>Applications</h6>
+                                                        </div>
+                                                        <h6>100</h6>
+                                                    </div>
+
+                                                    <div class="chart-details-item">
+                                                        <div class="chart-details-inner-items">
+                                                            <i class="fa-solid fa-bookmark"></i>
+                                                            <h6>Shortlisted</h6>
+                                                        </div>
+                                                        <h6>20</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="vertical-division-line"></div>
+                                                <div class="doughnut-chart-details doughnut-chart-details-2">
+                                                    <div class="chart-details-item">
+                                                        <div class="chart-details-inner-items">
+                                                            <i class="fa-solid fa-eye"></i>
+                                                            <h6>Job Views</h6>
+                                                        </div>
+                                                        <h6>60</h6>
+                                                    </div>
+
+                                                    <div class="chart-details-item">
+                                                        <div class="chart-details-inner-items">
+                                                            <i class="fa-solid fa-user-group"></i>
+                                                            <h6>Save Candidates</h6>
+                                                        </div>
+                                                        <h6>20</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>                
+                            <div class="view-all-item-container">
+                                <a href="">View All <i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="job-search-main-container">
+                    <h1 class="title">Manage Your Job Search</h1>
+                    <div class="job-search-inner-container">
+                        <div class="jobs-saved-main-container">
+                            <div class="job-saved-title-container">
+                                <h4 class="title">Jobs Saved by You <span>(Latest 3 saved jobs)</span></h4>
+                                <a href="#"><i class="fa-solid fa-bookmark"></i> &nbsp; Save Now</a>
+                            </div>
+
+                            <table class="job-saved-table">
+                                <thead>
+                                    <tr>
+                                        <th>Job Title</th>
+                                        <th>Company</th>
+                                        <th>Experience</th>
+                                        <th>Location</th>
+                                        <th>Match Score</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- lasted job saved 1 -->
+                                    <tr class="job-saved-table-row-1" style="border: 0;">
+                                        <td class="job-title">
+                                            <input type="radio" name="latest-job-saved" checked onclick="showJobSavedDetails('latestJobSaved1',1)"> 
+                                            <p class="job-title">Develper</p> 
+                                        </td>
+                                        <td class="job-status">
+                                            <p class="status">Company</p>
+                                        </td>
+                                        <td class="job-saved-date">
+                                            <p>1-2 Years</p>
+                                        </td>
+                                        <td class="candidates">
+                                            <p>Hyderabad</p>
+                                        </td>
+                                        <td class="notified-candidates">
+                                            <p>10%</p>
+                                        </td>
+                                        <td class="action">
+                                            <div class="view-btn"><button class="btn view-btn">View</button></div>
+                                            <div class="apply-btn"><button class="btn">Apply</i></button></div>
+                                            <div class="delete-btn"><button class="btn"><i class="fa-solid fa-trash-can"></i></button></div>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr id="latestJobSaved1" class="job-saved-hidden-details" style="display: contents;">
+                                        <td colspan="6">
+                                            <div class="job-saved-statistics-container">
+                                                <div class="doughnut-chart-container">
+                                                    <canvas id="jobSavedDoughnutChart1">
+                                                        
+                                                    </canvas>
+                                                    <div class="job-match-value-container">
+                                                        <h4 class="job-match-value" id="jobMatchScore1">00</h4>
+                                                        <h6 class="job-match-label">Match Score</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="doughnut-chart-details">
+                                                    <div class="chart-details-item">
+                                                        <h4 class="title">Job Suitability Score</h4>
+                                                        <form action="">
+                                                            <input type="file" class="resume-file">
+                                                            <button type="submit" class="btn btn-primary">Upload New</button>
+                                                        </form>
+                                                    </div>
+
+                                                </div>
+                                                <div class="vertical-division-line"></div>
+                                                <div class="doughnut-chart-details doughnut-chart-details-2">
+                                                    <div class="chart-details-item">
+                                                        <div class="chart-details-inner-items">
+                                                            <i class="fa-solid fa-check-double"></i>
+                                                            <h6>Matching Skills</h6>
+                                                        </div>
+                                                        <h6>5</h6>
+                                                    </div>
+
+                                                    <div class="chart-details-item">
+                                                        <div class="chart-details-inner-items">
+                                                            <i class="fa-solid fa-xmark"></i>
+                                                            <h6>Missing Skills</h6>
+                                                        </div>
+                                                        <h6>5</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <!-- lasted job posted 2 -->
+                                    <tr class="job-saved-table-row-2">
+                                        <td class="job-title">
+                                            <input type="radio" name="latest-job-saved" onclick="showJobSavedDetails('latestJobSaved2',2)"> 
+                                            <p class="job-title">Develper</p> 
+                                        </td>
+                                        <td class="job-status">
+                                            <p class="status">Company</p>
+                                        </td>
+                                        <td class="job-saved-date">
+                                            <p>1-2 Years</p>
+                                        </td>
+                                        <td class="candidates">
+                                            <p>Hyderabad</p>
+                                        </td>
+                                        <td class="notified-candidates">
+                                            <p>10%</p>
+                                        </td>
+                                        <td class="action">
+                                            <div class="view-btn"><button class="btn view-btn">View</button></div>
+                                            <div class="apply-btn"><button class="btn">Apply</i></button></div>
+                                            <div class="delete-btn"><button class="btn"><i class="fa-solid fa-trash-can"></i></button></div>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr id="latestJobSaved2" class="job-saved-hidden-details">
+                                        <td colspan="6">
+                                            <div class="job-saved-statistics-container">
+                                                <div class="doughnut-chart-container">
+                                                    <canvas id="jobSavedDoughnutChart2">
+                                                        
+                                                    </canvas>
+                                                    <div class="job-match-value-container">
+                                                        <h4 class="job-match-value" id="jobMatchScore2">00</h4>
+                                                        <h6 class="job-match-label">Match Score</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="doughnut-chart-details">
+                                                    <div class="chart-details-item">
+                                                        <h4 class="title">Job Suitability Score</h4>
+                                                        <form action="">
+                                                            <input type="file" class="resume-file">
+                                                            <button type="submit" class="btn btn-primary">Upload New</button>
+                                                        </form>
+                                                    </div>
+
+                                                </div>
+                                                <div class="vertical-division-line"></div>
+                                                <div class="doughnut-chart-details doughnut-chart-details-2">
+                                                    <div class="chart-details-item">
+                                                        <div class="chart-details-inner-items">
+                                                            <i class="fa-solid fa-check-double"></i>
+                                                            <h6>Matching Skills</h6>
+                                                        </div>
+                                                        <h6>4</h6>
+                                                    </div>
+
+                                                    <div class="chart-details-item">
+                                                        <div class="chart-details-inner-items">
+                                                            <i class="fa-solid fa-xmark"></i>
+                                                            <h6>Missing Skills</h6>
+                                                        </div>
+                                                        <h6>1</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <!-- lasted job posted 3 -->
+                                    <tr class="job-saved-table-row-3">
+                                        <td class="job-title">
+                                            <input type="radio" name="latest-job-saved" onclick="showJobSavedDetails('latestJobSaved3',3)"> 
+                                            <p class="job-title">Develper</p> 
+                                        </td>
+                                        <td class="job-status">
+                                            <p class="status">Company</p>
+                                        </td>
+                                        <td class="job-saved-date">
+                                            <p>1-2 Years</p>
+                                        </td>
+                                        <td class="candidates">
+                                            <p>Hyderabad</p>
+                                        </td>
+                                        <td class="notified-candidates">
+                                            <p>10%</p>
+                                        </td>
+                                        <td class="action">
+                                            <div class="view-btn"><button class="btn view-btn">View</button></div>
+                                            <div class="apply-btn"><button class="btn">Apply</i></button></div>
+                                            <div class="delete-btn"><button class="btn"><i class="fa-solid fa-trash-can"></i></button></div>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr id="latestJobSaved3" class="job-saved-hidden-details" >
+                                        <td colspan="6">
+                                            <div class="job-saved-statistics-container">
+                                                <div class="doughnut-chart-container">
+                                                    <canvas id="jobSavedDoughnutChart3">
+                                                        
+                                                    </canvas>
+                                                    <div class="job-match-value-container">
+                                                        <h4 class="job-match-value" id="jobMatchScore3"></h4>
+                                                        <h6 class="job-match-label">Match Score</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="doughnut-chart-details">
+                                                    <div class="chart-details-item">
+                                                        <h4 class="title">Job Suitability Score</h4>
+                                                        <form action="">
+                                                            <input type="file" class="resume-file">
+                                                            <button type="submit" class="btn btn-primary">Upload New</button>
+                                                        </form>
+                                                    </div>
+
+                                                </div>
+                                                <div class="vertical-division-line"></div>
+                                                <div class="doughnut-chart-details doughnut-chart-details-2">
+                                                    <div class="chart-details-item">
+                                                        <div class="chart-details-inner-items">
+                                                            <i class="fa-solid fa-check-double"></i>
+                                                            <h6>Matching Skills</h6>
+                                                        </div>
+                                                        <h6>3</h6>
+                                                    </div>
+
+                                                    <div class="chart-details-item">
+                                                        <div class="chart-details-inner-items">
+                                                            <i class="fa-solid fa-xmark"></i>
+                                                            <h6>Missing Skills</h6>
+                                                        </div>
+                                                        <h6>5</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>  
+                            
+                            <div class="view-all-item-container">
+                                <a href="">View All <i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- Job saved table end -->
+
+                        <div class="section-division-line"></div>
+
+                        <!-- manage alert jobs table start -->
+                        <div class="job-search-table-container">
+                            <div class="title-container">
+                                <h4 class="title">Manage Job Alerts <span>(Latest 3 job alerts)</span></h4>
+                                <a href="">+ Add Alert</a>
+                            </div>
+                            <table class="job-search-table job-manage-alerts-table">
+                                <thead>
+                                    <tr>
+                                        <th>Loaction</th>
+                                        <th>Work Type</th>
+                                        <th>Skills</th>
+                                        <th>Designation</th>
+                                        <th>New</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Hyderabad</td>
+                                        <td>Full Time</td>
+                                        <td>Front-End</td>
+                                        <td>Developer</td>
+                                        <td>10</td>
+                                        <td class="manage-alerts-action">
+                                            <div class="toggle-btn">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                            <div class="edit-btn">
+                                                <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                                                
+                                            </div>
+                                            <div class="delete-btn">
+                                                <button class="btn"><i class="fa-solid fa-trash-can"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hyderabad</td>
+                                        <td>Full Time</td>
+                                        <td>Front-End</td>
+                                        <td>Developer</td>
+                                        <td>10</td>
+                                        <td class="manage-alerts-action">
+                                            <div class="toggle-btn">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                            <div class="edit-btn">
+                                                <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                                                
+                                            </div>
+                                            <div class="delete-btn">
+                                                <button class="btn"><i class="fa-solid fa-trash-can"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hyderabad</td>
+                                        <td>Full Time</td>
+                                        <td>Front-End</td>
+                                        <td>Developer</td>
+                                        <td>10</td>
+                                        <td class="manage-alerts-action">
+                                            <div class="toggle-btn">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                            <div class="edit-btn">
+                                                <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                                                
+                                            </div>
+                                            <div class="delete-btn">
+                                                <button class="btn"><i class="fa-solid fa-trash-can"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="view-all-item-container">
+                                <a href="">View All <i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- manage job alerts end -->
+
+                        <div class="section-division-line"></div>
+
+                        <!-- Applied jobs table start -->
+                        <div class="job-search-table-container">
+                            <div class="title-container">
+                                <h4 class="title">Jobs Applied by You <span>(Latest 3 job alerts)</span></h4>
+                                <a href=""><i class="fa-solid fa-file-pen"></i> Apply Now</a>
+                            </div>
+                            <table class="job-search-table job-manage-alerts-table">
+                                <thead>
+                                    <tr>
+                                        <th>Job Title</th>
+                                        <th>Company</th>
+                                        <th>Work Type</th>
+                                        <th>Location</th>
+                                        <th>Applied Date</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Developer</td>
+                                        <td>Facebook</td>
+                                        <td>Bangalor</td>
+                                        <td>Developer</td>
+                                        <td>10 Oct, 2023</td>
+                                        <td class="apply-job-action">
+                                            <div class="view-btn">
+                                                <button class="btn">View</button>
+                                            </div>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Developer</td>
+                                        <td>Facebook</td>
+                                        <td>Bangalor</td>
+                                        <td>Developer</td>
+                                        <td>10 Oct, 2023</td>
+                                        <td class="apply-job-action">
+                                            <div class="view-btn">
+                                                <button class="btn">View</button>
+                                            </div>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Developer</td>
+                                        <td>Facebook</td>
+                                        <td>Bangalor</td>
+                                        <td>Developer</td>
+                                        <td>10 Oct, 2023</td>
+                                        <td class="apply-job-action">
+                                            <div class="view-btn">
+                                                <button class="btn">View</button>
+                                            </div>
+                                            
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="view-all-item-container">
+                                <a href="">View All <i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- Applied jobs section end -->
+                        
+                        <div class="section-division-line"></div>
+
+                        <div class="job-search-table-container recommended-jobs-container">
+                            <div class="title-container">
+                                <h4 class="title">Recommended Jobs Based On Your Skills</h4>
+                                <a href="">View All <i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+
+                            <div class="recommended-jobs-owl-carousel-container">
+                                <div class="job-carousel-item">
+                                    <div class="company-logo-container">
+                                        <img src="image/company-logos/1.png" alt="">
+                                    </div>
+                                    <h5>Product Manager</h5>
+                                    <div class="company-details">
+                                        <p>Accenture</p>
+                                        <p>Fulltime</p>
+                                        <p>Hyderabad (on-site)</p>
+                                    </div>
+                                    <div class="company-additional-details">
+                                        <p><i class="fa-solid fa-suitcase"></i> 4-5 Years</p>
+                                        <p><i class="fa-solid fa-suitcase"></i> 26 days ago</p>
+                                    </div>
+                                    <div class="save-job-btn">
+                                        <button class="btn"><i class="fa-solid fa-heart"></i></button>
+                                    </div>
+                                    
+                                    <div class="job-match-score">
+                                        <h6 class="job-match-score-value">20%</h6>
+                                        <p>Match Score</p>
+                                    </div>
+                                </div>
+
+                                <div class="job-carousel-item">
+                                    <div class="company-logo-container">
+                                        <img src="image/company-logos/2.png" alt="">
+                                    </div>
+                                    <h5>Front-End Developer</h5>
+                                    <div class="company-details">
+                                        <p>Accenture</p>
+                                        <p>Fulltime</p>
+                                        <p>Hyderabad (on-site)</p>
+                                    </div>
+                                    <div class="company-additional-details">
+                                        <p><i class="fa-solid fa-suitcase"></i> 4-5 Years</p>
+                                        <p><i class="fa-solid fa-suitcase"></i> 26 days ago</p>
+                                    </div>
+                                    <div class="save-job-btn">
+                                        <button class="btn"><i class="fa-solid fa-heart"></i></button>
+                                    </div>
+                                    
+                                    <div class="job-match-score">
+                                        <h6 class="job-match-score-value">20%</h6>
+                                        <p>Match Score</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="job-carousel-item">
+                                    <div class="company-logo-container">
+                                        <img src="image/company-logos/3.png" alt="">
+                                    </div>
+                                    <h5>UI/UX Designer</h5>
+                                    <div class="company-details">
+                                        <p>Accenture</p>
+                                        <p>Fulltime</p>
+                                        <p>Hyderabad (on-site)</p>
+                                    </div>
+                                    <div class="company-additional-details">
+                                        <p><i class="fa-solid fa-suitcase"></i> 4-5 Years</p>
+                                        <p><i class="fa-solid fa-suitcase"></i> 26 days ago</p>
+                                    </div>
+                                    <div class="save-job-btn">
+                                        <button class="btn"><i class="fa-solid fa-heart"></i></button>
+                                    </div>
+                                    
+                                    <div class="job-match-score">
+                                        <h6 class="job-match-score-value">20%</h6>
+                                        <p>Match Score</p>
+                                    </div>
+                                </div>
+
+                                <div class="job-carousel-item">
+                                    <div class="company-logo-container">
+                                        <img src="image/company-logos/1.png" alt="">
+                                    </div>
+                                    <h5>Product Manager</h5>
+                                    <div class="company-details">
+                                        <p>Accenture</p>
+                                        <p>Fulltime</p>
+                                        <p>Hyderabad (on-site)</p>
+                                    </div>
+                                    <div class="company-additional-details">
+                                        <p><i class="fa-solid fa-suitcase"></i> 4-5 Years</p>
+                                        <p><i class="fa-solid fa-suitcase"></i> 26 days ago</p>
+                                    </div>
+                                    <div class="save-job-btn">
+                                        <button class="btn"><i class="fa-solid fa-heart"></i></button>
+                                    </div>
+                                    
+                                    <div class="job-match-score">
+                                        <h6 class="job-match-score-value">20%</h6>
+                                        <p>Match Score</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Tablet & Mobile Footer Menu -->
+        <menu class="job-record-content-res ">
+            <section>
+                <div class="py-3 footer-nav section">
+                    <a href="" class="footer-nav-item"> <i class="fa-solid fa-house mb-1"></i>Home</a>
+                    <a href="user-dashboard.html" class="footer-nav-item"> <i class="fa-solid fa-table mb-1"></i>Dashboard</a>
+                    <a href="" class="footer-nav-item" id="seek-jobs"> <i class="fa-solid fa-suitcase mb-1"></i>Seek
+                        Jobs</a>
+                    <a href="" class="footer-nav-item" id="refer-jobs"> <i class="fa-solid fa-list mb-1"></i></i>Refer
+                        Jobs</a>
+                    <a href="user-profile.html" class="footer-nav-item" id="profile"> <i class="fa-solid fa-user mb-1"></i>Profile</a>
+                </div>
+            </section>
+        </menu>
+
+
+    </main>
+
+
+
+    
+
+    <!--Footer starts-->
+    <footer class="text-white py-5 footer-content" style="background-color:#00007C ;">
+        <div class="d-flex justify-content-lg-around justify-content-evenly">
+            <div>
+                <h4>Jobseekers</h4>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#"> Search
+                        Jobs</a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#"> Sign
+                        in</a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#"> Create Job
+                        alert</a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">
+                        Experience</a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">
+                        Education</a></span>
+            </div>
+            <div>
+                <h4>About Us</h4>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">About Us
+                    </a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">FAQ
+                    </a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Privacy
+                        Policy
+                    </a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Contact us
+                    </a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Sitemap
+                    </a></span>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Saved Jobs
+                    </a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Companies
+                    </a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Career tools
+                    </a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Career
+                        Resources
+                    </a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Benefits
+                    </a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Post a Job
+                    </a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Find a Job
+                    </a></span>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <div>
+                    <ul class="footer-icon p-0 py-3 d-flex">
+                        <a href="#"></a>
+                        <li class="me-2"
+                            style="list-style: none; display: flex; justify-content: center;align-items: center; width: 35px; height: 35px; border: 2px solid #fff; border-radius: 50%;">
+                            <i class="fa-brands fa-facebook-f " style=" line-height: 10px;"></i>
+                        </li>
+                        </a>
+                        <a href="#"></a>
+                        <li class="me-2"
+                            style="list-style: none; display: flex; justify-content: center;align-items: center; width: 35px; height: 35px; border: 2px solid #fff; border-radius: 50%;">
+                            <i class="fa-brands fa-instagram " style=" line-height: 10px;"></i>
+                        </li>
+                        </a>
+                        <a href="#"></a>
+                        <li class="me-2"
+                            style="list-style: none; display: flex; justify-content: center;align-items: center; width: 35px; height: 35px; border: 2px solid #fff; border-radius: 50%;">
+                            <i class="fa-brands fa-linkedin-in " style=" line-height: 10px;"></i>
+                        </li>
+                        </a>
+                        <a href="#">
+                            <li class="me-2"
+                                style="list-style: none; display: flex; justify-content: center;align-items: center; width: 35px; height: 35px; border: 2px solid #fff; border-radius: 50%;">
+                                <i class="fa-brands fa-pinterest " style=" line-height: 10px;"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div>
+                    <select
+                        style="width: 200px; padding: 8px 8px; outline: none; color: white; background-color: #657581; border: 1px solid #fff;"
+                        aria-label=" Default select example">
+                        <option selected>English</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div style="border-top: 1px solid #657581; margin: 30px 60px 0px 60px">
+            <span class="d-flex justify-content-center mt-4">&copy; Copyright @ 2023 | job Board Software by Reyferjobs.
+                All
+                Rights
+                Reserved</span>
+        </div>
+    </footer>
+    <!--Footer ends-->
+
+    <!-- All Script -->
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Slick Carousel JavaScript -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script src="js/dashboard.js"></script>
+
+
+    <!-- owl-carousel -->
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                dots: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 1
+                    },
+                    1400: {
+                        items: 2
+                    },
+                    1441: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+
+    <!-- Search Select-Box -->
+    <script>
+        function toggleDropdown(button) {
+            const dropdown = button.parentElement;
+            const dropdownSelect = dropdown.querySelector(".dropdown-select");
+            const checkboxes = dropdownSelect.querySelectorAll("input[type='checkbox']");
+            const countDisplay = dropdown.querySelector(".count");
+
+
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener("change", updateCount);
+            });
+
+            function updateCount() {
+                const selectedCheckboxes = Array.from(checkboxes).filter(checkbox => checkbox.checked);
+                if (selectedCheckboxes.length > 0) {
+                    countDisplay.textContent = selectedCheckboxes.length;
+                    countDisplay.style.display = "inline";
+                } else {
+                    countDisplay.style.display = "none";
+                }
+            }
+
+            const isOpen = dropdownSelect.style.display === "block";
+            dropdownSelect.style.display = isOpen ? "none" : "block";
+
+            // Close the dropdown when clicking outside of it
+            document.addEventListener("click", function (event) {
+                if (!dropdown.contains(event.target) && event.target !== button) {
+                    dropdownSelect.style.display = "none";
+                }
+            });
+
+
+        }
+        function filterItems(inputElement) {
+            const filter = inputElement.value.toLowerCase();
+            const dropdownSelect = inputElement.parentElement;
+            const checkboxes = dropdownSelect.querySelectorAll(".checkbox-label");
+            const resultsMessage = dropdownSelect.querySelector(".resultsMessage");
+            let found = false;
+
+            checkboxes.forEach(checkbox => {
+                const label = checkbox.textContent.toLowerCase();
+                if (label.includes(filter)) {
+                    checkbox.style.display = "block";
+                    found = true;
+                } else {
+                    checkbox.style.display = "none";
+                }
+            });
+
+            if (found) {
+                resultsMessage.style.display = "none";
+            } else {
+                resultsMessage.style.display = "block";
+            }
+        }
+
+    </script>
+
+    <!-- Second Nav -->
+    <script>
+        $(document).ready(function () {
+
+            $(document).click(function (event) {
+                if (!$(event.target).closest(".search-click").length) {
+                    $(".first-search").show();
+                    $(".second-search").hide();
+                    $(".secon-nav-search").css("padding" , "0");
+                }
+            });
+
+            $("#first-search-input").focus(function () {
+                $(".first-search").hide();
+                $(".second-search").show();
+                $(".secon-nav-search").css("padding" , "20px 100px");
+
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $(document).click(function (event) {
+                if (!$(event.target).closest(".search-click-res").length) {
+                    $(".first-search-res").show();
+                    $(".second-search-res").hide();
+                }
+            });
+
+            $("#first-search-input-res").focus(function () {
+                $(".first-search-res").hide();
+                $(".second-search-res").show();
+
+            });
+        });
+    </script>
+
+    <!--  -->
+    <script>
+        $(document).ready(function () {
+            function showSection() {
+                event.preventDefault();
+                $('#hidden-section').show();
+                $('.search-box-section').css('padding-top', '30px');
+            }
+
+            // Add click event listeners to the links
+            $('#seek-jobs, #refer-jobs, #profile').click(showSection);
+        });
+    </script>
+
+</body>
+
+</html>
