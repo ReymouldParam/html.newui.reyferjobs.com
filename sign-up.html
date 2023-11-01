@@ -4,10 +4,11 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Login</title>
+   <title>Sign Up</title>
    <link rel="stylesheet" href="style/bootstrap.min.css" type="text/css">
    <link rel="stylesheet" href="style/style.css" type="text/css" />
    <link rel="stylesheet" href="style/login.css" type="text/css" />
+   <link rel="stylesheet" href="style/sign-up.css" type="text/css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
    <!-- Font -->
    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet' type="text/css">
@@ -15,13 +16,9 @@
 
 <body>
 
-
    <!--Header start-->
    <header class="fixed-top">
-
-
       <!-- first nav -->
-
       <nav style="background-color: white;" class="navbar navbar-expand-lg py-3 section ">
          <div class="container-fluid px-0">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -65,62 +62,78 @@
 
    <!-- Content -->
    <section class="section">
-      <div class="login-form-content">
+      <div class="sign-up-form-content">
          <div class="bread-crumbs">
             <span class="text-blue me-1 b-home"><a href="#">Home</a></span><i
-               class="fa-solid fa-angle-right text-blue me-1"></i><span class="bread-crumbs-2"><a
-                  href="#"></a>Login</span>
+               class="fa-solid fa-angle-right text-blue me-1"></i><span class="bread-crumbs-2"><a href="#"></a>Sign
+               Up</span>
          </div>
       </div>
-      <div class="login-form-title">Welcome to ReyferJobs</div>
-      <div class="d-flex justify-content-center py-3">
-         <div class="login-form">
-            <h4>Login</h4>
-            <form action="" class="py-2">
-               <div class="py-2">
-                  <label for="">Email Id / Username</label>
+      <div class="d-lg-flex mb-5 gap-5">
+         <div>
+            <div class="sign-up-text">
+               <h4>Welcome to ReyferJobs</h4>
+               <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+               <button class="my-sm-5 my-3">The Career Matchmaker</button>
+            </div>
+            <img class="sign-up-image" src="./image/Refer job signup page 1.png" alt="">
+         </div>
+         <div class="sign-up-form-details">
+            <h5 class="my-lg-3 my-4">Sign up</h5>
+            <div class="sign-up-form">
+               <div class="my-3">
+                  <h5>Create account.</h5>
+                  <h6>You have already account? <a href="/login.html">Log in</a></h6>
+               </div>
+               <form action="">
+                  <select class="sign-up-input width-100 my-sm-3" aria-label="Default select example">
+                     <option selected>Select Total Work Experience</option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                  </select>
+                  <div class="d-sm-flex gap-2 my-3">
+                     <input type="text" class="sign-up-input my-md-0 my-3" name="" id="" placeholder="First Name">
+                     <input type="text" class="sign-up-input my-md-0 mt-3" name="" id="" placeholder="Last Name">
+                  </div>
+                  <input type="text" name="" id="" class="sign-up-input width-100 my-3" placeholder="Email ID">
                   <br />
-                  <input type="text" class="login-form-input" placeholder="Email Id / Username">
-               </div>
-               <div class="py-2">
-                  <label for="">Password</label>
+                  <input type="text" name="" id="" class="sign-up-input width-100 my-3" placeholder="Password">
                   <br />
-                  <input type="text" class="login-form-input" placeholder="Password">
-               </div>
-               <div class="d-flex justify-content-between py-2">
-                  <div>
-                     <input type="checkbox" name="" id="">
-                     <span>Remember me</span>
+                  <input type="text" name="" id="" class="sign-up-input width-100 my-3"
+                     placeholder="Confirmed Password">
+                  <br />
+                  <input type="text" name="" id="" class="sign-up-input width-100 my-3" placeholder="Phone">
+                  <select class="sign-up-input width-100 my-4" aria-label="Default select example">
+                     <option selected>Select Intrest Categories</option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                  </select>
+                  <div class="terms my-3">
+                     <input type="checkbox">
+                     <label for="">I’ve read and agree with your <span class="text-blue">Terms of
+                           Services</span></label>
                   </div>
                   <div>
-                     <a href="/verify.html" class="text-black">Forget Password</a>
+                     <button class="create-account-btn my-3">Create Account</button>
                   </div>
-               </div>
-               <div class="py-3">
-                  <button class="login-button">Login</button>
-               </div>
-               <div class="d-flex justify-content-between py-3">
-                  <div class="soical-content">
-                     <img src="./image/google.png" class="google-img" alt="">
-                     <span><a href="#" class="text-black">Sign with Google</a></span>
+                  <p class="or my-3">OR</p>
+                  <div class="d-flex justify-content-evenly align-items-baseline mb-3">
+                     <div class="sign-with">
+                        <img src="./image/google.png" alt="">
+                        <a href="#"> <span>Sign with Google</span></a>
+                     </div>
+                     <div class="sign-with">
+                        <img src="./image/in.png" alt="">
+                        <a href="#"> <span>Sign with Linkedin</span></a>
+                     </div>
                   </div>
-                  <div class="soical-content">
-                     <img src="./image/in.png" class="google-img" alt="">
-                     <span><a href="#" class="text-black">Sign with Linkedin</a></span>
-                  </div>
-               </div>
-               <div class="pt-3">
-                  <span>New to Referjobs</span>
-                  <span><a href="/sign-up.html">Join Now</a></span>
-               </div>
-            </form>
+               </form>
+            </div>
          </div>
       </div>
-      <div class="registration-btn">
-         <button>Registration for free</button>
       </div>
-      </div>
-
    </section>
 
    <!--Footer starts-->

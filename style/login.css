@@ -96,7 +96,7 @@ nav > div {
 @media (max-width: 59em) {
   .login-res {
     position: absolute;
-    top: 0;
+    top: 0px;
     right: 66px;
   }
   .login-res > button {
@@ -106,7 +106,7 @@ nav > div {
 @media (max-width: 34em) {
   .login-res {
     top: 3px;
-    right: 41px;
+    right: 58px;
   }
   .login-res > button {
     font-size: 15px;

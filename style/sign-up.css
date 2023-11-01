@@ -1,0 +1,191 @@
+.sign-up-form-content {
+  padding: 100px 0 40px 0;
+}
+.sign-up-image {
+  width: 744px;
+  height: 672.499px;
+  flex-shrink: 0;
+}
+.sign-up-text h4 {
+  color: #000;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 115%;
+}
+.sign-up-text p {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  width: 645px;
+}
+.sign-up-text button {
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #1751d0;
+  color: #1751d0;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+}
+.sign-up-form-details h5 {
+  color: #000;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%;
+}
+.sign-up-form {
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 1px solid #1751d0;
+  padding: 25px;
+}
+.sign-up-form h5 {
+  color: #000;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  text-transform: capitalize;
+}
+.sign-up-form h6 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%;
+}
+.width-100 {
+  width: 100%;
+}
+.sign-up-input {
+  border-radius: 40px;
+  border: 1px solid #373737;
+  background: #fff;
+  padding: 10px 20px;
+  flex-shrink: 0;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  outline: none;
+  line-height: 115%;
+}
+.create-account-btn {
+  border-radius: 40px;
+  background: #1751d0;
+  width: 100%;
+  border: 0;
+  outline: none;
+  padding: 10px 20px;
+  color: #dee9ff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 128%;
+}
+.text-blue {
+  color: #1751d0;
+}
+.terms {
+  font-weight: 500;
+}
+.or {
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%;
+}
+.sign-with img {
+  width: 50px;
+  height: 50px;
+}
+.sign-with span {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%;
+}
+
+@media (max-width: 59em) {
+  .sign-up-image {
+    width: 500px;
+    height: 400px;
+  }
+  .sign-up-form-details h5 {
+    font-size: 26px;
+  }
+  .sign-up-text h4 {
+    font-size: 33px;
+  }
+}
+@media (max-width: 34em) {
+  .sign-up-input {
+    width: 100%;
+    font-size: 18px;
+  }
+  .terms {
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .sign-with img {
+    width: 30px;
+    height: 30px;
+  }
+  .sign-with span {
+    font-size: 14px;
+  }
+  .sign-up-text p {
+    width: 375px;
+  }
+  .sign-up-image {
+    width: 400px;
+    height: 400px;
+  }
+  .sign-up-text button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  .sign-up-image {
+    width: 365px;
+    height: 353px;
+  }
+  .sign-up-text h4 {
+    font-size: 27px;
+  }
+  .sign-up-text p {
+    font-size: 14px;
+  }
+  .sign-up-input {
+    width: 100%;
+    font-size: 14px;
+  }
+  .terms {
+    font-weight: 500;
+    font-size: 11px;
+  }
+  .sign-with span {
+    font-size: 12px;
+  }
+  .sign-with img {
+    width: 25px;
+    height: 25px;
+  }
+  .sign-up-text p {
+    width: 347px;
+  }
+  .sign-up-image {
+    width: 365px;
+    height: 330px;
+  }
+}
+@media (max-width: 320px) {
+}

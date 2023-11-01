@@ -83,3 +83,51 @@
 .password {
   translate: -39px 0px;
 }
+
+@media (max-width: 59em) {
+  .login-res {
+    position: absolute;
+    top: 17px;
+    right: 103px;
+  }
+  .login-res > button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 34em) {
+  .login-res {
+    top: 18px;
+    right: 58px;
+  }
+  .login-res > button {
+    font-size: 15px;
+  }
+  .login-text span:nth-child(2) a {
+    font-size: 15px;
+  }
+  .login-text span:nth-child(1) a {
+    font-size: 15px;
+  }
+  .verify-form-title {
+    font-size: 24px;
+  }
+  .verify-form-input {
+    width: 300px;
+  }
+}
+@media (max-width: 375px) {
+}
+@media (max-width: 320px) {
+  .verify-form-input {
+    width: 255px;
+  }
+  .login-res > button {
+    font-size: 11px;
+  }
+  .login-text span:nth-child(2) a {
+    font-size: 12px;
+  }
+  .login-text span:nth-child(1) a {
+    font-size: 12px;
+  }
+}
