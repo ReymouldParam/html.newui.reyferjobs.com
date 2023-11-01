@@ -1,0 +1,130 @@
+.created-date-post {
+  color: #373737;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 115%;
+}
+.candidates {
+  color: #0b0e10;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 115%;
+}
+.candidates span {
+  color: #1751d0;
+}
+.form-check-input {
+  --bs-form-check-bg: ;
+  border: 2px solid #e4e4e4;
+}
+
+.drafted-text p {
+  color: #dc7d09;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 115%;
+}
+.drafted-text i {
+  color: #dc7d09;
+}
+.post-now-text {
+  color: #1751d0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.manage-job-drafted {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  gap: 60px;
+  align-items: start;
+}
+.draft-text p {
+  color: #1751d0;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 115%;
+}
+.draft-text i {
+  color: #1751d0;
+}
+.posted-now-text {
+  color: #dc7d09;
+  font-weight: 600;
+}
+.create-job-post {
+  color: #1751d0;
+  font-weight: 500;
+}
+.job-count {
+  color: #19680d;
+  font-size: 20px;
+}
+.active-on {
+  font-size: 16px;
+  color: #1714d0;
+  font-weight: 500;
+}
+.active-off {
+  font-size: 16px;
+  color: #c4c4c4;
+  font-weight: 500;
+}
+@media (max-width: 59em) {
+  .saved-job-card-content p {
+    font-size: 14px;
+  }
+  .manage-job-drafted {
+    gap: 35px;
+  }
+}
+@media (max-width: 34em) {
+  .saved-jobs-section {
+    margin-top: 161px !important;
+    position: relative;
+  }
+  .job-saved-content h3 {
+    font-size: 18px;
+  }
+  .job-count {
+    font-size: 13px;
+  }
+  .saved-job-card-content h5 a {
+    font-size: 16px;
+  }
+  .manage-job-drafted {
+    gap: 0px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  .drafted-text p {
+    font-size: 14px;
+  }
+  .active-on {
+    font-size: 14px;
+    color: #1714d0;
+    font-weight: 500;
+  }
+  .active-off {
+    font-size: 14px;
+    color: #c4c4c4;
+    font-weight: 500;
+  }
+  .post-now-text {
+    font-size: 14px;
+  }
+  .draft-text p {
+    font-size: 14px;
+  }
+  .posted-now-text {
+    font-size: 14px;
+  }
+  .post-job-title {
+    font-size: 19px;
+  }
+}

@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Saved-Jobs</title>
+   <!-- bootsrap -->
+   <link rel="stylesheet" href="style/bootstrap.min.css" type="text/css">
+
+   <!-- Custom css -->
+   <link rel="stylesheet" href="style/style.css" type="text/css" />
+   <link rel="stylesheet" href="style/saved-job.css" type="text/css">
+
+   <!-- cdn -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css"
+      integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+
+
+   <!-- Owl Carousel CSS files -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+   <!-- Font -->
+   <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet' type="text/css">
+</head>
+
+<body>
+
+
+   <!--Header start-->
+
+   <header class="fixed-top">
+      <!-- first nav -->
+
+      <nav style="background-color: white;" class="navbar navbar-expand-lg py-3 section header">
+         <div class="container-fluid px-0">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+               aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                  <li class="nav-item active me-3">
+                     <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item me-3">
+                     <a class="nav-link " href="#">About</a>
+                  </li>
+                  <li class="nav-item me-3">
+                     <a class="nav-link " href="#">Services</a>
+                  </li>
+                  <li class="nav-item me-3">
+                     <a class="nav-link " href="#">Term & Condition</a>
+                  </li>
+                  <li class="nav-item me-3">
+                     <a class="nav-link " href="#">Help</a>
+                  </li>
+               </ul>
+               <div class="d-flex align-items-center">
+                  <button type="button" class="btn text-white rounded-5 px-3 post-now">
+                     Post Now
+                  </button>
+                  <div class="px-3">
+                     <span style="width: 40px; height: 40px;">
+                        <i class="fa-solid fa-user border border-black rounded-circle px-2 py-2 mx-1"></i>
+                     </span>
+                     <span style="width: 40px; height: 40px;">
+                        <i
+                           class="fa-regular fa-bell border border-black rounded-circle px-2 py-2 mx-1  position-relative">
+                           <span
+                              class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
+                              <span class="visually-hidden">New alerts</span>
+                           </span>
+                        </i>
+                     </span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+
+      <!-- second nav -->
+      <div class="search-click header">
+         <nav class="navbar d-flex justify-content-lg-center navbar-expand-lg py-3 second-navbar section">
+            <div class="container-fluid px-0">
+               <div></div>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse second-nav" id="navbarTogglerDemo02">
+                  <div class="mx-auto">
+                     <div class="d-lg-flex ">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                           <li class="nav-item">
+                              <a class="nav-link text-white" href="#">Dashboard
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <div class="dropdown">
+                                 <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Seek jobs
+                                 </a>
+                                 <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/index.html"><i
+                                             class="fa-solid fa-magnifying-glass"></i>
+                                          Job search</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="/saved-jobs.html"><i
+                                             class="fa-regular fa-heart"></i>Saved
+                                          job</a></li>
+                                    <li><a class="dropdown-item" href="/applied-job.html"><i
+                                             class="fa-solid fa-suitcase"></i>Applied
+                                          job</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="/alert-notification.html"><i
+                                             class="fa-regular fa-bell"></i>Alert &
+                                          Notification</a></li>
+                                 </ul>
+                              </div>
+                           </li>
+                           <li class="nav-item">
+                              <div class="dropdown">
+                                 <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Refer jobs
+                                 </a>
+                                 <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/post-job.html"><i class="fa-solid fa-plus"></i>
+                                          Post job</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="/manage-job.html"><i
+                                             class="fa-solid fa-folder"></i>Manage
+                                          job</a></li>
+                                    <li><a class="dropdown-item" href="/favrorite-candidates.html"><i
+                                             class="fa-solid fa-suitcase"></i>Favorite
+                                          candidates</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-plus"></i>Bulk
+                                          jobs</a></li>
+                                 </ul>
+                              </div>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link text-white" href="#">Profile Section</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link text-white" href="#">Memberships</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="searchbar first-search">
+                        <input id="first-search-input" class="search_input" type="text" name
+                           placeholder="Search Job Here" />
+                        <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </nav>
+         <div>
+            <div class="secon-nav-search">
+               <div class="bg-white second-search hidden">
+                  <div class="d-flex flex-wrap">
+                     <div class="col-md-4">
+                        <div class="search-1 ps-5"> <i class="fas fa-search ps-3" style="color: #6666;"></i>
+                           <input class="search_input" type="text" name placeholder="Search job title or keyword" />
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="search-1 ps-5"> <i class="fa-solid fa-location-dot ps-3" style="color: #6666;"></i>
+                           <input class="search_input" type="text" name placeholder="Location" />
+                        </div>
+                     </div>
+                     <div class="col-md-5">
+                        <div>
+                           <div class="search-2 ps-5"><i class="fa-solid fa-suitcase ps-3" style="color: #6666;"></i>
+                              <input class="search_input" type="text" name placeholder="Experience" />
+                              <button type="sub" id="search-jobs" class="btn rounded-pill btn-primary">Search
+                                 jobs</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Responsive Header -->
+
+      <div class="search-click-res navbar-res">
+         <nav class="logo">
+            <img src="image/logo.png" class="d-flex justify-items-center m-auto" alt="">
+         </nav>
+         <div>
+            <nav style="background-color: white;" class="navbar navbar-expand-lg py-3 section  ">
+               <div class="container-fluid px-0">
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                     aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                        <li class="nav-item active me-3">
+                           <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item me-3">
+                           <a class="nav-link " href="#">About</a>
+                        </li>
+                        <li class="nav-item me-3">
+                           <a class="nav-link " href="#">Services</a>
+                        </li>
+                        <li class="nav-item me-3">
+                           <a class="nav-link " href="#">Term & Condition</a>
+                        </li>
+                        <li class="nav-item me-3">
+                           <a class="nav-link " href="#">Help</a>
+                        </li>
+                     </ul>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-between nav-right">
+                     <div class="search-res">
+                        <div class="searchbar first-search-res">
+                           <input id="first-search-input-res" class="search_input" type="text" name
+                              placeholder="Search Job Here" />
+                           <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                        </div>
+                     </div>
+                     <button type="button" class="btn text-white rounded-5 px-sm-3 mx-sm-0 mx-1 post-now">
+                        Post Now
+                     </button>
+                     <div class="px-sm-3">
+                        <span style="width: 40px; height: 40px;">
+                           <i
+                              class="fa-solid fa-user border border-black rounded-circle px-sm-2 py-sm-2 px-1 py-1 mx-sm-1"></i>
+                        </span>
+                        <span style="width: 40px; height: 40px;" class="me-sm-0 me-2">
+                           <i
+                              class="fa-regular fa-bell border border-black rounded-circle px-sm-2 py-sm-2 px-1 py-1 mx-sm-1  position-relative">
+                              <span
+                                 class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
+                                 <span class="visually-hidden">New alerts</span>
+                              </span>
+                           </i>
+                        </span>
+                     </div>
+                  </div>
+               </div>
+
+            </nav>
+            <div>
+               <div class="secon-nav-search">
+                  <div class="bg-white second-search-res hidden">
+                     <div class="d-flex">
+                        <div class="col-md-4">
+                           <div class="search-1 search-input-text"> <i class="fas fa-search ps-3"
+                                 style="color: #6666;"></i>
+                              <input class="search_input" type="text" name placeholder="Search job title or keyword" />
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                           <div class="search-1 search-input-text"> <i class="fa-solid fa-location-dot ps-3"
+                                 style="color: #6666;"></i>
+                              <input class="search_input" type="text" name placeholder="Location" />
+                           </div>
+                        </div>
+                        <div class="col-md-5">
+                           <div>
+                              <div class="search-2 search-input-text"><i class="fa-solid fa-suitcase ps-3"
+                                    style="color: #6666;"></i>
+                                 <input class="search_input" type="text" name placeholder="Experience" />
+                                 <button type="sub" id="search-jobs" class="btn rounded-pill btn-primary">Search
+                                    jobs</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </header>
+   <!--Header end-->
+
+   <!-- Content Start -->
+   <main class="saved-jobs-section">
+
+      <!-- Saved-jobs section start -->
+      <div class="jobs-section">
+         <!-- Bread-crumbs -->
+         <div>
+            <span class="Bread-crumbs-1 me-1"><a href="/index.html">Home</a></span><i
+               class="fa-solid fa-angle-right angle-right"></i><span class="Bread-crumbs-2 ms-1"><a href="">Saved
+                  Job</a></span>
+         </div>
+         <!-- cards -->
+         <div class="job-saved-content mt-4">
+            <h3>Saved jobs by you <span class="job-count">(12)</span></h3>
+            <div class="mt-4">
+               <div>
+                  <div class="card-background">
+                     <div class="d-lg-flex p-0">
+                        <div class="jobs-description col-lg-5  p-0">
+                           <div>
+                              <a href="/jobs-details.html" class="saved-job-detils-page">
+                                 <img class="saved-job-card-img" src="image/microsoft.png" alt>
+                              </a>
+                              <a class="saved-job-offcanvas-link" data-bs-toggle="offcanvas"
+                                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                 <img class="saved-job-card-img" src="image/microsoft.png" alt>
+                              </a>
+                           </div>
+                           <div class="p-0 saved-job-card-content">
+                              <h5 class="m-0 saved-job-detils-page"><a href="/jobs-details.html">Product
+                                    Design Lead</a> . <span>Fulltime</span></h5>
+                              <h5 class="m-0 saved-job-offcanvas-link"><a data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+                                    style="color: #1751d0;">Product
+                                    Design Lead</a> . <span>Fulltime</span></h5>
+                              <div>
+                                 <p class="text-color m-0">Deloitte
+                                 </p>
+                                 <p class="text-color m-0">
+                                    Hyderabad (On-site)</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-5 p-0">
+                           <div class="saved-jobs-details">
+                              <h5>
+                                 <i class="fa-solid fa-suitcase me-2"></i>
+                                 3-5 years experiences
+                              </h5>
+                              <h5 class="d-flex align-items-baseline">
+                                 <i class="fa-solid fa-list-check me-2"></i>
+                                 <p class="m-0"> Figma, Adobe Suitable, Miro, UX Design..+5 more</p>
+                              </h5>
+                              <h5>
+                                 <i class="fa-solid fa-calendar-days me-2"></i>
+                                 4 days ago
+                              </h5>
+                           </div>
+                        </div>
+                        <div class="col-lg-2  p-0">
+                           <div class="saved-job-card-score">
+                              <div>
+                                 <button>Apply</button>
+                                 <span class="ms-lg-3 ms-1"><i class="fa-solid fa-trash"></i></span>
+                              </div>
+                              <div class="saved-job-card-progressbar">
+                                 <div class="saved-card-progress-bar mt-3">
+                                    <progress value="75" min="0" max="100"
+                                       style="visibility:hidden;height:0;width:0;">75%</progress>
+                                 </div>
+                                 <span class="score-text">Matche Score</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-background">
+                     <div class="d-lg-flex p-0">
+                        <div class="jobs-description col-lg-5  p-0">
+                           <div>
+                              <a href="/jobs-details.html" class="saved-job-detils-page">
+                                 <img class="saved-job-card-img" src="image/microsoft.png" alt>
+                              </a>
+                              <a class="saved-job-offcanvas-link" data-bs-toggle="offcanvas"
+                                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                 <img class="saved-job-card-img" src="image/microsoft.png" alt>
+                              </a>
+                           </div>
+                           <div class="p-0 saved-job-card-content">
+                              <h5 class="m-0 saved-job-detils-page"><a href="/jobs-details.html">Product
+                                    Design Lead</a> . <span>Fulltime</span></h5>
+                              <h5 class="m-0 saved-job-offcanvas-link"><a data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+                                    style="color: #1751d0;">Product
+                                    Design Lead</a> . <span>Fulltime</span></h5>
+                              <div>
+                                 <p class="text-color m-0">Deloitte
+                                 </p>
+                                 <p class="text-color m-0">
+                                    Hyderabad (On-site)</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-5 p-0">
+                           <div class="saved-jobs-details">
+                              <h5>
+                                 <i class="fa-solid fa-suitcase me-2"></i>
+                                 3-5 years experiences
+                              </h5>
+                              <h5>
+                                 <i class="fa-solid fa-list-check me-2"></i>
+                                 Figma, Adobe Suitable, Miro, UX Design..+5 more
+                              </h5>
+                              <h5>
+                                 <i class="fa-solid fa-calendar-days me-2"></i>
+                                 4 days ago
+                              </h5>
+                           </div>
+                        </div>
+                        <div class="col-lg-2  p-0">
+                           <div class="saved-job-card-score">
+                              <div>
+                                 <button>Apply</button>
+                                 <span class="ms-lg-3 ms-1"><i class="fa-solid fa-trash"></i></span>
+                              </div>
+                              <div class="saved-job-card-progressbar">
+                                 <div class="saved-card-progress-bar mt-3">
+                                    <progress value="75" min="0" max="100"
+                                       style="visibility:hidden;height:0;width:0;">75%</progress>
+                                 </div>
+                                 <span class="score-text">Matche Score</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-background">
+                     <div class="d-lg-flex p-0">
+                        <div class="jobs-description col-lg-5  p-0">
+                           <div>
+                              <a href="/jobs-details.html" class="saved-job-detils-page">
+                                 <img class="saved-job-card-img" src="image/microsoft.png" alt>
+                              </a>
+                              <a class="saved-job-offcanvas-link" data-bs-toggle="offcanvas"
+                                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                 <img class="saved-job-card-img" src="image/microsoft.png" alt>
+                              </a>
+                           </div>
+                           <div class="p-0 saved-job-card-content">
+                              <h5 class="m-0 saved-job-detils-page"><a href="/jobs-details.html">Product
+                                    Design Lead</a> . <span>Fulltime</span></h5>
+                              <h5 class="m-0 saved-job-offcanvas-link"><a data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+                                    style="color: #1751d0;">Product
+                                    Design Lead</a> . <span>Fulltime</span></h5>
+                              <div>
+                                 <p class="text-color m-0">Deloitte
+                                 </p>
+                                 <p class="text-color m-0">
+                                    Hyderabad (On-site)</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-5 p-0">
+                           <div class="saved-jobs-details">
+                              <h5>
+                                 <i class="fa-solid fa-suitcase me-2"></i>
+                                 3-5 years experiences
+                              </h5>
+                              <h5>
+                                 <i class="fa-solid fa-list-check me-2"></i>
+                                 Figma, Adobe Suitable, Miro, UX Design..+5 more
+                              </h5>
+                              <h5>
+                                 <i class="fa-solid fa-calendar-days me-2"></i>
+                                 4 days ago
+                              </h5>
+                           </div>
+                        </div>
+                        <div class="col-lg-2  p-0">
+                           <div class="saved-job-card-score">
+                              <div>
+                                 <button>Apply</button>
+                                 <span class="ms-lg-3 ms-1"><i class="fa-solid fa-trash"></i></span>
+                              </div>
+                              <div class="saved-job-card-progressbar">
+                                 <div class="saved-card-progress-bar mt-3">
+                                    <progress value="75" min="0" max="100"
+                                       style="visibility:hidden;height:0;width:0;">75%</progress>
+                                 </div>
+                                 <span class="score-text">Matche Score</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="view-all">
+               <span><a href="#">View All <i class="fa-solid fa-angle-right"></i></a></span>
+            </div>
+         </div>
+         <hr>
+      </div>
+      <!-- Saved-jobs section End -->
+
+      <!-- Carousel Start -->
+      <div class="jobs-section">
+         <div class="carousel-section">
+            <div class="d-sm-flex justify-content-between">
+               <h5 class="fs-3">Recommended jobs based on
+                  your skills</h5>
+               <span><a href="" class="recommended-viewall">View All <i
+                        class="fa-solid fa-chevron-right"></i></a></span>
+            </div>
+            <div class="mt-3">
+               <div class="owl-carousel owl-carousel owl-theme">
+                  <div class="item">
+                     <div class="card border-0 me-2 mb-3">
+                        <div class="card-body border-1">
+                           <div class>
+                              <div class="d-flex justify-content-between">
+                                 <a href>
+                                    <img class="sidebar-card-img" src="image/microsoft.png" alt>
+                                 </a>
+                                 <span>
+                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                              </div>
+                              <div class="p-0 mt-2 sidebar-card-content">
+                                 <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a href="#">Product
+                                       Design
+                                       Lead</a></h5>
+                                 <div class="d-flex justify-content-between">
+                                    <div>
+                                       <p class="card-subtitle text-color m-0">
+                                          Deloitte</p>
+                                       <p class="card-subtitle text-color m-0">
+                                          Fulltime
+                                          |
+                                          Hyderabad
+                                          (On-site)</p>
+                                    </div>
+                                    <div>
+                                       <div class="card-progress-bar ms-auto">
+                                          <progress value="75" min="0" max="100"
+                                             style="visibility:hidden;height:0;width:0;">75%</progress>
+                                       </div>
+
+                                    </div>
+                                 </div>
+
+                                 <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="right-side-card-icon-content">
+                                       <span class="m-0 mt-3 text-color me-2"><i class="fa-solid fa-briefcase me-1"></i>
+                                          4-5
+                                          Yers</span>
+
+                                       <span class="text-color saved-job-carousel-card"><i
+                                             class="fa-solid fa-calendar-days me-2"></i>26
+                                          days
+                                          ago</span>
+                                    </div>
+                                    <span class="score-text text-color">Matched
+                                       Score</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="card border-0 me-2 mb-3">
+                        <div class="card-body">
+                           <div class>
+                              <div class="d-flex justify-content-between">
+                                 <a href>
+                                    <img class="sidebar-card-img img-fluid" src="image/microsoft.png" alt>
+                                 </a>
+                                 <span>
+                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                              </div>
+                              <div class="p-0 mt-2">
+                                 <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a href="#">Product
+                                       Design
+                                       Lead</a></h5>
+                                 <div class="d-flex justify-content-between">
+                                    <div>
+                                       <p class="card-subtitle text-color m-0">
+                                          Deloitte</p>
+                                       <p class="card-subtitle text-color m-0">
+                                          Fulltime
+                                          |
+                                          Hyderabad
+                                          (On-site)</p>
+                                    </div>
+                                    <div>
+                                       <div class="card-progress-bar ms-auto">
+                                          <progress value="75" min="0" max="100"
+                                             style="visibility:hidden;height:0;width:0;">75%</progress>
+                                       </div>
+
+                                    </div>
+                                 </div>
+
+                                 <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="right-side-card-icon-content">
+                                       <span class="m-0 mt-3 text-color me-2"><i class="fa-solid fa-briefcase me-1"></i>
+                                          4-5
+                                          Yers</span>
+
+                                       <span class="text-color saved-job-carousel-card"><i
+                                             class="fa-solid fa-calendar-days me-2"></i>26
+                                          days
+                                          ago</span>
+                                    </div>
+                                    <span class="score-text text-color">Matched
+                                       Score</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="card border-0 me-2 mb-3">
+                        <div class="card-body">
+                           <div class>
+                              <div class="d-flex justify-content-between">
+                                 <a href>
+                                    <img class="sidebar-card-img img-fluid" src="image/microsoft.png" alt>
+                                 </a>
+                                 <span>
+                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                              </div>
+                              <div class="p-0 mt-2">
+                                 <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a href="#">Product
+                                       Design
+                                       Lead</a></h5>
+                                 <div class="d-flex justify-content-between">
+                                    <div>
+                                       <p class="card-subtitle text-color m-0">
+                                          Deloitte</p>
+                                       <p class="card-subtitle text-color m-0">
+                                          Fulltime
+                                          |
+                                          Hyderabad
+                                          (On-site)</p>
+                                    </div>
+                                    <div>
+                                       <div class="card-progress-bar ms-auto">
+                                          <progress value="75" min="0" max="100"
+                                             style="visibility:hidden;height:0;width:0;">75%</progress>
+                                       </div>
+
+                                    </div>
+                                 </div>
+
+                                 <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="right-side-card-icon-content">
+                                       <span class="m-0 mt-3 text-color me-2"><i class="fa-solid fa-briefcase me-1"></i>
+                                          4-5
+                                          Yers</span>
+
+                                       <span class="text-color saved-job-carousel-card"><i
+                                             class="fa-solid fa-calendar-days me-2"></i>26
+                                          days
+                                          ago</span>
+                                    </div>
+                                    <span class="score-text text-color">Matched
+                                       Score</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="card border-0 me-2 mb-3">
+                        <div class="card-body">
+                           <div class>
+                              <div class="d-flex justify-content-between">
+                                 <a href>
+                                    <img class="sidebar-card-img img-fluid" src="image/microsoft.png" alt>
+                                 </a>
+                                 <span>
+                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                              </div>
+                              <div class="p-0 mt-2">
+                                 <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a href="#">Product
+                                       Design
+                                       Lead</a></h5>
+                                 <div class="d-flex justify-content-between">
+                                    <div>
+                                       <p class="card-subtitle text-color m-0">
+                                          Deloitte</p>
+                                       <p class="card-subtitle text-color m-0">
+                                          Fulltime
+                                          |
+                                          Hyderabad
+                                          (On-site)</p>
+                                    </div>
+                                    <div>
+                                       <div class="card-progress-bar ms-auto">
+                                          <progress value="75" min="0" max="100"
+                                             style="visibility:hidden;height:0;width:0;">75%</progress>
+                                       </div>
+
+                                    </div>
+                                 </div>
+
+                                 <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="right-side-card-icon-content">
+                                       <span class="m-0 mt-3 text-color me-2"><i class="fa-solid fa-briefcase me-1"></i>
+                                          4-5
+                                          Yers</span>
+
+                                       <span class="text-color saved-job-carousel-card"><i
+                                             class="fa-solid fa-calendar-days me-2"></i>26
+                                          days
+                                          ago</span>
+                                    </div>
+                                    <span class="score-text text-color">Matched
+                                       Score</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="card border-0 me-2 mb-3">
+                        <div class="card-body">
+                           <div class>
+                              <div class="d-flex justify-content-between">
+                                 <a href>
+                                    <img class="sidebar-card-img img-fluid" src="image/microsoft.png" alt>
+                                 </a>
+                                 <span>
+                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                              </div>
+                              <div class="p-0 mt-2">
+                                 <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a href="#">Product
+                                       Design
+                                       Lead</a></h5>
+                                 <div class="d-flex justify-content-between">
+                                    <div>
+                                       <p class="card-subtitle text-color m-0">
+                                          Deloitte</p>
+                                       <p class="card-subtitle text-color m-0">
+                                          Fulltime
+                                          |
+                                          Hyderabad
+                                          (On-site)</p>
+                                    </div>
+                                    <div>
+                                       <div class="card-progress-bar ms-auto">
+                                          <progress value="75" min="0" max="100"
+                                             style="visibility:hidden;height:0;width:0;">75%</progress>
+                                       </div>
+
+                                    </div>
+                                 </div>
+
+                                 <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="right-side-card-icon-content">
+                                       <span class="m-0 mt-3 text-color me-2"><i class="fa-solid fa-briefcase me-1"></i>
+                                          4-5
+                                          Yers</span>
+
+                                       <span class="text-color saved-job-carousel-card"><i
+                                             class="fa-solid fa-calendar-days me-2"></i>26
+                                          days
+                                          ago</span>
+                                    </div>
+                                    <span class="score-text text-color">Matched
+                                       Score</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="card border-0 me-2 mb-3">
+                        <div class="card-body">
+                           <div class>
+                              <div class="d-flex justify-content-between">
+                                 <a href>
+                                    <img class="sidebar-card-img img-fluid" src="image/microsoft.png" alt>
+                                 </a>
+                                 <span>
+                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                              </div>
+                              <div class="p-0 mt-2">
+                                 <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a href="#">Product
+                                       Design
+                                       Lead</a></h5>
+                                 <div class="d-flex justify-content-between">
+                                    <div>
+                                       <p class="card-subtitle text-color m-0">
+                                          Deloitte</p>
+                                       <p class="card-subtitle text-color m-0">
+                                          Fulltime
+                                          |
+                                          Hyderabad
+                                          (On-site)</p>
+                                    </div>
+                                    <div>
+                                       <div class="card-progress-bar ms-auto">
+                                          <progress value="75" min="0" max="100"
+                                             style="visibility:hidden;height:0;width:0;">75%</progress>
+                                       </div>
+
+                                    </div>
+                                 </div>
+
+                                 <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="right-side-card-icon-content">
+                                       <span class="m-0 mt-3 text-color me-2"><i class="fa-solid fa-briefcase me-1"></i>
+                                          4-5
+                                          Yers</span>
+
+                                       <span class="text-color saved-job-carousel-card"><i
+                                             class="fa-solid fa-calendar-days me-2"></i>26
+                                          days
+                                          ago</span>
+                                    </div>
+                                    <span class="score-text text-color">Matched
+                                       Score</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="card border-0 me-2 mb-3">
+                        <div class="card-body">
+                           <div class>
+                              <div class="d-flex justify-content-between">
+                                 <a href>
+                                    <img class="sidebar-card-img img-fluid" src="image/microsoft.png" alt>
+                                 </a>
+                                 <span>
+                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                              </div>
+                              <div class="p-0 mt-2">
+                                 <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a href="#">Product
+                                       Design
+                                       Lead</a></h5>
+                                 <div class="d-flex justify-content-between">
+                                    <div>
+                                       <p class="card-subtitle text-color m-0">
+                                          Deloitte</p>
+                                       <p class="card-subtitle text-color m-0">
+                                          Fulltime
+                                          |
+                                          Hyderabad
+                                          (On-site)</p>
+                                    </div>
+                                    <div>
+                                       <div class="card-progress-bar ms-auto">
+                                          <progress value="75" min="0" max="100"
+                                             style="visibility:hidden;height:0;width:0;">75%</progress>
+                                       </div>
+
+                                    </div>
+                                 </div>
+
+                                 <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="right-side-card-icon-content">
+                                       <span class="m-0 mt-3 text-color me-2"><i class="fa-solid fa-briefcase me-1"></i>
+                                          4-5
+                                          Yers</span>
+
+                                       <span class="text-color saved-job-carousel-card"><i
+                                             class="fa-solid fa-calendar-days me-2"></i>26
+                                          days
+                                          ago</span>
+                                    </div>
+                                    <span class="score-text text-color">Matched
+                                       Score</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="card border-0 me-2 mb-3">
+                        <div class="card-body">
+                           <div class>
+                              <div class="d-flex justify-content-between">
+                                 <a href>
+                                    <img class="sidebar-card-img img-fluid" src="image/microsoft.png" alt>
+                                 </a>
+                                 <span>
+                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                              </div>
+                              <div class="p-0 mt-2">
+                                 <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a href="#">Product
+                                       Design
+                                       Lead</a></h5>
+                                 <div class="d-flex justify-content-between">
+                                    <div>
+                                       <p class="card-subtitle text-color m-0">
+                                          Deloitte</p>
+                                       <p class="card-subtitle text-color m-0">
+                                          Fulltime
+                                          |
+                                          Hyderabad
+                                          (On-site)</p>
+                                    </div>
+                                    <div>
+                                       <div class="card-progress-bar ms-auto">
+                                          <progress value="75" min="0" max="100"
+                                             style="visibility:hidden;height:0;width:0;">75%</progress>
+                                       </div>
+
+                                    </div>
+                                 </div>
+
+                                 <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="right-side-card-icon-content">
+                                       <span class="m-0 mt-3 text-color me-2"><i class="fa-solid fa-briefcase me-1"></i>
+                                          4-5
+                                          Yers</span>
+
+                                       <span class="text-color saved-job-carousel-card"><i
+                                             class="fa-solid fa-calendar-days me-2"></i>26
+                                          days
+                                          ago</span>
+                                    </div>
+                                    <span class="score-text text-color">Matched
+                                       Score</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="card border-0 me-2 mb-3">
+                        <div class="card-body">
+                           <div class>
+                              <div class="d-flex justify-content-between">
+                                 <a href>
+                                    <img class="sidebar-card-img img-fluid" src="image/microsoft.png" alt>
+                                 </a>
+                                 <span>
+                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                              </div>
+                              <div class="p-0 mt-2">
+                                 <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a href="#">Product
+                                       Design
+                                       Lead</a></h5>
+                                 <div class="d-flex justify-content-between">
+                                    <div>
+                                       <p class="card-subtitle text-color m-0">
+                                          Deloitte</p>
+                                       <p class="card-subtitle text-color m-0">
+                                          Fulltime
+                                          |
+                                          Hyderabad
+                                          (On-site)</p>
+                                    </div>
+                                    <div>
+                                       <div class="card-progress-bar ms-auto">
+                                          <progress value="75" min="0" max="100"
+                                             style="visibility:hidden;height:0;width:0;">75%</progress>
+                                       </div>
+
+                                    </div>
+                                 </div>
+
+                                 <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="right-side-card-icon-content">
+                                       <span class="m-0 mt-3 text-color me-2"><i class="fa-solid fa-briefcase me-1"></i>
+                                          4-5
+                                          Yers</span>
+
+                                       <span class="text-color saved-job-carousel-card"><i
+                                             class="fa-solid fa-calendar-days me-2"></i>26
+                                          days
+                                          ago</span>
+                                    </div>
+                                    <span class="score-text text-color">Matched
+                                       Score</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Carousel End -->
+
+      <!-- Side Menu Start -->
+      <div class="side-menu">
+         <div>
+            <ul class="side-menu-list">
+               <li class="list-item">
+                  <div id="toggle-item">
+                     <div class="mt-3 ">
+                        <div class="angle-right-icon">
+                           <div>
+                              <i class="fa-solid fa-angle-right"></i>
+                              <p class="m-0 content">Seeker Jobs</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="mt-4 ">
+                        <i class="fa-solid fa-magnifying-glass sider-icon"></i>
+                        <a href="/index.html">
+                           <p class="m-0 content">job Search</p>
+                        </a>
+                     </div>
+                     <div class="mt-3 save-icon">
+                        <i class="fa-regular fa-bookmark sider-icon"></i>
+                        <a href="/saved-jobs.html">
+                           <p class="m-0 content">Saved Jobs</p>
+                        </a>
+                     </div>
+                     <div class="mt-3 ">
+                        <i class="fa-solid fa-suitcase sider-icon"></i>
+                        <a href="/applied-job.html">
+                           <p class="m-0 content">Applied Jobs</p>
+                        </a>
+                     </div>
+                     <div class="mt-3 ">
+                        <div><i class="fa-regular fa-bell sider-icon"></i>
+                           <a href="#">
+                              <p class="m-0 content">Alert & Notification</p>
+                           </a>
+                        </div>
+                        <span class="content sidemenu-text">Currently Membership Plan
+                           <br>
+                           <span class="welcome-plan">Welcome Plan</span>
+                           <br>
+                           <button type="submit" class="membership-btn">Upgrade Membership</button>
+                        </span>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <!-- Side Menu End -->
+
+      <!-- OFF CANVAS START -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+         <div class="offcanvas-header mt-1">
+            <div></div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+         </div>
+         <div class="offcanvas-body p-0">
+            <div>
+               <div class="p-4">
+                  <div class="d-sm-flex align-items-baseline">
+                     <h3 class="job-content-title">Product
+                        Design Lead</h3> <span class="ms-sm-2 fw-medium" style="color: #177308;">(Posted
+                        By
+                        Verified User)</span>
+                  </div>
+                  <h4 class="job-content-h4 my-sm-0 my-2">Deloitte
+                     . <span class="text-color fw-medium" style="font-size: 16px;">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Full-time</span>
+                     </span></h4>
+                  <h5 class="job-content-h5 my-3 text-color">Company
+                     ID :</h5>
+                  <h5 class="job-content-h5 text-color my-2"><span style="color: #177308;">now :</span>
+                     23
+                     application
+                  </h5>
+                  <h5 class="job-content-h5 text-color my-3 d-flex align-items-baseline"><i
+                        class="fa-solid fa-list me-1"></i>
+                     Skills:<span class="ms-2 font-17"> Mobile Application Design , Ui Design
+                        + 5
+                        more</span>
+                  </h5>
+                  <!-- Button -->
+                  <div class="d-flex align-items-baseline mt-4">
+                     <button type="button"
+                        class="btn  ofcanvas-button fw-medium rounded-pill text-white button-h">Apply</button>
+                     <button type="button"
+                        class="btn  ofcanvas-button fw-medium rounded-pill text-white button-s">Save</button>
+                     <a href>
+                        <button class="p-2 mx-2 text-white border-0 rounded-circle button-h share">
+                           <i class="fa-solid fa-share-nodes share-icon"></i>
+                        </button>
+                     </a>
+                  </div>
+               </div>
+               <hr class="m-0" />
+               <!--  -->
+               <div class="p-4">
+                  <div class="my-2">
+                     <h5 class="job-overview">Overview</h5>
+                     <p style="text-align: justify;" class="job-overview-content">Lorem
+                        ipsum dolor sit, amet
+                        consectetur
+                        adipisicing elit.
+                        Vero est at laboriosam
+                        deserunt
+                        distinctio, tenetur sit ea eum
+                        et harum sint, porro molestiae
+                        natus hic
+                        esse
+                        error
+                        aspernatur cupiditate corporis!
+                        Lorem ipsum dolor sit amet
+                        consectetur,
+                        adipisicing
+                        elit.
+                        Eos delectus blanditiis
+                        excepturi? Dolor explicabo cum
+                        soluta,
+                        distinctio,
+                        maiores
+                        consectetur quasi qui nam
+                        excepturi doloremque magni enim
+                        quam iste
+                        corporis
+                        exercitationem? Lorem ipsum
+                        dolor sit amet consectetur,
+                        adipisicing
+                        elit.
+                        Repellat
+                     </p>
+                  </div>
+                  <div class="my-2">
+                     <h5 class="job-overview">Job
+                        Description</h5>
+                     <div class="job-description p-3"
+                        style="text-align: justify; border: 1px solid #6666; border-radius: 10px; height: 300px; overflow-y: scroll;">
+                        Lorem ipsum dolor sit
+                        amet
+                        consectetur adipisicing elit.
+                        Adipisci explicabo, magnam
+                        eligendi commodi autem dolor
+                        dolorum provident quo cumque aut
+                        ipsam
+                        corrupti
+                        itaque,
+                        possimus in voluptatem quam,
+                        consectetur ut id? Lorem ipsum
+                        dolor sit
+                        amet
+                        consectetur,
+                        adipisicing elit. Iure
+                        repellendus a vitae, odit
+                        eveniet voluptatibus
+                        beatae, libero
+                        quisquam iusto ipsum eos quasi
+                        molestias fugit ut, repellat
+                        facilis
+                        culpa?
+                        Fugiat,
+                        maxime.
+                        Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Soluta nihil,
+                        voluptatem
+                        minus
+                        dolore, aliquam minima quae
+                        quibusdam delectus nesciunt
+                        assumenda
+                        distinctio,
+                        sapiente
+                        eveniet. Sunt quisquam
+                        reprehenderit vero asperiores
+                        sed? Aut.
+                        <ul>
+                           <li>repellendus</li>
+                           <li>repellendus</li>
+                           <li>repellendus</li>
+                           <li>repellendus</li>
+                           <li>repellendus</li>
+                           <li>repellendus</li>
+                           <li>repellendus</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="my-3">
+                     <h5 class="font-20">Benefits:</h5>
+                     <ul>
+                        <li class="font-17">Provident Fund</li>
+                     </ul>
+                  </div>
+                  <div class="my-2">
+                     <h5 class="font-20">Schedule:</h5>
+                     <ul>
+                        <li class="font-17">Day Shift</li>
+                     </ul>
+                  </div>
+                  <div class="my-2">
+                     <h5 class="font-20">Ability to
+                        commute/relocate:</h5>
+                     <ul>
+                        <li class="font-17">Hyderabad,Telangana:Reliably
+                           Commuate or
+                           planning to
+                           reloacte before starting
+                           work(Required)</li>
+                     </ul>
+                  </div>
+               </div>
+               <hr class="m-0" />
+               <!--  -->
+               <div class="p-4 ">
+                  <div class="row p-0 row-cols-sm-2">
+                     <div>
+                        <h5 class="job-score-text">Job Suitablity Score</h5>
+                        <div class="progress-bar-res">
+                           <div class="progress-bar mt-3">
+                              <progress value="75" min="0" max="100"
+                                 style="visibility:hidden;height:0;width:0;">75%</progress>
+                           </div>
+                        </div>
+                     </div>
+
+                     <table>
+                        <tr>
+                           <td class="fw-bolder table-tittle">
+                              Technical
+                              Skills
+                           </td>
+                           <td>: </td>
+                           <td class="fw-medium table-tittle-2">
+                              High</td>
+
+                        </tr>
+                        <tr>
+                           <td class="fw-bolder table-tittle">
+                              Soft
+                              Skills</td>
+                           <td>: </td>
+                           <td class="fw-medium table-tittle-2">
+                              Medium</td>
+
+                        </tr>
+                        <tr>
+                           <td class="fw-bolder table-tittle">
+                              Experience</td>
+                           <td>: </td>
+                           <td class="fw-medium table-tittle-2">
+                              Low</td>
+
+                        </tr>
+                        <tr>
+                           <td class="fw-bolder table-tittle">
+                              Education</td>
+                           <td>: </td>
+                           <td class="fw-medium table-tittle-2">
+                              High</td>
+
+                        </tr>
+                        <tr>
+                           <td class="fw-bolder table-tittle">
+                              Location</td>
+                           <td>: </td>
+                           <td class="fw-medium table-tittle-2">
+                              High</td>
+
+                        </tr>
+                        <tr>
+                           <td class="fw-bolder table-tittle">
+                              Certifications
+                           </td>
+                           <td>: </td>
+                           <td class="fw-medium table-tittle-2">
+                              High</td>
+
+                        </tr>
+                     </table>
+                  </div>
+
+               </div>
+               <hr class="m-0" style="border: 0; border-top: 2px dashed" />
+               <!--  -->
+               <div class="p-4">
+                  <div>
+                     <h5 class="skills-font">Matched Skills <span style="color: #177308; font-size: 18px;">(6
+                           Skills
+                           matched)</span>
+                     </h5>
+                     <p class="m-0 font-18">
+                        Knowledge Mobile Application Design,UI Design, + 4 more
+                     </p>
+                  </div>
+                  <div class="my-2">
+                     <h5 class="skills-font">Missing Skills <span style="color: #177308; font-size: 18px;">(4
+                           Skills
+                           matched)</span>
+                     </h5>
+                     <p class="m-0 font-18">
+                        Products Analysis,UX Design,User Analytic, UCD.
+                     </p>
+                  </div>
+               </div>
+               <hr class="m-0" style="border: 0; border-top: 2px dashed" />
+               <!--  -->
+               <div class="p-4">
+                  <div class="resume-check">
+                     <div class="form-check">
+                        <input class="form-check-input" checked type="radio" name="flexRadioDefault"
+                           id="flexRadioDefault1">
+                        <label class="form-check-label fw-bolder resume" for="flexRadioDefault1">
+                           Resume - 1
+
+                        </label>
+                     </div>
+                     <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label fw-bolder resume" for="flexRadioDefault1">
+                           Resume - 2
+                        </label>
+                     </div>
+                     <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label fw-bolder resume" for="flexRadioDefault1">
+                           Resume - 3
+                        </label>
+                     </div>
+                  </div>
+                  <div class="mt-4 mb-2 d-flex align-items-center gap-2">
+                     <label class="rounded fw-medium px-2 px-1 py-1 font-18"
+                        style="border: 2px solid #1751d0;cursor: pointer;">
+                        Choose File
+                        <input type="file" accept=".pdf" style="display: none; cursor: pointer;" />
+                     </label>
+                     <span class="fw-medium font-20" style="color: #1751d0;">Upload
+                        New Resume</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- OFF CANVAS END -->
+   </main>
+
+   <!-- Content End -->
+
+
+   <!--Footer starts-->
+   <footer class="text-white py-5" style="background-color:#00007C ;">
+
+      <div class="d-lg-flex justify-content-evenly saved-job-footer">
+         <div class="footer-links">
+            <a href="#"><span class="mx-2">About Us</span></a>
+            <a href="#"><span class="mx-2">How Its Works</span></a>
+            <a href="#"><span class="mx-2">FAQ</span></a>
+            <a href="#"><span class="mx-2">Privacy Policy</span></a>
+            <a href="#"><span class="mx-2">Conatct Us</span></a>
+         </div>
+         <div>
+            <div class="footer-text"> Upgrade Your Membership plans</div>
+            <div class="d-sm-flex justify-content-center align-items-baseline gap-3">
+               <div class="footer-input mt-lg-3 mt-sm-2 mt-3">
+                  <input type="text" placeholder="Email Address">
+               </div>
+               <button class="Subscribe-btn mt-sm-0 mt-3">Subscribe</button>
+            </div>
+         </div>
+      </div>
+      <div style="border-top: 1px solid #657581; margin: 30px 60px 0px 60px">
+         <div class="d-flex align-items-center flex-column mt-4 footer-social">
+            <h4>Follow Us</h4>
+            <div>
+               <ul class="footer-icon p-0 py-2 d-flex">
+                  <a href="#">
+                     <li class="me-2"
+                        style="list-style: none; display: flex; justify-content: center;align-items: center; width: 35px; height: 35px; border: 2px solid #fff; border-radius: 50%;">
+                        <i class="fa-brands fa-facebook-f " style=" line-height: 10px;"></i>
+                     </li>
+                  </a>
+                  <a href="#">
+                     <li class="me-2"
+                        style="list-style: none; display: flex; justify-content: center;align-items: center; width: 35px; height: 35px; border: 2px solid #fff; border-radius: 50%;">
+                        <i class="fa-brands fa-instagram " style=" line-height: 10px;"></i>
+                     </li>
+                  </a>
+                  <a href="#">
+                     <li class="me-2"
+                        style="list-style: none; display: flex; justify-content: center;align-items: center; width: 35px; height: 35px; border: 2px solid #fff; border-radius: 50%;">
+                        <i class="fa-brands fa-linkedin-in " style=" line-height: 10px;"></i>
+                     </li>
+                  </a>
+                  <a href="#">
+                     <li class="me-2"
+                        style="list-style: none; display: flex; justify-content: center;align-items: center; width: 35px; height: 35px; border: 2px solid #fff; border-radius: 50%;">
+                        <i class="fa-brands fa-pinterest " style=" line-height: 10px;"></i>
+                     </li>
+                  </a>
+               </ul>
+            </div>
+         </div>
+         <span class="d-flex justify-content-center footer-copyright">&copy; Copyright @ 2023 | job Board Software by
+            Reyferjobs.
+            All
+            Rights
+            Reserved</span>
+      </div>
+   </footer>
+   <!--Footer ends-->
+
+   <!-- All Script -->
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+   <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+   <!-- owl-carousel -->
+   <script>
+      $(document).ready(function () {
+         $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: true,
+            responsive: {
+               0: {
+                  items: 1
+               },
+               768: {
+                  items: 1
+               },
+               1400: {
+                  items: 3
+               },
+               1441: {
+                  items: 4
+               }
+            }
+         });
+      });
+   </script>
+
+   <!-- Second Nav -->
+   <script>
+      $(document).ready(function () {
+
+         $(document).click(function (event) {
+            if (!$(event.target).closest(".search-click").length) {
+               $(".first-search").show();
+               $(".second-search").hide();
+            }
+         });
+
+         $("#first-search-input").focus(function () {
+            $(".first-search").hide();
+            $(".second-search").show();
+
+         });
+      });
+   </script>
+   <script>
+      $(document).ready(function () {
+
+         $(document).click(function (event) {
+            if (!$(event.target).closest(".search-click-res").length) {
+               $(".first-search-res").show();
+               $(".second-search-res").hide();
+            }
+         });
+
+         $("#first-search-input-res").focus(function () {
+            $(".first-search-res").hide();
+            $(".second-search-res").show();
+
+         });
+      });
+   </script>
+
+   <!-- Menu -->
+   <script>
+      $(document).ready(function () {
+         function showSection() {
+            event.preventDefault();
+            $('#hidden-section').show();
+            $('.search-box-section').css('padding-top', '30px');
+         }
+
+         $('#seek-jobs, #refer-jobs, #profile').click(showSection);
+      });
+   </script>
+
+   <script>
+      var listItem = document.querySelector(".list-item");
+      var sideMenu = document.querySelector('.side-menu');
+
+      document.getElementById("toggle-item").addEventListener("click", function () {
+         listItem.classList.toggle("show-content");
+         if (listItem.classList.contains("show-content")) {
+            sideMenu.classList.add("show-content");
+         } else {
+            sideMenu.classList.remove("show-content");
+         }
+      });
+   </script>
+</body>
+
+</html>

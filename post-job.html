@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Post Job</title>
+   <!-- bootsrap -->
+   <link rel="stylesheet" href="style/bootstrap.min.css" type="text/css">
+
+   <!-- Custom css -->
+   <link rel="stylesheet" href="style/style.css" type="text/css" />
+   <link rel="stylesheet" href="style/post-job.css" type="text/css">
+   <link rel="stylesheet" href="style/saved-job.css" type="text/css">
+
+   <!-- cdn -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css"
+      integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+
+
+   <!-- Owl Carousel CSS files -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+   <!-- Font -->
+   <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet' type="text/css">
+</head>
+
+<body>
+
+
+   <!--Header start-->
+
+   <header class="fixed-top">
+      <!-- first nav -->
+
+      <nav style="background-color: white;" class="navbar navbar-expand-lg py-3 section header">
+         <div class="container-fluid px-0">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+               aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                  <li class="nav-item active me-3">
+                     <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item me-3">
+                     <a class="nav-link " href="#">About</a>
+                  </li>
+                  <li class="nav-item me-3">
+                     <a class="nav-link " href="#">Services</a>
+                  </li>
+                  <li class="nav-item me-3">
+                     <a class="nav-link " href="#">Term & Condition</a>
+                  </li>
+                  <li class="nav-item me-3">
+                     <a class="nav-link " href="#">Help</a>
+                  </li>
+               </ul>
+               <div class="d-flex align-items-center">
+                  <button type="button" class="btn text-white rounded-5 px-3 post-now">
+                     Post Now
+                  </button>
+                  <div class="px-3">
+                     <span style="width: 40px; height: 40px;">
+                        <i class="fa-solid fa-user border border-black rounded-circle px-2 py-2 mx-1"></i>
+                     </span>
+                     <span style="width: 40px; height: 40px;">
+                        <i
+                           class="fa-regular fa-bell border border-black rounded-circle px-2 py-2 mx-1  position-relative">
+                           <span
+                              class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
+                              <span class="visually-hidden">New alerts</span>
+                           </span>
+                        </i>
+                     </span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+
+      <!-- second nav -->
+      <div class="search-click header">
+         <nav class="navbar d-flex justify-content-lg-center navbar-expand-lg py-3 second-navbar section">
+            <div class="container-fluid px-0">
+               <div></div>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse second-nav" id="navbarTogglerDemo02">
+                  <div class="mx-auto">
+                     <div class="d-lg-flex ">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                           <li class="nav-item">
+                              <a class="nav-link text-white" href="#">Dashboard
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <div class="dropdown">
+                                 <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Seek jobs
+                                 </a>
+                                 <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/index.html"><i
+                                             class="fa-solid fa-magnifying-glass"></i>
+                                          Job search</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="/saved-jobs.html"><i
+                                             class="fa-regular fa-heart"></i>Saved
+                                          job</a></li>
+                                    <li><a class="dropdown-item" href="/applied-job.html"><i
+                                             class="fa-solid fa-suitcase"></i>Applied
+                                          job</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="/alert-notification.html"><i
+                                             class="fa-regular fa-bell"></i>Alert &
+                                          Notification</a></li>
+                                 </ul>
+                              </div>
+                           </li>
+                           <li class="nav-item">
+                              <div class="dropdown">
+                                 <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Refer jobs
+                                 </a>
+                                 <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/post-job.html"><i class="fa-solid fa-plus"></i>
+                                          Post job</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="/manage-job.html"><i
+                                             class="fa-solid fa-folder"></i>Manage
+                                          job</a></li>
+                                    <li><a class="dropdown-item" href="/favrorite-candidates.html"><i
+                                             class="fa-solid fa-suitcase"></i>Favorite
+                                          candidates</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-plus"></i>Bulk
+                                          jobs</a></li>
+                                 </ul>
+                              </div>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link text-white" href="#">Profile Section</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link text-white" href="#">Memberships</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="searchbar first-search">
+                        <input id="first-search-input" class="search_input" type="text" name
+                           placeholder="Search Job Here" />
+                        <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </nav>
+         <div>
+            <div class="secon-nav-search">
+               <div class="bg-white second-search hidden">
+                  <div class="d-flex flex-wrap">
+                     <div class="col-md-4">
+                        <div class="search-1 ps-5"> <i class="fas fa-search ps-3" style="color: #6666;"></i>
+                           <input class="search_input" type="text" name placeholder="Search job title or keyword" />
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="search-1 ps-5"> <i class="fa-solid fa-location-dot ps-3" style="color: #6666;"></i>
+                           <input class="search_input" type="text" name placeholder="Location" />
+                        </div>
+                     </div>
+                     <div class="col-md-5">
+                        <div>
+                           <div class="search-2 ps-5"><i class="fa-solid fa-suitcase ps-3" style="color: #6666;"></i>
+                              <input class="search_input" type="text" name placeholder="Experience" />
+                              <button type="sub" id="search-jobs" class="btn rounded-pill btn-primary">Search
+                                 jobs</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Responsive Header -->
+
+      <div class="search-click-res navbar-res">
+         <nav class="logo">
+            <img src="image/logo.png" class="d-flex justify-items-center m-auto" alt="">
+         </nav>
+         <div>
+            <nav style="background-color: white;" class="navbar navbar-expand-lg py-3 section  ">
+               <div class="container-fluid px-0">
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                     aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                        <li class="nav-item active me-3">
+                           <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item me-3">
+                           <a class="nav-link " href="#">About</a>
+                        </li>
+                        <li class="nav-item me-3">
+                           <a class="nav-link " href="#">Services</a>
+                        </li>
+                        <li class="nav-item me-3">
+                           <a class="nav-link " href="#">Term & Condition</a>
+                        </li>
+                        <li class="nav-item me-3">
+                           <a class="nav-link " href="#">Help</a>
+                        </li>
+                     </ul>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-between nav-right">
+                     <div class="search-res">
+                        <div class="searchbar first-search-res">
+                           <input id="first-search-input-res" class="search_input" type="text" name
+                              placeholder="Search Job Here" />
+                           <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                        </div>
+                     </div>
+                     <button type="button" class="btn text-white rounded-5 px-sm-3 mx-sm-0 mx-1 post-now">
+                        Post Now
+                     </button>
+                     <div class="px-sm-3">
+                        <span style="width: 40px; height: 40px;">
+                           <i
+                              class="fa-solid fa-user border border-black rounded-circle px-sm-2 py-sm-2 px-1 py-1 mx-sm-1"></i>
+                        </span>
+                        <span style="width: 40px; height: 40px;" class="me-sm-0 me-2">
+                           <i
+                              class="fa-regular fa-bell border border-black rounded-circle px-sm-2 py-sm-2 px-1 py-1 mx-sm-1  position-relative">
+                              <span
+                                 class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
+                                 <span class="visually-hidden">New alerts</span>
+                              </span>
+                           </i>
+                        </span>
+                     </div>
+                  </div>
+               </div>
+
+            </nav>
+            <div>
+               <div class="secon-nav-search">
+                  <div class="bg-white second-search-res hidden">
+                     <div class="d-flex">
+                        <div class="col-md-4">
+                           <div class="search-1 search-input-text"> <i class="fas fa-search ps-3"
+                                 style="color: #6666;"></i>
+                              <input class="search_input" type="text" name placeholder="Search job title or keyword" />
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                           <div class="search-1 search-input-text"> <i class="fa-solid fa-location-dot ps-3"
+                                 style="color: #6666;"></i>
+                              <input class="search_input" type="text" name placeholder="Location" />
+                           </div>
+                        </div>
+                        <div class="col-md-5">
+                           <div>
+                              <div class="search-2 search-input-text"><i class="fa-solid fa-suitcase ps-3"
+                                    style="color: #6666;"></i>
+                                 <input class="search_input" type="text" name placeholder="Experience" />
+                                 <button type="sub" id="search-jobs" class="btn rounded-pill btn-primary">Search
+                                    jobs</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </header>
+   <!--Header end-->
+
+   <!-- Content Start -->
+   <main class="saved-jobs-section">
+
+      <!-- Saved-jobs section start -->
+      <div class="jobs-section">
+         <!-- Bread-crumbs -->
+         <div>
+            <span class="Bread-crumbs-1 me-1"><a href="/index.html">Home</a></span><i
+               class="fa-solid fa-angle-right angle-right"></i><span class="Bread-crumbs-2 ms-1"><a href="">Post
+                  a Job</a></span>
+         </div>
+         <!--  -->
+         <div class="post-job">
+            <div>
+               <h3 class="post-job-title">Post a Job</h3>
+            </div>
+            <form action="">
+               <div class="post-job-form">
+                  <div class="d-sm-flex gap-5 my-sm-0 mb-4">
+                     <div class="col">
+                        <label for="" class="form-input-label">Job Title <span class="required">*</span></label>
+                        <input type="text" class="post-job-input" name="" id="" placeholder="Job Title">
+                     </div>
+                     <div class="col my-sm-0 my-4">
+                        <label for="" class="form-input-label">Company Name<span class="required">*</span></label>
+                        <input type="text" class="post-job-input" name="" id="" value="Reymould Technology Solution">
+                     </div>
+                  </div>
+                  <div class="d-sm-flex gap-5 my-4">
+                     <div class="col">
+                        <label for="" class="form-input-label">Company Job ID</label>
+                        <input type="text" class="post-job-input" name="" id="" placeholder="RM123@RREE">
+                     </div>
+                     <div class="col my-sm-0 my-4">
+                        <label for="" class="form-input-label">Location<span class="required">*</span></label>
+                        <input type="text" class="post-job-input" name="" id="" placeholder="Location">
+                     </div>
+                  </div>
+                  <div class="d-sm-flex gap-5 my-4">
+                     <div class="col">
+                        <label for="" class="form-input-label">Job Category<span class="required">*</span></label>
+                        <select class="post-job-input" aria-label="Select Job Category">
+                           <option selected>Select Job Category</option>
+                           <option value="1">One</option>
+                           <option value="2">Two</option>
+                           <option value="3">Three</option>
+                        </select>
+                     </div>
+                     <div class="col my-sm-0 my-4">
+                        <label for="" class="form-input-label">Job Type<span class="required">*</span></label>
+                        <select class="post-job-input" aria-label="Select Job Type">
+                           <option selected>Fulltime</option>
+                           <option value="1">Fulltime</option>
+                           <option value="2">Two</option>
+                           <option value="3">Three</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="d-sm-flex gap-5 my-sm-0 my-4">
+                     <div class="col">
+                        <label for="" class="form-input-label">Skills<span class="required">*</span></label>
+                        <select class="post-job-input" aria-label="Skills">
+                           <option selected>Skills</option>
+                           <option value="1">one</option>
+                           <option value="2">Two</option>
+                           <option value="3">Three</option>
+                        </select>
+                     </div>
+                     <div class="col my-sm-0 my-4">
+                        <label for="" class="form-input-label">Workplace Type<span class="required">*</span></label>
+                        <input type="text" class="post-job-input" name="" id="" value="Onsite">
+                     </div>
+                  </div>
+                  <div class="d-sm-flex gap-5 my-4">
+                     <div class="col">
+                        <label for="" class="form-input-label">Designation<span class="required">*</span></label>
+                        <select class="post-job-input" aria-label="Select Job Designation">
+                           <option selected>Select Job Designation</option>
+                           <option value="1">One</option>
+                           <option value="2">Two</option>
+                           <option value="3">Three</option>
+                        </select>
+                     </div>
+                     <div class="col my-sm-0 my-4">
+                        <label for="" class="form-input-label">Experience<span class="required">*</span></label>
+                        <select class="post-job-input" aria-label="Select Experience">
+                           <option selected>Select Experience</option>
+                           <option value="1">Fulltime</option>
+                           <option value="2">Two</option>
+                           <option value="3">Three</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="d-sm-flex gap-5 my-4">
+                     <div class="col">
+                        <label for="" class="form-input-label">Qualification<span class="required">*</span></label>
+                        <input type="text" class="post-job-input" name="" id="" placeholder="Qualification">
+                     </div>
+                     <div class="col my-sm-0 my-4">
+                        <label for="" class="form-input-label">Company Website</label>
+                        <input type="text" class="post-job-input" name="" id="" placeholder="Company Website">
+                     </div>
+                  </div>
+                  <div class="d-sm-flex gap-5 my-4">
+                     <div class="col-sm-6 pe-sm-4">
+                        <label for="" class="form-input-label">Annual Salary (INR)</label>
+                        <input type="text" class="post-job-input" name="" id="" placeholder="Annual Salary">
+                     </div>
+                  </div>
+                  <div class="my-4">
+                     <label for="" class="form-input-label">Company Profile</label>
+                     <textarea name="" class="post-job-input" placeholder="Company Profile" id="" cols="30"
+                        rows="10"></textarea>
+                  </div>
+                  <div>
+                     <label for="" class="form-input-label">Job Description</label>
+                     <div class="mt-3 d-sm-flex">
+                        <div class="form-check me-3">
+                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="textRadio" checked>
+                           <label class="form-check-label" for="textRadio">
+                              Text
+                           </label>
+                        </div>
+                        <div class="form-check me-3">
+                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="uploadRadio">
+                           <label class="form-check-label" for="uploadRadio">
+                              Upload Document
+                           </label>
+                        </div>
+                        <div class="form-check me-3">
+                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="urlRadio">
+                           <label class="form-check-label" for="urlRadio">
+                              Enter URL
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Text Start -->
+                  <div class="mt-3" id="textContent">
+                     <textarea name="" class="post-job-input p-4" placeholder="Job Description" id="" cols="30"
+                        rows="12"></textarea>
+                     <p class="m-0 mt-3 company-logo-text">Company Logo</p>
+                     <div class="d-sm-flex align-items-baseline">
+                        <label class="choose-file">
+                           Choose File
+                           <input type="file" accept=".pdf" style="display: none; cursor: pointer;" />
+                        </label>
+                        <p class="m-0 ms-sm-4 mt-sm-0 mt-2 choose-file-content">Supported files types gif, jpg, jpeg,
+                           png ( Max. 10MB)
+                        </p>
+                     </div>
+                  </div>
+                  <!-- Text End -->
+
+                  <!-- Upload Document Start -->
+                  <div id="uploadContent" style="display: none;" class="mt-4">
+                     <div class="job-upload-dec">
+                        <p class="m-0">Job Description <span class="required">*</span></p>
+                        <div class="d-sm-flex align-items-baseline">
+                           <label class="upload-choose-file">
+                              Choose File
+                              <input type="file" accept=".pdf" style="display: none; cursor: pointer;" />
+                           </label>
+                           <span class=" ms-sm-4 choose-file-content">Supported files types gif, jpg, jpeg, png ( Max.
+                              10MB)
+                           </span>
+                        </div>
+                        <div class="m-0 mt-4 company-logo-text">Company Logo</div>
+                        <div class="d-sm-flex align-items-baseline">
+                           <label class="choose-file">
+                              Choose File
+                              <input type="file" accept=".pdf" style="display: none; cursor: pointer;" />
+                           </label>
+                           <span class="m-0 ms-sm-4 choose-file-content">Supported files types gif, jpg, jpeg, png (
+                              Max.
+                              10MB)
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Upload Document End -->
+
+                  <!-- Enter URL Start -->
+                  <div id="urlContent" style="display: none;" class="mt-4">
+                     <div class="job-upload-dec">
+                        <p class="m-0">Job Description <span class="required">*</span></p>
+                        <div class="mt-3">
+                           <input type="text" class="job-desc-input" value="Enter URL Link">
+                        </div>
+                        <div class="m-0 mt-4 company-logo-text">Company Logo</div>
+                        <div class="d-sm-flex align-items-baseline">
+                           <label class="choose-file">
+                              Choose File
+                              <input type="file" accept=".pdf" style="display: none; cursor: pointer;" />
+                           </label>
+                           <span class="m-0 ms-sm-4 choose-file-content">Supported files types gif, jpg, jpeg, png (
+                              Max.
+                              10MB)
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Enter URL End -->
+               </div>
+               <div class="mt-4 d-flex justify-content-between align-items-baseline">
+                  <button type="button" class="preview-button" data-bs-toggle="modal"
+                     data-bs-target="#exampleModal">Preview</button>
+                  <div>
+                     <button class="upload-button">Upload</button>
+                     <button class="cancle-button">Cancle</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+      </div>
+      <!-- Saved-jobs section End -->
+
+      <!-- Side Menu Start -->
+      <div class="side-menu">
+         <div>
+            <ul class="side-menu-list">
+               <li class="list-item">
+                  <div id="toggle-item">
+                     <div class="mt-3 ">
+                        <div class="angle-right-icon">
+                           <div>
+                              <i class="fa-solid fa-angle-right"></i>
+                              <p class="m-0 content">Refer Jobs</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="mt-4 post-job-icon">
+                        <i class="fa-solid fa-plus sider-icon"></i>
+                        <a href="/post-job.html">
+                           <p class="m-0 content">Post Jobs</p>
+                        </a>
+                     </div>
+                     <div class="mt-3">
+                        <i class="fa-solid fa-file-edit sider-icon"></i>
+                        <a href="/manage-job.html">
+                           <p class="m-0 content">Manage Jobs</p>
+                        </a>
+                     </div>
+                     <div class="mt-3 ">
+                        <i class="fa-regular fa-heart sider-icon"></i>
+                        <a href="/favrorite-candidates.html">
+                           <p class="m-0 content">Favorite List</p>
+                        </a>
+                     </div>
+                     <div class="mt-3 ">
+                        <div><i class="fa-solid fa-circle-plus sider-icon"></i>
+                           <a href="#">
+                              <p class="m-0 content">Bulk post jobs</p>
+                           </a>
+                        </div>
+                        <span class="content sidemenu-text">Currently Membership Plan
+                           <br>
+                           <span class="welcome-plan">Welcome Plan</span>
+                           <br>
+                           <button type="submit" class="membership-btn">Upgrade Membership</button>
+                        </span>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <!-- Side Menu End -->
+
+      <!--  -->
+      <!-- Modal -->
+      <div class="modal custom-model-width fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog ">
+            <div class="modal-content p-2">
+               <div class="modal-header post-job-model-header">
+                  <h3 class="modal-title fs-5" id="exampleModalLabel">Preview job post</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <div class="post-text">
+                     <p>This is a preview of what your job post will look like to job seekers, which includes details
+                        about your job such as company size and location, as well as information around when you created
+                        your LinkedIn profile. Candidates will answer screening questions when they apply.</p>
+                  </div>
+                  <div class="post-job-details">
+                     <div>
+                        <div class="d-sm-flex align-items-center gap-3">
+                           <img class="post-job-img" src="./image/post-job.png" alt="">
+                           <div class="d-sm-flex align-items-baseline">
+                              <h3 class="post-job-modal-title">UI/UX Designer
+                                 <span>( Post By Verified User )</span>
+                                 <br />
+                                 <p class="m-0">Reymould Technology Solution</p>
+                              </h3>
+                           </div>
+                        </div>
+                        <div>
+                           <table class="table-width">
+                              <tr>
+                                 <td class="post-job-table-title">Company Job ID</td>
+                                 <td>:</td>
+                                 <td class="post-job-table-subtitle">123@DFHFF</td>
+                              </tr>
+                              <tr>
+                                 <td class="post-job-table-title">Location</td>
+                                 <td>:</td>
+                                 <td class="post-job-table-subtitle">Hyderabad</td>
+                              </tr>
+                              <tr>
+                                 <td class="post-job-table-title">Job Category</td>
+                                 <td>:</td>
+                                 <td class="post-job-table-subtitle"> IT Company</td>
+                              </tr>
+                              <tr>
+                                 <td class="post-job-table-title">Job Type</td>
+                                 <td>:</td>
+                                 <td class="post-job-table-subtitle">Fulltime</td>
+                              </tr>
+                              <tr>
+                                 <td class="post-job-table-title">Skills</td>
+                                 <td>:</td>
+                                 <td class="post-job-table-subtitle">Figma, Adobe Suitable, Photoshop, User
+                                    Experience,Miro, Sketch...etc </td>
+                              </tr>
+                              <tr>
+                                 <td class="post-job-table-title">Workplace Type</td>
+                                 <td>:</td>
+                                 <td class="post-job-table-subtitle">Onsite</td>
+                              </tr>
+                              <tr>
+                                 <td class="post-job-table-title">Experience</td>
+                                 <td>:</td>
+                                 <td class="post-job-table-subtitle"> 04-05 years</td>
+                              </tr>
+                              <tr>
+                                 <td class="post-job-table-title">Qualification</td>
+                                 <td>:</td>
+                                 <td class="post-job-table-subtitle">Graduated</td>
+                              </tr>
+                              <tr>
+                                 <td class="post-job-table-title">Company Website</td>
+                                 <td>:</td>
+                                 <td class="post-job-table-subtitle">@reymould.com</td>
+                              </tr>
+                              <tr>
+                                 <td class="post-job-table-title">Annual Salary (INR)</td>
+                                 <td>:</td>
+                                 <td class="post-job-table-subtitle"> 4-5 LPA</td>
+                              </tr>
+                           </table>
+                        </div>
+                        <hr />
+                     </div>
+                     <div class="company-profile">
+                        <h4>Company Profile:</h4>
+                        <p>With over 17,000 employees worldwide, the Microsoft Customer Experience & Success (CE&S)
+                           organization is responsible for the strategy, design, and implementation of Microsoft’s
+                           end-to-end customer experience. Come join CE&S and help us build a future where customers
+                           come to us not only because we provide industry-leading products and services, but also
+                           because we provide a differentiated and connected customer experience.</p>
+                     </div>
+                     <hr />
+                     <div class="job-dec">
+                        <h4>Job Description:</h4>
+                        <div>
+                           <p>We are seeking an experienced and visionary Product Design Lead to join our dynamic team.
+                              As a Product Design Lead, you will be responsible for shaping the user experience and
+                              driving the design strategy for our products. You will lead a team of talented designers
+                              and collaborate closely with cross-functional teams to ensure the successful delivery of
+                              user-centered, visually appealing, and innovative products. </p>
+                           <h5>Role Overview:</h5>
+                           <p>The Product Lead Designer plays a pivotal role in the product development
+                              process, combining design expertise with leadership and strategic thinking. They are
+                              responsible for ensuring that the product's user experience aligns with business
+                              objectives
+                              and user needs.</p>
+                           <p class="m-0">Responsibilities:</p>
+                           <ul>
+                              <li>Design Leadership</li>
+                              <li>Design Leadership</li>
+                              <li>Design Leadership</li>
+                              <li>Design Leadership</li>
+                              <li>Design Leadership</li>
+                              <li>Design Leadership</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   <!-- Content End -->
+
+
+   <!--Footer starts-->
+   <footer class="text-white py-5" style="background-color:#00007C ;">
+
+      <div class="d-lg-flex justify-content-evenly saved-job-footer">
+         <div class="footer-links">
+            <a href="#"><span class="mx-2">About Us</span></a>
+            <a href="#"><span class="mx-2">How Its Works</span></a>
+            <a href="#"><span class="mx-2">FAQ</span></a>
+            <a href="#"><span class="mx-2">Privacy Policy</span></a>
+            <a href="#"><span class="mx-2">Conatct Us</span></a>
+         </div>
+         <div>
+            <div class="footer-text"> Upgrade Your Membership plans</div>
+            <div class="d-sm-flex justify-content-center align-items-baseline gap-3">
+               <div class="footer-input mt-lg-3 mt-sm-2 mt-3">
+                  <input type="text" placeholder="Email Address">
+               </div>
+               <button class="Subscribe-btn mt-sm-0 mt-3">Subscribe</button>
+            </div>
+         </div>
+      </div>
+      <div style="border-top: 1px solid #657581; margin: 30px 60px 0px 60px">
+         <div class="d-flex align-items-center flex-column mt-4 footer-social">
+            <h4>Follow Us</h4>
+            <div>
+               <ul class="footer-icon p-0 py-2 d-flex">
+                  <a href="#">
+                     <li class="me-2"
+                        style="list-style: none; display: flex; justify-content: center;align-items: center; width: 35px; height: 35px; border: 2px solid #fff; border-radius: 50%;">
+                        <i class="fa-brands fa-facebook-f " style=" line-height: 10px;"></i>
+                     </li>
+                  </a>
+                  <a href="#">
+                     <li class="me-2"
+                        style="list-style: none; display: flex; justify-content: center;align-items: center; width: 35px; height: 35px; border: 2px solid #fff; border-radius: 50%;">
+                        <i class="fa-brands fa-instagram " style=" line-height: 10px;"></i>
+                     </li>
+                  </a>
+                  <a href="#">
+                     <li class="me-2"
+                        style="list-style: none; display: flex; justify-content: center;align-items: center; width: 35px; height: 35px; border: 2px solid #fff; border-radius: 50%;">
+                        <i class="fa-brands fa-linkedin-in " style=" line-height: 10px;"></i>
+                     </li>
+                  </a>
+                  <a href="#">
+                     <li class="me-2"
+                        style="list-style: none; display: flex; justify-content: center;align-items: center; width: 35px; height: 35px; border: 2px solid #fff; border-radius: 50%;">
+                        <i class="fa-brands fa-pinterest " style=" line-height: 10px;"></i>
+                     </li>
+                  </a>
+               </ul>
+            </div>
+         </div>
+         <span class="d-flex justify-content-center footer-copyright">&copy; Copyright @ 2023 | job Board Software by
+            Reyferjobs.
+            All
+            Rights
+            Reserved</span>
+      </div>
+   </footer>
+   <!--Footer ends-->
+
+   <!-- All Script -->
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+   <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+
+   <!-- Radio content -->
+   <script>
+      const textRadio = document.getElementById("textRadio");
+      const uploadRadio = document.getElementById("uploadRadio");
+      const urlRadio = document.getElementById("urlRadio");
+      const textContent = document.getElementById("textContent");
+      const uploadContent = document.getElementById("uploadContent");
+      const urlContent = document.getElementById("urlContent");
+
+      //  Show Hide
+      textRadio.addEventListener("change", () => {
+         if (textRadio.checked) {
+            textContent.style.display = "block";
+            uploadContent.style.display = "none";
+            urlContent.style.display = "none";
+         }
+      });
+
+      uploadRadio.addEventListener("change", () => {
+         if (uploadRadio.checked) {
+            textContent.style.display = "none";
+            uploadContent.style.display = "block";
+            urlContent.style.display = "none";
+         }
+      });
+
+      urlRadio.addEventListener("change", () => {
+         if (urlRadio.checked) {
+            textContent.style.display = "none";
+            uploadContent.style.display = "none";
+            urlContent.style.display = "block";
+         }
+      });
+   </script>
+
+
+   <!-- Second Nav -->
+   <script>
+      $(document).ready(function () {
+
+         $(document).click(function (event) {
+            if (!$(event.target).closest(".search-click").length) {
+               $(".first-search").show();
+               $(".second-search").hide();
+            }
+         });
+
+         $("#first-search-input").focus(function () {
+            $(".first-search").hide();
+            $(".second-search").show();
+
+         });
+      });
+   </script>
+   <script>
+      $(document).ready(function () {
+
+         $(document).click(function (event) {
+            if (!$(event.target).closest(".search-click-res").length) {
+               $(".first-search-res").show();
+               $(".second-search-res").hide();
+            }
+         });
+
+         $("#first-search-input-res").focus(function () {
+            $(".first-search-res").hide();
+            $(".second-search-res").show();
+
+         });
+      });
+   </script>
+
+   <!-- Menu -->
+   <script>
+      $(document).ready(function () {
+         function showSection() {
+            event.preventDefault();
+            $('#hidden-section').show();
+            $('.search-box-section').css('padding-top', '30px');
+         }
+
+         $('#seek-jobs, #refer-jobs, #profile').click(showSection);
+      });
+   </script>
+
+   <script>
+      var listItem = document.querySelector(".list-item");
+      var sideMenu = document.querySelector('.side-menu');
+
+      document.getElementById("toggle-item").addEventListener("click", function () {
+         listItem.classList.toggle("show-content");
+         if (listItem.classList.contains("show-content")) {
+            sideMenu.classList.add("show-content");
+         } else {
+            sideMenu.classList.remove("show-content");
+         }
+      });
+   </script>
+</body>
+
+</html>

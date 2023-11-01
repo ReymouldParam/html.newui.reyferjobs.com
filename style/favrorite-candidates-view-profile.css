@@ -1,0 +1,552 @@
+.favrorite-candidates-view-profile-section {
+  margin: 10px 0;
+  border: 1px solid #e4e4e4;
+  border-radius: 35px;
+  padding: 20px;
+}
+.favrorite-candidates-view-profile {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 15px 20px;
+  margin: 15px 0;
+}
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+}
+.profile-header h5 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 128%;
+}
+.send-saved {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+.profile-img {
+  display: flex;
+  gap: 30px;
+  align-items: start;
+  margin-top: 40px;
+}
+.profile-img img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+}
+
+.profile-content {
+  margin: 20px 0;
+}
+.about-details {
+  display: flex;
+  gap: 30px;
+  align-items: start;
+}
+
+.profile-img-comntent {
+  border: 1px solid #dc7d09;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.profile-img h5 {
+  color: #0b0e10;
+  font-weight: 600;
+  font-size: 26px;
+}
+.profile-img-comntent h6 {
+  color: #0b0e10;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.url-links h5 {
+  color: #0b0e10;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 128%;
+}
+
+.profile-view-user h5 {
+  color: #0b0e10;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 50.4px;
+  word-wrap: break-word;
+}
+.profile-view-user-details {
+  border-left: 1px solid #dc7d09;
+  padding-left: 10px;
+  margin-top: 18px;
+}
+.profile-view-user-details span {
+  color: #0b0e10;
+  font-size: 23px;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+.profile-view-user-details div span {
+  color: #0b0e10;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 78px;
+  word-wrap: break-word;
+}
+.profile-view-user-details > span:nth-child(3) {
+  color: #0b0e10;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  word-wrap: break-word;
+}
+.profile-view-user-details > span > span {
+  font-weight: 600;
+}
+.profile-about {
+  margin-top: 20px;
+}
+.profile-about h5 {
+  color: #0b0e10;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 26px;
+  word-wrap: break-word;
+}
+.profile-about p {
+  text-align: justify;
+  color: #0b0e10;
+  font-size: 17px;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+.profile-view-user-experience {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.profile-view-user-experience h6 span {
+  color: #0b0e10;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+.profile-view-user-experience h6 {
+  color: #0b0e10;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 26px;
+  word-wrap: break-word;
+}
+.border-right {
+  border-right: 1px solid #c4c4c4;
+  padding-right: 20px;
+}
+
+.profile-view-resume-details {
+  padding-top: 20px;
+}
+.profile-view-resume-details > h6:nth-child(1) {
+  color: #0b0e10;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+  word-wrap: break-word;
+}
+.profile-view-resume-details > h6:nth-child(2) {
+  color: #1751d0;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 34.84px;
+  word-wrap: break-word;
+}
+.profile-view-resume-details span {
+  color: #373737;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+.all-experiences-section {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 15px 20px;
+  margin: 15px 0;
+}
+.all-experiences-section > div > h5 {
+  color: #0b0e10;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 128%;
+}
+.all-experiences-section > div > div {
+  margin-top: 20px;
+  display: flex;
+  align-items: start;
+  gap: 30px;
+}
+.all-experiences-section > div > div > img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  padding: 5px;
+}
+.all-experiences-section > div > div > div > h4 {
+  color: #0b0e10;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 128%;
+}
+.all-experiences-section > div > div > div > h4 > span {
+  font-size: 18px;
+  font-weight: 400;
+}
+.all-experiences-section > div > div > div > h5 {
+  color: #0b0e10;
+  font-size: 22px;
+  font-weight: 500;
+}
+.all-experiences-section > div > div > div > h5 > span {
+  color: #0b0e10;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+}
+.all-experiences-section > div > div > div > h6 {
+  color: #0b0e10;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+}
+.all-experiences-section > div > div > div > p {
+  color: #0b0e10;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.all-experiences-section > div > div {
+  border-bottom: 1px solid #c4c4c4;
+}
+.all-experiences-section > div > div:nth-child(4) {
+  border-bottom: 0px solid #c4c4c4;
+}
+
+.educations-content {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 15px 20px;
+  margin: 15px 0;
+}
+.educations-content > h5 {
+  color: #0b0e10;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 100%;
+}
+.educations-content > div > div {
+  margin-top: 25px;
+}
+.educations-content > div > div > h5 {
+  color: #0b0e10;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+.educations-content > div > div > span {
+  color: #373737;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+.profile-details-progress-bar {
+  display: flex;
+  font-weight: 700;
+  font-size: 24px;
+  color: #1751d0;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 99px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, #fff 79%, transparent 80% 100%),
+    conic-gradient(#1751d0 60%, #feddb2 0);
+}
+
+.profile-details-progress-bar::before {
+  content: "75%";
+}
+.score-text {
+  font-size: 17px;
+  font-weight: 500;
+  color: #1751d0;
+}
+
+@media (max-width: 59em) {
+  .profile-img img {
+    width: 170px;
+    height: 170px;
+  }
+  .profile-content {
+    gap: 10px;
+    display: block;
+  }
+
+  .profile-view-user-details > span:nth-child(3) {
+    font-size: 13px;
+  }
+  .profile-view-user-details span {
+    font-size: 16px;
+  }
+  .profile-view-user-details div span {
+    font-size: 14px;
+    line-height: 30px;
+    display: block;
+  }
+  .profile-view-user-details span {
+    font-size: 16px;
+  }
+  .profile-view-user h5 {
+    font-size: 23px;
+  }
+  .profile-img img {
+    width: 160px;
+    height: 160px;
+  }
+  .profile-view-user-experience h6 span {
+    font-size: 16px;
+  }
+  .profile-view-user-experience h6 {
+    font-size: 14px;
+  }
+  .profile-img-comntent {
+    margin: 20px 0;
+  }
+  .all-experiences-section > div > div > div > h4 {
+    font-size: 20px;
+  }
+  .all-experiences-section > div > div > div > h4 > span {
+    font-size: 15px;
+  }
+  .all-experiences-section > div > div > div > h5 {
+    font-size: 18px;
+  }
+  .all-experiences-section > div > div > div > h5 > span {
+    font-size: 14px;
+  }
+  .profile-header h5 {
+    font-size: 26px;
+  }
+  .profile-img-comntent h6 {
+    font-size: 12px;
+  }
+  .url-links {
+    font-size: 10px;
+  }
+  .profile-img-comntent h5 {
+    font-size: 16px;
+  }
+  .profile-img h5 {
+    font-size: 22px;
+  }
+  .profile-about p {
+    font-size: 15px;
+  }
+  .profile-view-user-experience h6 {
+    font-size: 16px;
+  }
+  .profile-view-user-experience h6 span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 34em) {
+  .manage-job-progress {
+    margin-bottom: 13px;
+    margin-top: 10px;
+  }
+  .profile-details-progress-bar {
+    font-size: 18px;
+    width: 80px;
+    height: 80px;
+  }
+  .profile-img {
+    display: block;
+  }
+  .about-details {
+    display: block;
+  }
+  .profile-header h5 {
+    font-size: 21px;
+  }
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    text-align: end;
+  }
+  .send-saved {
+    font-size: 17px;
+  }
+  .profile-img img {
+    width: 140px;
+    height: 140px;
+  }
+  .profile-img h5 {
+    font-size: 22px;
+  }
+  .profile-view-user-details {
+    margin-top: 0px;
+  }
+  .profile-img h5 {
+    line-height: 65px;
+  }
+  .profile-view-user-details span {
+    font-size: 12px;
+  }
+  .profile-view-user-details div span {
+    font-size: 13px;
+  }
+  .url-links {
+    font-size: 14px;
+  }
+  .profile-view-resume-details > h6:nth-child(1) {
+    font-size: 17px;
+  }
+  .profile-view-user-experience {
+    display: block;
+  }
+  .profile-view-user-experience h6 span {
+    font-size: 20px;
+    margin-right: 30px;
+  }
+  .profile-view-resume-details > h6:nth-child(2) {
+    font-size: 15px;
+  }
+  .all-experiences-section > div > div {
+    display: block;
+  }
+  .all-experiences-section > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .all-experiences-section > div > div > div > h5 {
+    font-size: 17px;
+  }
+  .all-experiences-section > div > div > div > h6 {
+    font-size: 15px;
+  }
+  .all-experiences-section > div > div > div > p {
+    font-size: 13px;
+    text-align: justify;
+  }
+  .educations-content > div > div > span {
+    font-size: 14px;
+  }
+  .educations-content > div > div > h5 {
+    font-size: 17px;
+  }
+  .Bread-crumbs-2 a {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 375px) {
+  .profile-view-user-details div span {
+    font-size: 13px;
+    line-height: 32px;
+  }
+  .profile-view-user-details span {
+    font-size: 15px;
+  }
+  .url-links {
+    font-size: 12px;
+  }
+  .profile-view-user-experience h6 span {
+    font-size: 18px;
+    margin-right: 30px;
+  }
+  .profile-view-resume-details > h6:nth-child(1) {
+    font-size: 15px;
+  }
+  .profile-view-resume-details > h6:nth-child(2) {
+    font-size: 14px;
+  }
+  .profile-view-resume-details span {
+    font-size: 14px;
+  }
+  .all-experiences-section {
+    margin: 0;
+  }
+  .all-experiences-section > div > div > div > h5 {
+    font-size: 15px;
+  }
+  .all-experiences-section > div > div > div > p {
+    font-size: 12px;
+  }
+  .all-experiences-section > div > div > img {
+    height: 70px;
+    width: 70px;
+    padding: 2px;
+  }
+  .educations-content {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin: 0px;
+  }
+}
+@media (max-width: 320px) {
+  .profile-view-user-details div span {
+    font-size: 9px;
+    line-height: 27px;
+  }
+  .url-links {
+    font-size: 9px;
+  }
+  .profile-img-comntent h5 {
+    font-size: 13px;
+  }
+  .profile-img-comntent h6 {
+    font-size: 10px;
+  }
+  .all-experiences-section {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 15px 0px;
+    margin: 15px 0;
+  }
+  .all-experiences-section > div > h5 {
+    color: #0b0e10;
+    font-size: 20px;
+  }
+  .all-experiences-section > div > div > div > h4 {
+    font-size: 17px;
+  }
+  .all-experiences-section > div > div > div > h5 {
+    font-size: 13px;
+  }
+  .all-experiences-section > div > div > div > h6 {
+    font-size: 12px;
+  }
+  .educations-content > div > div > h5 {
+    font-size: 15px;
+  }
+  .educations-content > div > div > span {
+    font-size: 11px;
+  }
+}

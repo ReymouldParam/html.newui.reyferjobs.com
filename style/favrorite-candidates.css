@@ -1,0 +1,124 @@
+.favrorite-candidates-section > h3 {
+  color: #0b0e10;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 20px 0;
+  line-height: 115%;
+}
+.text-orange {
+  color: #dc7d09;
+}
+.text-blue {
+  color: #1751d0;
+}
+.favrorite-candidates-card {
+  border-radius: 8px;
+  background: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.favrorite-candidates-img {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.favrorite-candidates-img img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.favrorite-candidates-user-details h5 {
+  color: #0b0e10;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 128%;
+}
+.favrorite-candidates-user-details h6 {
+  color: #0b0e10;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+}
+.skills-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  gap: 13px;
+}
+.view-profile a {
+  color: #1751d0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 115%;
+}
+.trush {
+  border-left: 1px solid #c4c4c4;
+  padding-left: 10px;
+}
+.trush i {
+  color: #fd3e3e;
+}
+@media (max-width: 59em) {
+  .favrorite-candidates-card {
+    border-radius: 8px;
+    background: #fff;
+    padding: 10px 20px;
+    display: block;
+    align-items: start;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  .view-profile a {
+    font-size: 17px;
+  }
+  .skills-details {
+    gap: 4px;
+  }
+}
+@media (max-width: 34em) {
+  .skills-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 10px;
+  }
+  .trush i {
+    font-size: 15px;
+  }
+  .view-profile a {
+    font-size: 16px;
+  }
+  .favrorite-candidates-section > h3 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 375px) {
+  .favrorite-candidates-section > h3 {
+    font-size: 20px;
+  }
+  .favrorite-candidates-user-details h5 {
+    font-size: 18px;
+  }
+  .favrorite-candidates-img {
+    gap: 12px;
+  }
+  .favrorite-candidates-img img {
+    width: 60px;
+    height: 60px;
+  }
+  .favrorite-candidates-user-details h5 {
+    font-size: 15px;
+  }
+  .favrorite-candidates-user-details h6 {
+    color: #0b0e10;
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+}

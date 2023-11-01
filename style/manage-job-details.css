@@ -1,0 +1,473 @@
+.manage-job-details {
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 20px;
+}
+.manage-job-details-header {
+  background-color: #dee9ff;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.job-content-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.manage-job-details-header:nth-child(1) span {
+  color: #177308;
+}
+.created-date {
+  color: #373737 !important;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 128%;
+}
+.icon-color {
+  color: #1751d0;
+}
+.icon-font {
+  font-size: 20px;
+}
+.trush {
+  color: #fd3e3e;
+}
+.plus-icon-border {
+  border-left: 1px solid #c4c4c4;
+  padding: 0 0px 0px 10px;
+}
+.share-nodes-icon-border {
+  border-left: 1px solid #c4c4c4;
+  border-right: 1px solid #c4c4c4;
+  padding: 0 10px 0px 10px;
+}
+.manage-job-details div h4 {
+  cursor: pointer;
+  color: #1751d0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 33.28px;
+  word-wrap: break-word;
+}
+.active-details {
+  border-bottom: 2px solid #1751d0;
+}
+.save-icon i {
+  color: #ffff;
+  background-color: #1751d0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 8px;
+}
+.save-icon {
+  display: flex;
+  align-items: center;
+  color: #1751d0;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  word-wrap: break-word;
+}
+.view-active-manage-job-details {
+  background-color: #dee9ff;
+  border-radius: 16px;
+  margin-top: 20px;
+  padding: 20px 25px;
+}
+.applicant-header-details {
+  border-radius: 8px;
+  background: #fff;
+  padding: 20px;
+}
+.applicant-header-user-img img {
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+}
+.user-name-details h5 {
+  color: #1751d0;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 128%;
+}
+.user-name-details h6 {
+  color: #0b0e10;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.manage-job-details-progress-bar {
+  display: flex;
+  font-weight: 700;
+  font-size: 13px;
+  color: #1751d0;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* border: 2px solid #dee9ff; */
+  background: radial-gradient(closest-side, #fff 79%, transparent 80% 100%),
+    conic-gradient(#1751d0 60%, #feddb2 0);
+}
+.manage-job-details-progress-bar::before {
+  content: "75%";
+}
+.applicant-header-details {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 30px;
+}
+.skills-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 13px;
+}
+.skills-details span:nth-child(1) {
+  color: #0b0e10;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 128%;
+  text-align: center;
+}
+.skills-details span:nth-child(2) {
+  color: #0b0e10;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 128%;
+}
+.manage-job-progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.status-view-manage-job {
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+.text-orange {
+  color: #dc7d09;
+}
+.text-blue {
+  color: #1751d0;
+}
+.accordion-view-details {
+  border-radius: 8px !important;
+  background: #fff;
+  margin-top: 10px;
+}
+/*  */
+.applicant-job-view-details-header {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.applicant-job-view-details-header h5 {
+  color: #0b0e10;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 128%;
+}
+.applicant-job-view-details-header span {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 128%;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor-default {
+  cursor: default;
+}
+.send-saved {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 128%;
+}
+.resume-view {
+  height: 750px;
+  width: 135%;
+  overflow-y: scroll;
+  border-radius: 5px;
+}
+
+.resume-view::-webkit-scrollbar {
+  width: 7px;
+}
+.dwn-button {
+  border: 0;
+  background-color: transparent;
+  float: inline-end;
+  font-weight: 600;
+}
+.resume-view::-webkit-scrollbar-track {
+  background-color: rgba(211, 211, 211, 0.307);
+  border: 1px solid #66666619;
+  border-radius: 50px;
+}
+.resume-view::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.201);
+  border: 1px solid #66666619;
+  border-radius: 50px;
+}
+.border-left {
+  border-left: 1px solid #c4c4c4;
+  padding-left: 15px;
+}
+/*  */
+.manage-job-details-view-content {
+  background-color: #dee9ff;
+  border-radius: 16px;
+}
+.manage-job-details-view-content div:nth-child(1) {
+  background-color: #fbfbfb;
+  border-radius: 10px;
+}
+.job-details-title {
+  font-size: 25px;
+  font-weight: 600;
+}
+.job-description {
+  text-align: justify;
+}
+.read-more {
+  font-weight: 500;
+  text-align: end;
+}
+.link-view-offcanvas {
+  display: none;
+}
+.view-details-header {
+  background-color: #dee9ff;
+}
+.job-details-view-offcanvas {
+  display: none;
+}
+@media (max-width: 1440px) {
+  .resume-view {
+    width: 100%;
+  }
+}
+
+@media (max-width: 59em) {
+  .link-view-accordion {
+    display: none;
+  }
+  .link-view-offcanvas {
+    display: block;
+  }
+  .resume-view {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    border-radius: 5px;
+  }
+  .job-score-title {
+    font-size: 22px !important;
+  }
+  .resume-view img {
+    width: 100%;
+    height: 100%;
+  }
+  .manage-job-details-header {
+    display: block;
+  }
+  .save-icon {
+    font-size: 14px;
+  }
+  .applicant-header-user-img img {
+    height: 60px;
+    width: 60px;
+  }
+  .applicant-header-details {
+    display: block;
+  }
+  .skills-details span:nth-child(1) {
+    font-size: 15px;
+  }
+  .skills-details {
+    gap: 5px;
+  }
+  .skills-details span:nth-child(2) {
+    font-size: 12px;
+  }
+  .status-view-manage-job h5 {
+    font-size: 14px;
+  }
+  .status-view-manage-job h6 {
+    font-size: 12px;
+  }
+  .status-view-manage-job {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+  .score-text {
+    font-size: 9px !important;
+  }
+  .user-name-details h6 {
+    font-size: 14px;
+  }
+  .applicant-job-view-details-header span {
+    font-size: 14px;
+  }
+  .applicant-job-view-details-header h5 {
+    font-size: 18px;
+  }
+  .send-saved {
+    font-size: 16px;
+  }
+}
+@media (max-width: 34em) {
+  .saved-jobs-section {
+    margin-top: 161px !important;
+    position: relative;
+  }
+  .ofcanvas-button {
+    padding: 4px 30px;
+    font-size: 18px;
+  }
+  .job-overview-content {
+    font-size: 16px;
+  }
+  .job-overview {
+    font-size: 23px !important;
+  }
+  .job-details-view-link {
+    display: none;
+  }
+  .job-details-view-offcanvas {
+    display: block;
+  }
+  .save-icon {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .manage-job-details-progress-bar {
+    font-size: 14px;
+    width: 50px;
+    height: 50px;
+  }
+  .score-text {
+    font-size: 13px !important;
+  }
+  .applicant-header-user-img img {
+    height: 50px;
+    width: 50px;
+  }
+  .user-name-details h5 {
+    font-size: 16px;
+  }
+  .user-name-details h6 {
+    font-size: 12px;
+  }
+  .skills-details {
+    margin-top: 5px;
+  }
+  .skills-details {
+    flex-direction: row;
+    justify-content: start;
+  }
+  .skills-details span:nth-child(1) {
+    font-size: 16px;
+  }
+  .skills-details span:nth-child(2) {
+    font-size: 13px;
+    color: #1751d0;
+  }
+  .border-left {
+    border-left: none;
+    padding-left: 0px;
+  }
+  .status-view-manage-job {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 10px;
+  }
+  .status-view-manage-job h5 {
+    font-size: 16px;
+  }
+  .status-view-manage-job h6 {
+    font-size: 15px;
+  }
+  .manage-job-progress {
+    margin-bottom: 13px;
+  }
+  .progress-bar {
+    width: 70px;
+    height: 70px;
+  }
+  .table-tittle {
+    font-size: 18px;
+  }
+  .table-tittle-2 {
+    font-size: 16px;
+  }
+  .Bread-crumbs-2 a {
+    font-size: 14px !important;
+  }
+  .Bread-crumbs-1 a {
+    font-size: 14px !important;
+  }
+  .manage-job-details-header {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 375px) {
+  .Bread-crumbs-2 a {
+    font-size: 13px !important  ;
+  }
+  .Bread-crumbs-1 a {
+    font-size: 13px !important;
+  }
+  .manage-job-details div h4 {
+    font-size: 18px;
+  }
+  .save-icon {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .user-name-details h5 {
+    font-size: 13px;
+  }
+  .user-name-details h6 {
+    font-size: 11px;
+  }
+  .manage-job-details-progress-bar {
+    font-size: 12px;
+    width: 40px;
+    height: 40px;
+  }
+  .skills-details span:nth-child(1) {
+    font-size: 15px;
+  }
+  .status-view-manage-job h5 {
+    font-size: 15px;
+  }
+  .status-view-manage-job h5 {
+    font-size: 15px;
+  }
+  .ofcanvas-button {
+    padding: 4px 21px;
+    font-size: 18px;
+  }
+}
