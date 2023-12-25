@@ -77,14 +77,38 @@
                                 <input type="text" placeholder="Search job title or keyword" class="input-2 w-35">
                                 <input type="text" placeholder="Location" class=" input-2 w-20">
                                 <input type="text" placeholder="Experience" class="border-0 input-2 w-20">
-                                <button type="submit" class="fs-8 p-1 px-2 btn rounded-circle orange-filled-btn"><ion-icon name="search-outline"></ion-icon></i></button>
+                                <button type="submit" class="submit-btn d-flex align-items-center p-1 px-2 btn rounded-pill orange-filled-btn"><ion-icon name="search-outline"></ion-icon></i> <span class="nav-search-submit-label ms-1" style="display: none;">Submit</span></button>
                             </form>
                         </div>
 
-                        <div class="d-flex justify-content-around w-20">
-                            <button class="rounded-pill btn blue-filled-btn py-1">Post Jobs</button>
-                            <div class="profile-dp">
-                                <img src="image/Avtar-1.jpg" alt="" class="dp rounded-circle" style="height: 35px;;">
+                        <div class="d-flex justify-content-around w-20 align-items-center">
+                            <button class="rounded-pill btn blue-filled-btn py-1 h-75">Post Jobs</button>
+                            <div class="nav-profile-dp">
+                                <img src="image/Avtar-1.jpg" alt="" class="dp rounded-circle" style="height: 30px;">
+
+                                <div class="nav-profile-hidden-container p-2 card">
+                                    <div class="row align-items-center">
+                                        <div class="col-3">
+                                            <img src="image/Avtar-1.jpg" alt="" class="dp rounded-circle" style="height: 60px;">
+                                        </div>
+                                        <div class="col">
+                                            <h4 class="title fw-bold fs-6 mb-1">Revanth Danduboina</h4>
+                                            <p class="sub-title">UI/UX Designer</p>
+                                            <p class="sub-title">@ Reymould Technology pvt.ltd</p>
+                                        </div>
+                                    </div>
+                                    <div class="py-3" style="border-bottom: 1px solid rgb(183, 183, 183);">
+                                        <button class="blue-filled-btn btn rounded-pill w-100">View Profile</button>
+                                    </div>
+                                    <div class="py-3">
+                                        <p class="fw-bold mb-0">Membership Account</p>
+                                        <a href="#" class="fs-8" style="color: red;">Upgrade Membership</a>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn">Sign Out</button>
+                                        <button class="blue-unfilled-btn border-0 anchor-color">Change Password</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1274,6 +1298,9 @@ $(".recommended-jobs-owl-carousel-container").slick({
     var closeSearchNav = $(".nav-search-close-btn");
     var navFormInput1 = $(".nav-search-container> form .input-1");
     var navFormInput2 = $(".nav-search-container> form .input-2");
+    var navFormSubmitText = $(".nav-search-submit-label");
+
+    var navSearchShow = false;
 
     navSearchForm.click(function(){
         navSearchContainer.css("width","98%");
@@ -1282,6 +1309,12 @@ $(".recommended-jobs-owl-carousel-container").slick({
         closeSearchNav.css("display","block")
         navFormInput1.css("display","none");
         navFormInput2.css("display","block");
+        navFormSubmitText.css("display","block");
+
+       if(!navSearchShow){
+        navFormInput2[0].focus();
+       }
+       navSearchShow = true;
     });
 
     closeSearchNav.click(function(){
@@ -1291,6 +1324,8 @@ $(".recommended-jobs-owl-carousel-container").slick({
         closeSearchNav.css("display","none")
         navFormInput1.css("display","block");
         navFormInput2.css("display","none");
+        navFormSubmitText.css("display","none");
+        navSearchShow = false;
     })
 
 
