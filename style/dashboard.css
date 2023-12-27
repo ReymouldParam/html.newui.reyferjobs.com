@@ -1238,4 +1238,8 @@ toggle switch styles
         grid-template-columns: auto;
         row-gap: 10px;
     }
+
+    .recommended-jobs-container .recommended-jobs-owl-carousel-container{
+        width: 85%;
+    }
 }
