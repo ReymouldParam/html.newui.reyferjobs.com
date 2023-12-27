@@ -1,0 +1,2146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reyferjobs</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css" type="text/css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css"
+        integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+    <!-- Owl Carousel CSS files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- slick carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet' type="text/css">
+
+    <!-- Custom style sheets -->
+    <link rel="stylesheet" href="style/dashboard.css" type="text/css">
+    <link rel="stylesheet" href="style/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+    <!--Header start-->
+
+    <header class="fixed-top ">
+
+        <!-- second nav -->
+
+        <div class="search-click header">
+
+            <div class="second-navbar d-flex justify-content-between align-items section py-3">
+                <div class="logo-container ">
+                    <a href=""><img src="image/main-logo.png" alt="logo" style="height: 40px;" class="company-logo"></a>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between  w-75">
+                    <div class="w-95 d-flex align-items-center px-2 justify-content-between position-relative">
+                        <div class="d-flex justify-content-between w-35">
+                            <div class="nav-item ">
+                                <a href="user-dashboard.html" class="nav-link">Dashboard</a>
+                            </div>
+
+                            <div class="nav-item ">
+                                <a href="#" class="nav-link nav-active">Seek jobs</a>
+                                <ul class="list-group nav-drop-down">
+                                    <li class="list-group-item"><a href="job-search.html" class=" drop-nav-link"><i class="fa-solid fa-magnifying-glass"></i> Job Search</a></li>
+                                    <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-regular fa-heart"></i> Saved Jobs</a></li>
+                                    <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-solid fa-magnifying-glass"></i> Applied Jobs</a></li>
+                                    <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-regular fa-bell"></i> Alerts and Notifications</a></li>
+                                
+                                </ul>
+                            </div>
+
+                            <div class="nav-item ">
+                                <a href="#" class="nav-link">Reyfer jobs</a>
+                                <ul class="list-group nav-drop-down">
+                                    <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-solid fa-plus"></i> Post Jobs</a></li>
+                                    <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-regular fa-folder"></i> Manage Jobs</a></li>
+                                    <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-regular fa-heart"></i> Favorite Candidates</a></li>
+                                    <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-solid fa-circle-plus"></i> Bulk Jobs</a></li>
+                                
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Expandable nav search bar -->
+                        <div class="nav-search-container" >
+                            <form action="" class="p-1 px-3 h-100 rounded-pill d-flex align-items-center justify-content-between">
+                                <input type="text" placeholder="Search Job Here " class="border-0 w-75 input-1">
+                                <input type="text" placeholder="Search job title or keyword" class="input-2 w-35">
+                                <input type="text" placeholder="Location" class=" input-2 w-20">
+                                <input type="text" placeholder="Experience" class="border-0 input-2 w-20">
+                                <button type="submit" class="submit-btn d-flex align-items-center p-1 px-2 btn rounded-pill orange-filled-btn"><ion-icon name="search-outline"></ion-icon></i> <span class="nav-search-submit-label ms-1" style="display: none;">Submit</span></button>
+                            </form>
+                        </div>
+
+                        <div class="d-flex justify-content-around w-20 align-items-center">
+                            <button class="rounded-pill btn blue-filled-btn py-1 h-75">Post Jobs</button>
+                            <div class="nav-profile-dp">
+                                <img src="image/Avtar-1.jpg" alt="" class="dp rounded-circle" style="height: 30px;">
+
+                                <div class="nav-profile-hidden-container p-2 card">
+                                    <div class="row align-items-center">
+                                        <div class="col-3">
+                                            <img src="image/Avtar-1.jpg" alt="" class="dp rounded-circle" style="height: 60px;">
+                                        </div>
+                                        <div class="col">
+                                            <h4 class="title fw-bold fs-6 mb-1">Revanth Danduboina</h4>
+                                            <p class="sub-title">UI/UX Designer</p>
+                                            <p class="sub-title">@ Reymould Technology pvt.ltd</p>
+                                        </div>
+                                    </div>
+                                    <div class="py-3" style="border-bottom: 1px solid rgb(183, 183, 183);">
+                                        <button class="blue-filled-btn btn rounded-pill w-100">View Profile</button>
+                                    </div>
+                                    <div class="py-3">
+                                        <p class="fw-bold mb-0">Membership Account</p>
+                                        <a href="#" class="fs-8" style="color: red;">Upgrade Membership</a>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn">Sign Out</button>
+                                        <button class="blue-unfilled-btn border-0 anchor-color">Change Password</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-5 center-item position-relative">
+                        <button class="rounded-circle btn border-white round-icon-btn position-absolute"><ion-icon name="notifications-outline"></ion-icon></button>
+                        <button class="rounded-circle round-icon-btn-anchor position-absolute nav-search-close-btn" style="display: none;">x</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+        
+        </div>
+        <!-- Responsive Header -->
+
+        <div class="search-click-res navbar-res">
+            <nav class="logo">
+                <img src="image/logo.png" class="d-flex justify-items-center m-auto" alt="">
+            </nav>
+            <div>
+                <nav style="background-color: white;" class="navbar navbar-expand-lg py-3 section  ">
+                    <div class="container-fluid px-0">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                                <li class="nav-item active me-3">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link " href="#">About</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link " href="#">Services</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link " href="#">Term & Condition</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link " href="#">Help</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between nav-right">
+                            <div class="search-res">
+                                <div class="searchbar first-search-res">
+                                    <input id="first-search-input-res" class="search_input" type="text" name
+                                        placeholder="Search Job Here" />
+                                    <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                            <button type="button" class="btn text-white rounded-5 px-sm-3 mx-sm-0 mx-1 post-now">
+                                Post Now
+                            </button>
+                            <div class="px-sm-3">
+                                <span style="width: 40px; height: 40px;">
+                                    <i
+                                        class="fa-solid fa-user border border-black rounded-circle px-sm-2 py-sm-2 px-1 py-1 mx-sm-1"></i>
+                                </span>
+                                <span style="width: 40px; height: 40px;" class="me-sm-0 me-2">
+                                    <i
+                                        class="fa-regular fa-bell border border-black rounded-circle px-sm-2 py-sm-2 px-1 py-1 mx-sm-1  position-relative">
+                                        <span
+                                            class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
+                                            <span class="visually-hidden">New alerts</span>
+                                        </span>
+                                    </i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+                <div>
+                    <div class="secon-nav-search">
+                        <div class="bg-white second-search-res hidden">
+                            <div class="d-flex">
+                                <div class="col-md-4">
+                                    <div class="search-1 search-input-text"> <i class="fas fa-search ps-3"
+                                            style="color: #6666;"></i>
+                                        <input class="search_input" type="text" name
+                                            placeholder="Search job title or keyword" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="search-1 search-input-text"> <i class="fa-solid fa-location-dot ps-3"
+                                            style="color: #6666;"></i>
+                                        <input class="search_input" type="text" name placeholder="Location" />
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div>
+                                        <div class="search-2 search-input-text"><i class="fa-solid fa-suitcase ps-3"
+                                                style="color: #6666;"></i>
+                                            <input class="search_input" type="text" name placeholder="Experience" />
+                                            <button type="sub" id="search-jobs"
+                                                class="btn rounded-pill btn-primary">Search
+                                                jobs</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!--Header end-->
+
+    <!-- Content -->
+
+    <main class="page-main-section">
+
+        <!-- Search Box -->
+        <section class="menu-section" id="hidden-section">
+            <div class="section">
+                <ul class="d-flex justify-content-between align-items-center p-0 list-unstyled">
+                    <li> <a href="/index.html">Search Jobs </a></li>
+                    <li> <a href="/saved-jobs.html">Saved Jobs </a></li>
+                    <li> <a href="/applied-job.html">Applied Jobs </a></li>
+                    <li> <a href="/alert-notification.html">Alert & Notification </a></li>
+                </ul>
+            </div>
+        </section>
+        <!--  -->
+        <section class="section searchbox-fix">
+            <div>
+                <div class="search-box-section">
+                    <div class="row m-0 justify-content-xl-between align-items-baseline flex-lg-nowrap flex-wrap">
+                        <div class="dropdown col-1">
+                            <button onclick="toggleDropdown(this)" class="select-box">Work
+                                Type<span class="count"></span><i class="fa-solid fa-caret-down"></i></button>
+                            <div class="dropdown-select">
+                                <input type="text" class="search-box-input" onkeyup="filterItems(this)"
+                                    placeholder="Search items...">
+                                <div class="resultsMessage p-4" style="display: none;">No results found</div>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 1"> Item 1</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 2"> Item 2</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 3</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 4</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 5</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 6</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 7</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 8</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 9</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item
+                                    10000000000000000000000000000</label>
+                            </div>
+                        </div>
+                        <div class="dropdown col-1">
+                            <button onclick="toggleDropdown(this)" class="select-box ">Data Posted<span
+                                    class="count"></span><i class="fa-solid fa-caret-down"></i></button>
+                            <div class="dropdown-select">
+                                <input type="text" class="search-box-input" onkeyup="filterItems(this)"
+                                    placeholder="Search items...">
+                                <div class="resultsMessage p-4" style="display: none;">No results found</div>
+                                <label class="checkbox-label"><input type="radio" name="dataPosted" value="Item 1"> Item
+                                    1</label>
+                                <label class="checkbox-label"><input type="radio" name="dataPosted" value="Item 2"> Item
+                                    2</label>
+                                <label class="checkbox-label"><input type="radio" name="dataPosted" value="Item 3"> Item
+                                    3</label>
+                                <label class="checkbox-label"><input type="radio" name="dataPosted" value="Item 3"> Item
+                                    4</label>
+                                <label class="checkbox-label"><input type="radio" name="dataPosted" value="Item 3"> Item
+                                    5</label>
+                                <label class="checkbox-label"><input type="radio" name="dataPosted" value="Item 3"> Item
+                                    6</label>
+                                <label class="checkbox-label"><input type="radio" name="dataPosted" value="Item 3"> Item
+                                    7</label>
+                                <label class="checkbox-label"><input type="radio" name="dataPosted" value="Item 3"> Item
+                                    8</label>
+                                <label class="checkbox-label"><input type="radio" name="dataPosted" value="Item 3"> Item
+                                    9</label>
+                                <label class="checkbox-label"><input type="radio" name="dataPosted" value="Item 3"> Item
+                                    10</label>
+                            </div>
+                        </div>
+                        <div class="dropdown col-1">
+                            <button onclick="toggleDropdown(this)" class="select-box ">Experienced<span class="count"></span><i class="fa-solid fa-caret-down"></i></button>
+                            <div class="dropdown-select">
+                                <input type="text" class="search-box-input" onkeyup="filterItems(this)"
+                                    placeholder="Search items...">
+                                <div class="resultsMessage p-4" style="display: none;">No results found</div>
+                                <label class="checkbox-label"><input type="radio" name="Experienced" value="Item 1">
+                                    Item
+                                    1</label>
+                                <label class="checkbox-label"><input type="radio" name="Experienced" value="Item 2">
+                                    Item
+                                    2</label>
+                                <label class="checkbox-label"><input type="radio" name="Experienced" value="Item 3">
+                                    Item
+                                    3</label>
+                                <label class="checkbox-label"><input type="radio" name="Experienced" value="Item 3">
+                                    Item
+                                    4</label>
+                                <label class="checkbox-label"><input type="radio" name="Experienced" value="Item 3">
+                                    Item
+                                    5</label>
+                                <label class="checkbox-label"><input type="radio" name="Experienced" value="Item 3">
+                                    Item
+                                    6</label>
+                                <label class="checkbox-label"><input type="radio" name="Experienced" value="Item 3">
+                                    Item
+                                    7</label>
+                                <label class="checkbox-label"><input type="radio" name="Experienced" value="Item 3">
+                                    Item
+                                    8</label>
+                                <label class="checkbox-label"><input type="radio" name="Experienced" value="Item 3">
+                                    Item
+                                    9</label>
+                                <label class="checkbox-label"><input type="radio" name="Experienced" value="Item 3">
+                                    Item
+                                    10</label>
+                            </div>
+                        </div>
+                        <div class="dropdown col-1">
+                            <button onclick="toggleDropdown(this)" class="select-box">Company Name<span
+                                    class="count"></span><i class="fa-solid fa-caret-down"></i></button>
+                            <div class="dropdown-select">
+                                <input type="text" class="search-box-input" onkeyup="filterItems(this)"
+                                    placeholder="Search items...">
+                                <div class="resultsMessage p-4" style="display: none;">No results found</div>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 1"> Item 1</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 2"> Item 2</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 3</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 4"> Item 4</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 5"> Item 5</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 6"> Item 6</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 7"> Item 7</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 8"> Item 8</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 9"> Item 9</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 10"> queueloop</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 10"> rain 10</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 10"> Item 10</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 10"> Item 10</label>
+                            </div>
+                        </div>
+                        <div class="dropdown col-1">
+                            <button onclick="toggleDropdown(this)" class="select-box ">Skills<span
+                                    class="count"></span><i class="fa-solid fa-caret-down"></i></button>
+                            <div class="dropdown-select">
+                                <input type="text" class="search-box-input" onkeyup="filterItems(this)"
+                                    placeholder="Search items...">
+                                <div class="resultsMessage p-4" style="display: none;">No results found</div>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 1"> Item 1</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 2"> Item 2</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 3</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 4</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 5</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 6</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 7</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 8</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 9</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 10</label>
+                            </div>
+                        </div>
+                        <div class="dropdown col-1">
+                            <button onclick="toggleDropdown(this)" class="select-box ">One-site<span class="count"></span><i class="fa-solid fa-caret-down"></i></button>
+                            <div class="dropdown-select">
+                                <input type="text" class="search-box-input" onkeyup="filterItems(this)"
+                                    placeholder="Search items...">
+                                <div class="resultsMessage p-4" style="display: none;">No results found</div>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 1"> Item 1</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 2"> Item 2</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 3</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 4</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 5</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 6</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 7</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 8</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 9</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 10</label>
+                            </div>
+                        </div>
+                        <div class="dropdown col-1">
+                            <button onclick="toggleDropdown(this)" class="select-box ">Location<span
+                                    class="count"></span><i class="fa-solid fa-caret-down"></i></button>
+                            <div class="dropdown-select">
+                                <input type="text" class="search-box-input" onkeyup="filterItems(this)"
+                                    placeholder="Search items...">
+                                <div class="resultsMessage p-4" style="display: none;">No results found</div>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 1"> Item 1</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 2"> Item 2</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 3</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 4</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 5</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 6</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 7</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 8</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 9</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 10</label>
+                            </div>
+                        </div>
+
+                        <div class="dropdown col-1">
+                            <button onclick="toggleDropdown(this)" class="select-box">Sort By<span
+                                    class="count"></span><i class="fa-solid fa-caret-down"></i></button>
+                            <div class="dropdown-select">
+                                <input type="text" class="search-box-input" onkeyup="filterItems(this)"
+                                    placeholder="Search items...">
+                                <div class="resultsMessage p-4" style="display: none;">No results found</div>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 1"> Item 1</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 2"> Item 2</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 3"> Item 3</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 4"> Item 4</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 5"> Item 5</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 6"> Item 6</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 7"> Item 7</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 8"> Item 8</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 9"> Item 9</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 10"> queueloop</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 10"> rain 10</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 10"> Item 10</label>
+                                <label class="checkbox-label"><input type="checkbox" value="Item 10"> Item 10</label>
+                            </div>
+                        </div>
+
+                        <div class="col-0 center-item">
+                            <button type="button" class="btn rounded-pill reset-button">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-bottom: 100px;" class="section">
+            <!-- Large Screen View -->
+            <div class="job-records-content">
+                <!-- Content -->
+                <div class="d-flex gap-1">
+                    <div class="col-xl-4 sidebar-custom-col">
+                        <div>
+                            <!-- Pagination -->
+                            <div class="text-lg-center mb-3">
+                                <nav aria-label="Page navigation example">
+                                    <div class="pagination-box">
+                                        <h6 class="me-2">1-20 of 240 jobs</h6>
+                                        <ul class="pagination m-0">
+                                            <li class="page-item mx-1 box-shadow">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true"><i
+                                                            class="fa-solid fa-angle-left"></i></span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item mx-1 box-shadow"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item mx-1 box-shadow"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item mx-1 box-shadow"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item mx-1 box-shadow"><a class="page-link" href="#">4</a></li>
+                                            <li class="page-item mx-1 box-shadow">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true"><i
+                                                            class="fa-solid fa-angle-right"></i></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <!--  -->
+
+                            <!-- Side bar card start -->
+                            <div class="sidebar">
+                                <div class="card border-0 me-2  mb-3">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div>
+                                                <a href>
+                                                    <img class="sidebar-card-img" src="image/microsoft.png" alt>
+                                                </a>
+                                            </div>
+                                            <div class="p-0 sidebar-card-content">
+                                                <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a
+                                                        href="#">Product
+                                                        Design Lead</a></h5>
+                                                <div class="my-0">
+                                                    <p class="card-subtitle text-color m-0 me-1">Deloitte 1
+                                                        
+                                                    </p>
+                                                    <p class="card-subtitle text-color m-0 me-1">
+                                                        Full-Time | <span>Hyderabad (On-site) </span></p>
+                                                </div>
+                                                <div>
+                                                    <div class="sidebar-card-icon-content">
+                                                        <span class="m-0 mt-3 text-color me-2"><ion-icon name="briefcase-outline"></ion-icon>
+                                                            4-5
+                                                            Yers</span>
+
+                                                        <span class="text-color"><ion-icon name="calendar-clear-outline"></ion-icon>26
+                                                            days
+                                                            ago</span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" d-flex flex-column justify-content-flex-start ms-auto">
+                                                <span style="text-align: right;">
+                                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                                                <div class="card-progress-bar ms-auto m-1 me-3">
+                                                    <progress value="75" min="0" max="100"
+                                                        style="visibility:hidden;height:0;width:0;">75%</progress>
+                                                </div>
+                                                <span class="score-text text-color">Matched
+                                                    Score</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card border-0 me-2  mb-3">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div>
+                                                <a href>
+                                                    <img class="sidebar-card-img" src="image/microsoft.png" alt>
+                                                </a>
+                                            </div>
+                                            <div class="p-0 sidebar-card-content">
+                                                <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a
+                                                        href="#">Product
+                                                        Design Lead</a></h5>
+                                                <div class="my-0">
+                                                    <p class="card-subtitle text-color m-0 me-1">Deloitte 1
+                                                        
+                                                    </p>
+                                                    <p class="card-subtitle text-color m-0 me-1">
+                                                        Full-Time | <span>Hyderabad (On-site) </span></p>
+                                                </div>
+                                                <div>
+                                                    <div class="sidebar-card-icon-content">
+                                                        <span class="m-0 mt-3 text-color me-2"><ion-icon name="briefcase-outline"></ion-icon>
+                                                            4-5
+                                                            Yers</span>
+
+                                                        <span class="text-color"><ion-icon name="calendar-clear-outline"></ion-icon>26
+                                                            days
+                                                            ago</span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" d-flex flex-column justify-content-flex-start ms-auto">
+                                                <span style="text-align: right;">
+                                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                                                <div class="card-progress-bar ms-auto m-1 me-3">
+                                                    <progress value="75" min="0" max="100"
+                                                        style="visibility:hidden;height:0;width:0;">75%</progress>
+                                                </div>
+                                                <span class="score-text text-color">Matched
+                                                    Score</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card border-0 me-2  mb-3">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div>
+                                                <a href>
+                                                    <img class="sidebar-card-img" src="image/microsoft.png" alt>
+                                                </a>
+                                            </div>
+                                            <div class="p-0 sidebar-card-content">
+                                                <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a
+                                                        href="#">Product
+                                                        Design Lead</a></h5>
+                                                <div class="my-0">
+                                                    <p class="card-subtitle text-color m-0 me-1">Deloitte 1
+                                                        
+                                                    </p>
+                                                    <p class="card-subtitle text-color m-0 me-1">
+                                                        Full-Time | <span>Hyderabad (On-site) </span></p>
+                                                </div>
+                                                <div>
+                                                    <div class="sidebar-card-icon-content">
+                                                        <span class="m-0 mt-3 text-color me-2"><ion-icon name="briefcase-outline"></ion-icon>
+                                                            4-5
+                                                            Yers</span>
+
+                                                        <span class="text-color"><ion-icon name="calendar-clear-outline"></ion-icon>26
+                                                            days
+                                                            ago</span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" d-flex flex-column justify-content-flex-start ms-auto">
+                                                <span style="text-align: right;">
+                                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                                                <div class="card-progress-bar ms-auto m-1 me-3">
+                                                    <progress value="75" min="0" max="100"
+                                                        style="visibility:hidden;height:0;width:0;">75%</progress>
+                                                </div>
+                                                <span class="score-text text-color">Matched
+                                                    Score</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card border-0 me-2  mb-3">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div>
+                                                <a href>
+                                                    <img class="sidebar-card-img" src="image/microsoft.png" alt>
+                                                </a>
+                                            </div>
+                                            <div class="p-0 sidebar-card-content">
+                                                <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a
+                                                        href="#">Product
+                                                        Design Lead</a></h5>
+                                                <div class="my-0">
+                                                    <p class="card-subtitle text-color m-0 me-1">Deloitte 1
+                                                        
+                                                    </p>
+                                                    <p class="card-subtitle text-color m-0 me-1">
+                                                        Full-Time | <span>Hyderabad (On-site) </span></p>
+                                                </div>
+                                                <div>
+                                                    <div class="sidebar-card-icon-content">
+                                                        <span class="m-0 mt-3 text-color me-2"><ion-icon name="briefcase-outline"></ion-icon>
+                                                            4-5
+                                                            Yers</span>
+
+                                                        <span class="text-color"><ion-icon name="calendar-clear-outline"></ion-icon>26
+                                                            days
+                                                            ago</span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" d-flex flex-column justify-content-flex-start ms-auto">
+                                                <span style="text-align: right;">
+                                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                                                <div class="card-progress-bar ms-auto m-1 me-3">
+                                                    <progress value="75" min="0" max="100"
+                                                        style="visibility:hidden;height:0;width:0;">75%</progress>
+                                                </div>
+                                                <span class="score-text text-color">Matched
+                                                    Score</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card border-0 me-2  mb-3">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div>
+                                                <a href>
+                                                    <img class="sidebar-card-img" src="image/microsoft.png" alt>
+                                                </a>
+                                            </div>
+                                            <div class="p-0 sidebar-card-content">
+                                                <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a
+                                                        href="#">Product
+                                                        Design Lead</a></h5>
+                                                <div class="my-0">
+                                                    <p class="card-subtitle text-color m-0 me-1">Deloitte 1
+                                                        
+                                                    </p>
+                                                    <p class="card-subtitle text-color m-0 me-1">
+                                                        Full-Time | <span>Hyderabad (On-site) </span></p>
+                                                </div>
+                                                <div>
+                                                    <div class="sidebar-card-icon-content">
+                                                        <span class="m-0 mt-3 text-color me-2"><ion-icon name="briefcase-outline"></ion-icon>
+                                                            4-5
+                                                            Yers</span>
+
+                                                        <span class="text-color"><ion-icon name="calendar-clear-outline"></ion-icon>26
+                                                            days
+                                                            ago</span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" d-flex flex-column justify-content-flex-start ms-auto">
+                                                <span style="text-align: right;">
+                                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                                                <div class="card-progress-bar ms-auto m-1 me-3">
+                                                    <progress value="75" min="0" max="100"
+                                                        style="visibility:hidden;height:0;width:0;">75%</progress>
+                                                </div>
+                                                <span class="score-text text-color">Matched
+                                                    Score</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card border-0 me-2  mb-3">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div>
+                                                <a href>
+                                                    <img class="sidebar-card-img" src="image/microsoft.png" alt>
+                                                </a>
+                                            </div>
+                                            <div class="p-0 sidebar-card-content">
+                                                <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a
+                                                        href="#">Product
+                                                        Design Lead</a></h5>
+                                                <div class="my-0">
+                                                    <p class="card-subtitle text-color m-0 me-1">Deloitte 1
+                                                        
+                                                    </p>
+                                                    <p class="card-subtitle text-color m-0 me-1">
+                                                        Full-Time | <span>Hyderabad (On-site) </span></p>
+                                                </div>
+                                                <div>
+                                                    <div class="sidebar-card-icon-content">
+                                                        <span class="m-0 mt-3 text-color me-2"><ion-icon name="briefcase-outline"></ion-icon>
+                                                            4-5
+                                                            Yers</span>
+
+                                                        <span class="text-color"><ion-icon name="calendar-clear-outline"></ion-icon>26
+                                                            days
+                                                            ago</span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" d-flex flex-column justify-content-flex-start ms-auto">
+                                                <span style="text-align: right;">
+                                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                                                <div class="card-progress-bar ms-auto m-1 me-3">
+                                                    <progress value="75" min="0" max="100"
+                                                        style="visibility:hidden;height:0;width:0;">75%</progress>
+                                                </div>
+                                                <span class="score-text text-color">Matched
+                                                    Score</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card border-0 me-2  mb-3">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div>
+                                                <a href>
+                                                    <img class="sidebar-card-img" src="image/microsoft.png" alt>
+                                                </a>
+                                            </div>
+                                            <div class="p-0 sidebar-card-content">
+                                                <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a
+                                                        href="#">Product
+                                                        Design Lead</a></h5>
+                                                <div class="my-0">
+                                                    <p class="card-subtitle text-color m-0 me-1">Deloitte 1
+                                                        
+                                                    </p>
+                                                    <p class="card-subtitle text-color m-0 me-1">
+                                                        Full-Time | <span>Hyderabad (On-site) </span></p>
+                                                </div>
+                                                <div>
+                                                    <div class="sidebar-card-icon-content">
+                                                        <span class="m-0 mt-3 text-color me-2"><ion-icon name="briefcase-outline"></ion-icon>
+                                                            4-5
+                                                            Yers</span>
+
+                                                        <span class="text-color"><ion-icon name="calendar-clear-outline"></ion-icon>26
+                                                            days
+                                                            ago</span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" d-flex flex-column justify-content-flex-start ms-auto">
+                                                <span style="text-align: right;">
+                                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                                                <div class="card-progress-bar ms-auto m-1 me-3">
+                                                    <progress value="75" min="0" max="100"
+                                                        style="visibility:hidden;height:0;width:0;">75%</progress>
+                                                </div>
+                                                <span class="score-text text-color">Matched
+                                                    Score</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card border-0 me-2  mb-3">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div>
+                                                <a href>
+                                                    <img class="sidebar-card-img" src="image/microsoft.png" alt>
+                                                </a>
+                                            </div>
+                                            <div class="p-0 sidebar-card-content">
+                                                <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a
+                                                        href="#">Product
+                                                        Design Lead</a></h5>
+                                                <div class="my-0">
+                                                    <p class="card-subtitle text-color m-0 me-1">Deloitte 1
+                                                        
+                                                    </p>
+                                                    <p class="card-subtitle text-color m-0 me-1">
+                                                        Full-Time | <span>Hyderabad (On-site) </span></p>
+                                                </div>
+                                                <div>
+                                                    <div class="sidebar-card-icon-content">
+                                                        <span class="m-0 mt-3 text-color me-2"><ion-icon name="briefcase-outline"></ion-icon>
+                                                            4-5
+                                                            Yers</span>
+
+                                                        <span class="text-color"><ion-icon name="calendar-clear-outline"></ion-icon>26
+                                                            days
+                                                            ago</span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" d-flex flex-column justify-content-flex-start ms-auto">
+                                                <span style="text-align: right;">
+                                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                                                <div class="card-progress-bar ms-auto m-1 me-3">
+                                                    <progress value="75" min="0" max="100"
+                                                        style="visibility:hidden;height:0;width:0;">75%</progress>
+                                                </div>
+                                                <span class="score-text text-color">Matched
+                                                    Score</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card border-0 me-2  mb-3">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div>
+                                                <a href>
+                                                    <img class="sidebar-card-img" src="image/microsoft.png" alt>
+                                                </a>
+                                            </div>
+                                            <div class="p-0 sidebar-card-content">
+                                                <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a
+                                                        href="#">Product
+                                                        Design Lead</a></h5>
+                                                <div class="my-0">
+                                                    <p class="card-subtitle text-color m-0 me-1">Deloitte 1
+                                                        
+                                                    </p>
+                                                    <p class="card-subtitle text-color m-0 me-1">
+                                                        Full-Time | <span>Hyderabad (On-site) </span></p>
+                                                </div>
+                                                <div>
+                                                    <div class="sidebar-card-icon-content">
+                                                        <span class="m-0 mt-3 text-color me-2"><ion-icon name="briefcase-outline"></ion-icon>
+                                                            4-5
+                                                            Yers</span>
+
+                                                        <span class="text-color"><ion-icon name="calendar-clear-outline"></ion-icon>26
+                                                            days
+                                                            ago</span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" d-flex flex-column justify-content-flex-start ms-auto">
+                                                <span style="text-align: right;">
+                                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                                                <div class="card-progress-bar ms-auto m-1 me-3">
+                                                    <progress value="75" min="0" max="100"
+                                                        style="visibility:hidden;height:0;width:0;">75%</progress>
+                                                </div>
+                                                <span class="score-text text-color">Matched
+                                                    Score</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card border-0 me-2  mb-3">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div>
+                                                <a href>
+                                                    <img class="sidebar-card-img" src="image/microsoft.png" alt>
+                                                </a>
+                                            </div>
+                                            <div class="p-0 sidebar-card-content">
+                                                <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a
+                                                        href="#">Product
+                                                        Design Lead</a></h5>
+                                                <div class="my-0">
+                                                    <p class="card-subtitle text-color m-0 me-1">Deloitte 1
+                                                        
+                                                    </p>
+                                                    <p class="card-subtitle text-color m-0 me-1">
+                                                        Full-Time | <span>Hyderabad (On-site) </span></p>
+                                                </div>
+                                                <div>
+                                                    <div class="sidebar-card-icon-content">
+                                                        <span class="m-0 mt-3 text-color me-2"><ion-icon name="briefcase-outline"></ion-icon>
+                                                            4-5
+                                                            Yers</span>
+
+                                                        <span class="text-color"><ion-icon name="calendar-clear-outline"></ion-icon>26
+                                                            days
+                                                            ago</span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" d-flex flex-column justify-content-flex-start ms-auto">
+                                                <span style="text-align: right;">
+                                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                                                <div class="card-progress-bar ms-auto m-1 me-3">
+                                                    <progress value="75" min="0" max="100"
+                                                        style="visibility:hidden;height:0;width:0;">75%</progress>
+                                                </div>
+                                                <span class="score-text text-color">Matched
+                                                    Score</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                            <!-- Side bar card End -->
+                        </div>
+                        <!--  -->
+                        <div class="text-center mt-3">
+                            <nav aria-label="Page navigation example">
+                                <div class="pagination-box">
+                                    <h6 class="me-2">1-20 of 240 jobs</h6>
+                                    <ul class="pagination m-0">
+                                        <li class="page-item mx-1 box-shadow">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true"><i class="fa-solid fa-angle-left"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item mx-1 box-shadow"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item mx-1 box-shadow"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item mx-1 box-shadow"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item mx-1 box-shadow"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item mx-1 box-shadow">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <!-- Right Side Start -->
+                    <div class="col-xl-8 right-side-custom-col">
+                        <div class="job-main-content "
+                            style="background-color: white; border: 1px solid #e4e4e4; border-radius: 10px;">
+
+                            <div>
+                                <div style="border-bottom: 1px dotted;" class="d-flex mb-4">
+                                    <!--  -->
+                                    <div class="col-lg-8 col-sm-7 job-content">
+                                        <div class="d-xxl-flex align-items-center">
+                                            <h3 class="job-content-title anchor-color">Product
+                                                Design Lead</h3> <span class="ms-xxl-3 my-lg-0 fw-medium"
+                                                style="color: #177308;">(Posted
+                                                By
+                                                Verified User)</span>
+                                        </div>
+                                        <h4 class="job-content-h4 my-lg-1 my-sm-2">Deloitte | Hyderabad, Telangana, India | Posted Date 12/12/2023 </h4>
+                                        <h4 class="job-content-h4 my-lg-1 my-sm-2">Category : IT Company | Company Job ID : RM1222 | Full-time </h4>
+                                        <!-- <h5 class="job-content-h5 text-color"><span style="color: #177308;">now:</span>
+                                            23
+                                            application
+                                        </h5> -->
+
+                                        <div class="d-flex text-color fw-medium align-items-baseline skills-content mt-3">
+                                            <i class="fa-solid fa-list me-1"></i>
+                                            Skills:
+                                            <div class="d-flex flex-wrap">
+                                                <div class="light-blue-bg px-1 me-1 mb-1">Mobile Application Design</div>
+                                                <div class="light-blue-bg px-1 me-1 mb-1">UX Design</div>
+                                                <div class="light-blue-bg px-1 me-1 mb-1">Products Analysis</div>
+                                                <div class="light-blue-bg px-1 me-1 mb-1">Leadership Skills</div>
+                                                <div class="light-blue-bg px-1 me-1 mb-1">Strategic Thinking</div>
+                                                <div class="light-blue-bg px-1 me-1 mb-1">Problem-Solving</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="justify-content-start py-3 border-bottom-dotted" style="display: grid; grid-template-columns: auto auto auto; column-gap: 10px;">
+                                            <div class="col">
+                                                <b><ion-icon name="location-outline"></ion-icon> Onsite/Remote</b>
+                                            </div>
+                                            <div class="col">:</div>
+                                            <div class="col">Remote</div>
+
+                                            <div class="col">
+                                                <b><ion-icon name="document-text-outline"></ion-icon> Designation</b>
+                                            </div>
+                                            <div class="col">:</div>
+                                            <div class="col">Web Developer</div>
+
+                                            <div class="col">
+                                                <b><ion-icon name="briefcase-outline"></ion-icon> Experience</b>
+                                            </div>
+                                            <div class="col">:</div>
+                                            <div class="col">1-2  years</div>
+                                            
+                                            <div class="col">
+                                                <b><ion-icon name="book-outline"></ion-icon> Qualification</b>
+                                            </div>
+                                            <div class="col">:</div>
+                                            <div class="col">Any Graduation</div>
+
+                                        </div>
+
+                                        <div class="py-3 border-bottom-dotted">
+                                            
+                                            <p style="text-align: justify;" class="job-overview-content m-0"><b class="fs-6">Company Profile : </b>Lorem
+                                                ipsum dolor sit, amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Vero est at laboriosam
+                                                deserunt
+                                                distinctio, tenetur sit ea eum
+                                                et harum sint, porro molestiae
+                                                natus hic
+                                                esse
+                                                error
+                                                aspernatur cupiditate corporis!
+                                                Lorem ipsum dolor sit amet
+                                                consectetur,
+                                                adipisicing
+                                                elit.
+                                                Eos delectus blanditiis
+                                                excepturi? Dolor explicabo cum
+                                                soluta,
+                                                distinctio,
+                                                maiores
+                                                consectetur quasi qui nam
+                                                excepturi doloremque magni enim
+                                                quam iste
+                                                corporis
+                                                exercitationem? Lorem ipsum
+                                                dolor sit amet consectetur,
+                                                adipisicing
+                                                elit.
+                                                Repellat
+                                            </p>
+                                        </div>
+                                        <div class="py-3">
+                                            
+                                            <p style="text-align: justify;" class="job-overview-content mb-4"><b class="fs-6">Job Description : </b>Lorem
+                                                ipsum dolor sit, amet
+                                                consectetur
+                                                adipisicing elit.
+                                                Vero est at laboriosam
+                                                deserunt
+                                                distinctio, tenetur sit ea eum
+                                                et harum sint, porro molestiae
+                                                natus hic
+                                                esse
+                                                error
+                                                aspernatur cupiditate corporis!
+                                                Lorem ipsum dolor sit amet
+                                                consectetur,
+                                                adipisicing
+                                                elit.
+                                                Eos delectus blanditiis
+                                                excepturi? Dolor explicabo cum
+                                                soluta,
+                                                distinctio,
+                                                maiores
+                                                consectetur quasi qui nam
+                                                excepturi doloremque magni enim
+                                                quam iste
+                                                corporis
+                                                exercitationem? Lorem ipsum
+                                                dolor sit amet consectetur,
+                                                adipisicing
+                                                elit.
+                                                Repellat
+                                            </p>
+
+                                            <p  style="text-align: justify;">
+                                                <b class="fs-6">Role Overview : </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aliquam accusantium officia nam ullam sequi. Fugiat, nesciunt. Vitae fuga voluptates voluptatibus suscipit harum omnis optio. Illum corporis blanditiis quaerat sequi eveniet? Unde, eaque. Ut nisi repellat illo minus quidem, ipsum consequatur explicabo maiores fuga, itaque, voluptatibus atque impedit. Eius, deserunt.
+                                            </p>
+
+                                            <b class="fs-6">Responsibilities :</b>
+                                            <ol>
+                                                <li>Design leadership</li>
+                                                <li>Desing leadership</li>
+                                            </ol>
+
+                                             
+                                        </div>
+
+                                    </div>
+                                    <!-- job-score-board -->
+                                    <div class="col-lg-4 col-sm-5 job-score ">
+                                        <div class="d-flex align-items-center justify-content-end">
+                                            <a href>
+                                                <button class=" ms-xxl-2 round-unsave-btn me-2">
+                                                    <ion-icon name="share-social-outline"></ion-icon>
+                                                </button>
+                                            </a>
+                                            <button type="button"
+                                                class="round-unsave-btn me-2"><ion-icon name="heart-outline"></ion-icon>
+                                            </button>
+                                            <button type="button"
+                                                class="btn me-2 my-lg-0 my-lg-2 blue-unfilled-btn rounded-pill"
+                                                style=" padding: 6px 25px;  font-weight: 500;">Apply
+                                            </button>
+                                            
+                                            
+                                        </div>
+                                        <div class="mt-5">
+                                            <div class="py-xxl-4 px-xxl-3 px-sm-2 py-sm-3"
+                                                style="border: 1px solid #1751d0; border-radius: 10px;">
+                                                <div>
+                                                    <h5 class="job-score-title text-center fw-bold">Job Suitablity Score</h5>
+                                                    
+                                                    <div class=" mt-3 d-flex align-items-center row">
+                                                        <div class="col-7">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" checked type="radio"
+                                                                    name="flexRadioDefault" id="flexRadioDefault1">
+                                                                <label class="form-check-label fw-bolder ms-1"
+                                                                    style="font-size: 13px;" for="flexRadioDefault1">
+                                                                    Resume - 1
+    
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="flexRadioDefault" id="flexRadioDefault1">
+                                                                <label class="form-check-label fw-bolder ms-1"
+                                                                    style="font-size: 13px;" for="flexRadioDefault1">
+                                                                    Resume - 2
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="flexRadioDefault" id="flexRadioDefault1">
+                                                                <label class="form-check-label fw-bolder ms-1"
+                                                                    style="font-size: 13px;" for="flexRadioDefault1">
+                                                                    Resume - 3
+                                                                </label>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="progress-bar col-4">
+                                                            <progress value="75" min="0" max="100"
+                                                                style="visibility:hidden;height:0;width:0;">75%</progress>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mt-4">
+                                                        <div>
+                                                            <table>
+                                                                <tr>
+                                                                    <td class="fw-bolder table-tittle">
+                                                                        Technical
+                                                                        Skills
+                                                                    </td>
+                                                                    <td class=" table-tittle-2"><p class="fw-medium legend-bg-high m-0">High</p></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="fw-bolder table-tittle">
+                                                                        Soft
+                                                                        Skills</td>
+                                                                        <td class=" table-tittle-2"><p class="fw-medium legend-bg-low m-0">Low</p></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="fw-bolder table-tittle">
+                                                                        Experience</td>
+                                                                        <td class=" table-tittle-2"><p class="fw-medium legend-bg-high m-0">High</p></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="fw-bolder table-tittle">
+                                                                        Education</td>
+                                                                    <td class=" table-tittle-2"><p class="fw-medium legend-bg-medium m-0">Medium</p></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="fw-bolder table-tittle">
+                                                                        Location</td>
+                                                                        <td class=" table-tittle-2"><p class="fw-medium legend-bg-high m-0">High</p></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="fw-bolder table-tittle">
+                                                                        Certifications
+                                                                    </td>
+                                                                    <td class=" table-tittle-2"><p class="fw-medium legend-bg-high m-0">High</p></td>
+
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-4">
+                                                        <h5 class="job-score-skills-title fw-bold">Matched
+                                                            Skills</h5>
+                                                        <div class="d-flex flex-wrap">
+                                                            <div class="light-blue-bg fs-9">Mobile Application Design</div>
+                                                            <div class="light-blue-bg fs-9">UX Design</div>
+                                                            <div class="light-blue-bg fs-9">Php</div>
+                                                            <div class="light-blue-bg fs-9">Web Development</div>
+                                                            <div class="light-blue-bg fs-9">AJEX</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-4">
+                                                        <h5 class="job-score-skills-title fw-bold">Missing
+                                                            Skills</h5>
+                                                            <div class="d-flex flex-wrap">
+                                                                <div class="light-blue-bg fs-9">Problem-Solving</div>
+                                                                <div class="light-blue-bg fs-9">Strategic Thinking</div>
+                                                                <div class="light-blue-bg fs-9">Strategic Thinking</div>
+                                                            </div>
+                                                    </div>
+
+                                                    <!-- <div class="mt-4">
+                                                        <button
+                                                            class="text-white button-h border-0 fw-medium px-xl-5 py-xl-2 px-sm-3 py-sm-2 rounded-pill">Update
+                                                            Score</button>
+                                                    </div>
+                                                    <div class="mt-4">
+
+                                                        <label class="rounded fw-medium px-xl-2 px-sm-1 py-1"
+                                                            style="border: 2px solid #1751d0; font-size: 14px; cursor: pointer;">
+                                                            Choose File
+                                                            <input type="file" accept=".pdf"
+                                                                style="display: none; cursor: pointer;" />
+                                                        </label>
+                                                        <span class="fw-medium resume">Upload
+                                                            New Resume</span>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Reccommend jobs section start -->
+
+                                <div class="job-search-table-container recommended-jobs-container dashboard-card light-blue-bg ">
+                    <div class="title-container">
+                        <h4 class="title">Recommended Jobs Based on Your Suitability Score</h4>
+                        <a href="" class="view-all-btn">View All</a>
+                    </div>
+
+                    <div class="recommended-jobs-owl-carousel-container">
+                        <div class="job-carousel-item">
+                            <div class="company-logo-container">
+                                <img src="image/company-logos/1.png" alt="">
+                            </div>
+                            <h5 class="title">Product Manager</h5>
+                            <div class="company-details">
+                                <p>Accenture</p>
+                                <p>Fulltime | Hyderabad (on-site)</p>
+                            </div>
+                            <div class="company-additional-details">
+                                <p><ion-icon name="briefcase-outline"></ion-icon> 4-5 Years <ion-icon name="calendar-clear-outline"></ion-icon> 26 days ago</p>
+                                <p></p>
+                            </div>
+                            <div class="save-job-btn">
+                                <button class="btn love-btn"><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                            
+                            <div class="job-match-score">
+                                <h6 class="job-match-score-value">20%</h6>
+                                <p class="label">Match Score</p>
+                            </div>
+                        </div>
+
+                        <div class="job-carousel-item">
+                            <div class="company-logo-container">
+                                <img src="image/company-logos/1.png" alt="">
+                            </div>
+                            <h5 class="title">Product Manager</h5>
+                            <div class="company-details">
+                                <p>Accenture</p>
+                                <p>Fulltime | Hyderabad (on-site)</p>
+                            </div>
+                            <div class="company-additional-details">
+                                <p><ion-icon name="briefcase-outline"></ion-icon> 4-5 Years <ion-icon name="calendar-clear-outline"></ion-icon> 26 days ago</p>
+                                <p></p>
+                            </div>
+                            <div class="save-job-btn">
+                                <button class="btn love-btn"><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                            
+                            <div class="job-match-score">
+                                <h6 class="job-match-score-value">20%</h6>
+                                <p class="label">Match Score</p>
+                            </div>
+                        </div>
+                        
+                        <div class="job-carousel-item">
+                            <div class="company-logo-container">
+                                <img src="image/company-logos/1.png" alt="">
+                            </div>
+                            <h5 class="title">Product Manager</h5>
+                            <div class="company-details">
+                                <p>Accenture</p>
+                                <p>Fulltime | Hyderabad (on-site)</p>
+                            </div>
+                            <div class="company-additional-details">
+                                <p><ion-icon name="briefcase-outline"></ion-icon> 4-5 Years <ion-icon name="calendar-clear-outline"></ion-icon> 26 days ago</p>
+                                <p></p>
+                            </div>
+                            <div class="save-job-btn">
+                                <button class="btn love-btn"><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                            
+                            <div class="job-match-score">
+                                <h6 class="job-match-score-value">20%</h6>
+                                <p class="label">Match Score</p>
+                            </div>
+                        </div>
+
+                        <div class="job-carousel-item">
+                            <div class="company-logo-container">
+                                <img src="image/company-logos/1.png" alt="">
+                            </div>
+                            <h5 class="title">Product Manager</h5>
+                            <div class="company-details">
+                                <p>Accenture</p>
+                                <p>Fulltime | Hyderabad (on-site)</p>
+                            </div>
+                            <div class="company-additional-details">
+                                <p><ion-icon name="briefcase-outline"></ion-icon> 4-5 Years <ion-icon name="calendar-clear-outline"></ion-icon> 26 days ago</p>
+                                <p></p>
+                            </div>
+                            <div class="save-job-btn">
+                                <button class="btn love-btn"><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                            
+                            <div class="job-match-score">
+                                <h6 class="job-match-score-value">20%</h6>
+                                <p class="label">Match Score</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                                <!-- recommended jobs section end -->
+                            </div>
+                        </div>
+                        <!-- Right Side End -->
+                    </div>
+                </div>
+            </div>
+            <div>
+                <!-- portrait View And Mobile View -->
+                <div class="section-padding job-record-content-res">
+                    <div class="mb-5">
+                        <div>
+                            <div class="card border-0 me-2  mb-3">
+                                <div class="card-body" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight">
+                                    <div class="d-flex">
+                                        <div>
+                                            <a href>
+                                                <img class="sidebar-card-img" src="image/microsoft.png" alt>
+                                            </a>
+                                        </div>
+                                        <div class="p-0 sidebar-card-content">
+                                            <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a href="#">Product
+                                                    Design Lead</a></h5>
+                                            <div class="my-0">
+                                                <p class="card-subtitle text-color m-0">Deloitte</p>
+                                                    <p class="card-subtitle text-color m-0">Fulltime
+                                                    | Hyderabad (On-site) | <span>Full-Time</span></p>
+                                            </div>
+                                            <div>
+                                                <div class="sidebar-card-icon-content">
+                                                    <span class="m-0 mt-3 text-color me-2"><i
+                                                            class="fa-solid fa-briefcase me-1"></i>
+                                                        4-5
+                                                        Yers</span>
+
+                                                    <span class="text-color"><i
+                                                            class="fa-solid fa-calendar-days me-2"></i>26
+                                                        days
+                                                        ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" d-flex flex-column justify-content-flex-start ms-auto">
+                                            <span style="text-align: right;">
+                                                <a href><i class="fa-solid fa-heart"></i></a></span>
+                                            <div class="card-progress-bar ms-auto">
+                                                <progress value="75" min="0" max="100"
+                                                    style="visibility:hidden;height:0;width:0;">75%</progress>
+                                            </div>
+                                            <span class="score-text text-color">Matched
+                                                Score</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card border-0 me-2  mb-3">
+                                <div class="card-body" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight">
+                                    <div class="d-flex">
+                                        <div>
+                                            <a href>
+                                                <img class="sidebar-card-img" src="image/microsoft.png" alt>
+                                            </a>
+                                        </div>
+                                        <div class="p-0 sidebar-card-content">
+                                            <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a href="#">Product
+                                                    Design Lead</a></h5>
+                                            <div class="my-0">
+                                                <p class="card-subtitle text-color m-0">Deloitte</p>
+                                                    <p class="card-subtitle text-color m-0">Fulltime
+                                                    | Hyderabad (On-site) | <span>Full-Time</span></p>
+                                            </div>
+                                            <div>
+                                                <div class="sidebar-card-icon-content">
+                                                    <span class="m-0 mt-3 text-color me-2"><i
+                                                            class="fa-solid fa-briefcase me-1"></i>
+                                                        4-5
+                                                        Yers</span>
+
+                                                    <span class="text-color"><i
+                                                            class="fa-solid fa-calendar-days me-2"></i>26
+                                                        days
+                                                        ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" d-flex flex-column justify-content-flex-start ms-auto">
+                                            <span style="text-align: right;">
+                                                <a href><i class="fa-solid fa-heart"></i></a></span>
+                                            <div class="card-progress-bar ms-auto">
+                                                <progress value="75" min="0" max="100"
+                                                    style="visibility:hidden;height:0;width:0;">75%</progress>
+                                            </div>
+                                            <span class="score-text text-color">Matched
+                                                Score</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card border-0 me-2  mb-3">
+                                <div class="card-body" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight">
+                                    <div class="d-flex">
+                                        <div>
+                                            <a href>
+                                                <img class="sidebar-card-img" src="image/microsoft.png" alt>
+                                            </a>
+                                        </div>
+                                        <div class="p-0 sidebar-card-content">
+                                            <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a href="#">Product
+                                                    Design Lead</a></h5>
+                                            <div class="my-0">
+                                                <p class="card-subtitle text-color m-0">Deloitte</p>
+                                                    <p class="card-subtitle text-color m-0">Fulltime
+                                                    | Hyderabad (On-site) | <span>Full-Time</span></p>
+                                            </div>
+                                            <div>
+                                                <div class="sidebar-card-icon-content">
+                                                    <span class="m-0 mt-3 text-color me-2"><i
+                                                            class="fa-solid fa-briefcase me-1"></i>
+                                                        4-5
+                                                        Yers</span>
+                                                    <span class="text-color"><i
+                                                            class="fa-solid fa-calendar-days me-2"></i>26
+                                                        days
+                                                        ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" d-flex flex-column justify-content-flex-start ms-auto">
+                                            <span style="text-align: right;">
+                                                <a href><i class="fa-solid fa-heart"></i></a></span>
+                                            <div class="card-progress-bar ms-auto">
+                                                <progress value="75" min="0" max="100"
+                                                    style="visibility:hidden;height:0;width:0;">75%</progress>
+                                            </div>
+                                            <span class="score-text text-color">Matched
+                                                Score</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card border-0 me-2  mb-3">
+                                <div class="card-body" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight">
+                                    <div class="d-flex">
+                                        <div>
+                                            <a href>
+                                                <img class="sidebar-card-img" src="image/microsoft.png" alt>
+                                            </a>
+                                        </div>
+                                        <div class="p-0 sidebar-card-content">
+                                            <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a href="#">Product
+                                                    Design Lead</a></h5>
+                                            <div class="my-0">
+                                                <p class="card-subtitle text-color m-0">Deloitte</p>
+                                                    <p class="card-subtitle text-color m-0">Fulltime
+                                                    | Hyderabad (On-site) | <span>Full-Time</span></p>
+                                            </div>
+                                            <div>
+                                                <div class="sidebar-card-icon-content">
+                                                    <span class="m-0 mt-3 text-color me-2"><i
+                                                            class="fa-solid fa-briefcase me-1"></i>
+                                                        4-5
+                                                        Yers</span>
+
+                                                    <span class="text-color"><i
+                                                            class="fa-solid fa-calendar-days me-2"></i>26
+                                                        days
+                                                        ago</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" d-flex flex-column justify-content-flex-start ms-auto">
+                                            <span style="text-align: right;">
+                                                <a href><i class="fa-solid fa-heart"></i></a></span>
+                                            <div class="card-progress-bar ms-auto">
+                                                <progress value="75" min="0" max="100"
+                                                    style="visibility:hidden;height:0;width:0;">75%</progress>
+                                            </div>
+                                            <span class="score-text text-color">Matched
+                                                Score</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-center fw-medium" style="color: #1751d0;"><a href="#">View All <i
+                                    class="fa-solid fa-chevron-right"></i></a></p>
+                        <div>
+                            <h5 class="fs-3 mt-5 mb-4">Recommended jobs based on
+                                your skills</h5>
+                            <div>
+                                <div class="card border-0 me-2  mb-3">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div>
+                                                <a href>
+                                                    <img class="sidebar-card-img" src="image/microsoft.png" alt>
+                                                </a>
+                                            </div>
+                                            <div class="p-0 sidebar-card-content">
+                                                <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a
+                                                        href="#">Product
+                                                        Design Lead</a></h5>
+                                                <div class="my-0">
+                                                    <p class="card-subtitle text-color m-0">Deloitte</p>
+                                                    <p class="card-subtitle text-color m-0">Fulltime
+                                                        | Hyderabad (On-site) | <span>Full-Time</span></p>
+                                                </div>
+                                                <div>
+                                                    <div class="sidebar-card-icon-content">
+                                                        <span class="m-0 mt-3 text-color me-2"><ion-icon name="briefcase-outline"></ion-icon>
+                                                            4-5
+                                                            Yers</span>
+
+                                                        <span class="text-color"><ion-icon name="calendar-clear-outline"></ion-icon>26
+                                                            days
+                                                            ago</span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" d-flex flex-column justify-content-flex-start ms-auto">
+                                                <span style="text-align: right;">
+                                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                                                <div class="card-progress-bar ms-auto">
+                                                    <progress value="75" min="0" max="100"
+                                                        style="visibility:hidden;height:0;width:0;">75%</progress>
+                                                </div>
+                                                <span class="score-text text-color">Matched
+                                                    Score</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-0 me-2  mb-3">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div>
+                                                <a href>
+                                                    <img class="sidebar-card-img" src="image/microsoft.png" alt>
+                                                </a>
+                                            </div>
+                                            <div class="p-0 sidebar-card-content">
+                                                <h5 class="m-0 mb-1 fw-medium " style="cursor: pointer;"><a
+                                                        href="#">Product
+                                                        Design Lead</a></h5>
+                                                <div class="my-0">
+                                                    <p class="card-subtitle text-color m-0">Deloitte</p>
+                                                    <p class="card-subtitle text-color m-0">Fulltime
+                                                        | Hyderabad (On-site) | <span>Full-Time</span></p>
+                                                </div>
+                                                <div>
+                                                    <div class="sidebar-card-icon-content">
+                                                        <span class="m-0 mt-3 text-color me-2"><ion-icon name="briefcase-outline"></ion-icon>
+                                                            4-5
+                                                            Yers</span>
+
+                                                        <span class="text-color"><ion-icon name="calendar-clear-outline"></ion-icon>26
+                                                            days
+                                                            ago</span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" d-flex flex-column justify-content-flex-start ms-auto">
+                                                <span style="text-align: right;">
+                                                    <a href><i class="fa-solid fa-heart"></i></a></span>
+                                                <div class="card-progress-bar ms-auto">
+                                                    <progress value="75" min="0" max="100"
+                                                        style="visibility:hidden;height:0;width:0;">75%</progress>
+                                                </div>
+                                                <span class="score-text text-color">Matched
+                                                    Score</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OFF CANVAS START -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header mt-1">
+                <div></div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <div>
+                    <div class="p-4">
+                        <div class="d-sm-flex align-items-baseline">
+                            <h3 class="job-content-title">Product
+                                Design Lead</h3> <span class="ms-sm-2 fw-medium" style="color: #177308;">(Posted
+                                By
+                                Verified User)</span>
+                        </div>
+                        <h4 class="job-content-h4 my-sm-0 my-0">Deloitte
+                            . <span class="text-color fw-medium" style="font-size: 16px;">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span>Full-time</span>
+                            </span></h4>
+                        <h5 class="job-content-h5 my-3 text-color">Company
+                            ID :</h5>
+                        <h5 class="job-content-h5 text-color my-0"><span style="color: #177308;">now :</span>
+                            23
+                            application
+                        </h5>
+                        <h5 class="job-content-h5 text-color my-3 d-flex align-items-baseline"><i
+                                class="fa-solid fa-list me-1"></i>
+                            Skills:<span class="ms-2 font-17"> Mobile Application Design , Ui Design
+                                + 5
+                                more</span>
+                        </h5>
+                        <!-- Button -->
+                        <div class="d-flex align-items-baseline mt-4">
+                            <button type="button"
+                                class="btn  ofcanvas-button fw-medium rounded-pill text-white button-h">Apply</button>
+                            <button type="button"
+                                class="btn  ofcanvas-button fw-medium rounded-pill text-white button-s">Save</button>
+                            <a href>
+                                <button class="p-2 mx-2 text-white border-0 rounded-circle button-h share">
+                                    <i class="fa-solid fa-share-nodes share-icon"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <hr class="m-0" />
+                    <!--  -->
+                    <div class="p-4">
+                        <div class="my-2">
+                            <h5 class="job-overview">Overview</h5>
+                            <p style="text-align: justify;" class="job-overview-content">Lorem
+                                ipsum dolor sit, amet
+                                consectetur
+                                adipisicing elit.
+                                Vero est at laboriosam
+                                deserunt
+                                distinctio, tenetur sit ea eum
+                                et harum sint, porro molestiae
+                                natus hic
+                                esse
+                                error
+                                aspernatur cupiditate corporis!
+                                Lorem ipsum dolor sit amet
+                                consectetur,
+                                adipisicing
+                                elit.
+                                Eos delectus blanditiis
+                                excepturi? Dolor explicabo cum
+                                soluta,
+                                distinctio,
+                                maiores
+                                consectetur quasi qui nam
+                                excepturi doloremque magni enim
+                                quam iste
+                                corporis
+                                exercitationem? Lorem ipsum
+                                dolor sit amet consectetur,
+                                adipisicing
+                                elit.
+                                Repellat
+                            </p>
+                        </div>
+                        <div class="my-2">
+                            <h5 class="job-overview">Job
+                                Description</h5>
+                            <div class="job-description p-3"
+                                style="text-align: justify; border: 1px solid #6666; border-radius: 10px; height: 300px; overflow-y: scroll;">
+                                Lorem ipsum dolor sit
+                                amet
+                                consectetur adipisicing elit.
+                                Adipisci explicabo, magnam
+                                eligendi commodi autem dolor
+                                dolorum provident quo cumque aut
+                                ipsam
+                                corrupti
+                                itaque,
+                                possimus in voluptatem quam,
+                                consectetur ut id? Lorem ipsum
+                                dolor sit
+                                amet
+                                consectetur,
+                                adipisicing elit. Iure
+                                repellendus a vitae, odit
+                                eveniet voluptatibus
+                                beatae, libero
+                                quisquam iusto ipsum eos quasi
+                                molestias fugit ut, repellat
+                                facilis
+                                culpa?
+                                Fugiat,
+                                maxime.
+                                Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit.
+                                Soluta nihil,
+                                voluptatem
+                                minus
+                                dolore, aliquam minima quae
+                                quibusdam delectus nesciunt
+                                assumenda
+                                distinctio,
+                                sapiente
+                                eveniet. Sunt quisquam
+                                reprehenderit vero asperiores
+                                sed? Aut.
+                                <ul>
+                                    <li>repellendus</li>
+                                    <li>repellendus</li>
+                                    <li>repellendus</li>
+                                    <li>repellendus</li>
+                                    <li>repellendus</li>
+                                    <li>repellendus</li>
+                                    <li>repellendus</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <h5 class="font-20">Benefits:</h5>
+                            <ul>
+                                <li class="font-17">Provident Fund</li>
+                            </ul>
+                        </div>
+                        <div class="my-2">
+                            <h5 class="font-20">Schedule:</h5>
+                            <ul>
+                                <li class="font-17">Day Shift</li>
+                            </ul>
+                        </div>
+                        <div class="my-2">
+                            <h5 class="font-20">Ability to
+                                commute/relocate:</h5>
+                            <ul>
+                                <li class="font-17">Hyderabad,Telangana:Reliably
+                                    Commuate or
+                                    planning to
+                                    reloacte before starting
+                                    work(Required)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="m-0" />
+                    <!--  -->
+                    <div class="p-4 ">
+                        <div class="row p-0 row-cols-sm-2">
+                            <div>
+                                <h5 class="job-score-text">Job Suitablity Score</h5>
+                                <div class="progress-bar-res">
+                                    <div class="progress-bar mt-3">
+                                        <progress value="75" min="0" max="100"
+                                            style="visibility:hidden;height:0;width:0;">75%</progress>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <table>
+                                <tr>
+                                    <td class="fw-bolder table-tittle">
+                                        Technical
+                                        Skills
+                                    </td>
+                                    <td>: </td>
+                                    <td class="fw-medium table-tittle-2">
+                                        High</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="fw-bolder table-tittle">
+                                        Soft
+                                        Skills</td>
+                                    <td>: </td>
+                                    <td class="fw-medium table-tittle-2">
+                                        Medium</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="fw-bolder table-tittle">
+                                        Experience</td>
+                                    <td>: </td>
+                                    <td class="fw-medium table-tittle-2">
+                                        Low</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="fw-bolder table-tittle">
+                                        Education</td>
+                                    <td>: </td>
+                                    <td class="fw-medium table-tittle-2">
+                                        High</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="fw-bolder table-tittle">
+                                        Location</td>
+                                    <td>: </td>
+                                    <td class="fw-medium table-tittle-2">
+                                        High</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="fw-bolder table-tittle">
+                                        Certifications
+                                    </td>
+                                    <td>: </td>
+                                    <td class="fw-medium table-tittle-2">
+                                        High</td>
+
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                    <hr class="m-0" style="border: 0; border-top: 2px dashed" />
+                    <!--  -->
+                    <div class="p-4">
+                        <div>
+                            <h5 class="skills-font">Matched Skills <span style="color: #177308; font-size: 18px;">(6
+                                    Skills
+                                    matched)</span>
+                            </h5>
+                            <p class="m-0 font-18">
+                                Knowledge Mobile Application Design,UI Design, + 4 more
+                            </p>
+                        </div>
+                        <div class="my-2">
+                            <h5 class="skills-font">Missing Skills <span style="color: #177308; font-size: 18px;">(4
+                                    Skills
+                                    matched)</span>
+                            </h5>
+                            <p class="m-0 font-18">
+                                Products Analysis,UX Design,User Analytic, UCD.
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="m-0" style="border: 0; border-top: 2px dashed" />
+                    <!--  -->
+                    <div class="p-4">
+                        <div class="resume-check">
+                            <div class="form-check">
+                                <input class="form-check-input" checked type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label fw-bolder resume" for="flexRadioDefault1">
+                                    Resume - 1
+
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label fw-bolder resume" for="flexRadioDefault1">
+                                    Resume - 2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label fw-bolder resume" for="flexRadioDefault1">
+                                    Resume - 3
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mt-4 mb-2 d-flex align-items-center gap-2">
+                            <label class="rounded fw-medium px-2 px-1 py-1 font-18"
+                                style="border: 2px solid #1751d0;cursor: pointer;">
+                                Choose File
+                                <input type="file" accept=".pdf" style="display: none; cursor: pointer;" />
+                            </label>
+                            <span class="fw-medium font-20" style="color: #1751d0;">Upload
+                                New Resume</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- OFF CANVAS END -->
+
+        <!-- Tablet & Mobile Footer Menu -->
+        <menu class="job-record-content-res ">
+            <section>
+                <div class="py-3 footer-nav section">
+                    <a href="" class="footer-nav-item"> <i class="fa-solid fa-house mb-1"></i>Home</a>
+                    <a href="user-dashboard.html" class="footer-nav-item"> <i class="fa-solid fa-table mb-1"></i>Dashboard</a>
+                    <a href="" class="footer-nav-item" id="seek-jobs"> <i class="fa-solid fa-suitcase mb-1"></i>Seek
+                        Jobs</a>
+                    <a href="" class="footer-nav-item" id="refer-jobs"> <i class="fa-solid fa-list mb-1"></i></i>Refer
+                        Jobs</a>
+                    <a href="" class="footer-nav-item" id="profile"> <i class="fa-solid fa-user mb-1"></i>Profile</a>
+                </div>
+            </section>
+        </menu>
+
+    </main>
+
+    <!--Footer starts-->
+    <footer class="text-white py-5 footer-content" style="background-color:#00007C ;">
+        <div class="d-lg-flex justify-content-evenly saved-job-footer">
+            <div class="footer-links">
+                <a href="#"><span class="mx-2">About Us</span></a>
+                <a href="#"><span class="mx-2">How Its Works</span></a>
+                <a href="#"><span class="mx-2">FAQ</span></a>
+                <a href="#"><span class="mx-2">Privacy Policy</span></a>
+                <a href="#"><span class="mx-2">Conatct Us</span></a>
+            </div>
+            <div>
+                <div class="footer-text"> Upgrade Your Membership plans</div>
+                <div class="d-sm-flex justify-content-center align-items-baseline gap-3">
+                    <div class="footer-input mt-lg-3 mt-sm-2 mt-3">
+                        <input type="text" placeholder="Email Address">
+                    </div>
+                    <button class="Subscribe-btn mt-sm-0 mt-3">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div style="border-top: 1px solid #657581; margin: 30px 60px 0px 60px">
+            <div class="d-flex align-items-center flex-column mt-4 footer-social">
+                <h4>Follow Us</h4>
+                <div>
+                    <ul class="footer-icon p-0 py-2 d-flex">
+                        <a href="#">
+                            <li class="me-2"
+                                style="list-style: none; display: flex; justify-content: center;align-items: center; width: 35px; height: 35px; border: 2px solid #fff; border-radius: 50%;">
+                                <i class="fa-brands fa-facebook-f " style=" line-height: 10px;"></i>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="me-2"
+                                style="list-style: none; display: flex; justify-content: center;align-items: center; width: 35px; height: 35px; border: 2px solid #fff; border-radius: 50%;">
+                                <i class="fa-brands fa-instagram " style=" line-height: 10px;"></i>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="me-2"
+                                style="list-style: none; display: flex; justify-content: center;align-items: center; width: 35px; height: 35px; border: 2px solid #fff; border-radius: 50%;">
+                                <i class="fa-brands fa-linkedin-in " style=" line-height: 10px;"></i>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="me-2"
+                                style="list-style: none; display: flex; justify-content: center;align-items: center; width: 35px; height: 35px; border: 2px solid #fff; border-radius: 50%;">
+                                <i class="fa-brands fa-pinterest " style=" line-height: 10px;"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <span class="d-flex justify-content-center footer-copyright">&copy; Copyright @ 2023 | job Board Software by
+                Reyferjobs.
+                All
+                Rights
+                Reserved</span>
+        </div>
+    </footer>
+    <!--Footer ends-->
+
+    <!-- All Script -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Ionic icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Slick Carousel JavaScript -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+    <script src="js/global.js"></script>
+
+    <!-- owl-carousel -->
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                dots: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 1
+                    },
+                    1400: {
+                        items: 2
+                    },
+                    1441: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+
+    <!-- Search Select-Box -->
+    <script>
+        function toggleDropdown(button) {
+            const dropdown = button.parentElement;
+            const dropdownSelect = dropdown.querySelector(".dropdown-select");
+            const checkboxes = dropdownSelect.querySelectorAll("input[type='checkbox']");
+            const countDisplay = dropdown.querySelector(".count");
+
+
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener("change", updateCount);
+            });
+
+            function updateCount() {
+                const selectedCheckboxes = Array.from(checkboxes).filter(checkbox => checkbox.checked);
+                if (selectedCheckboxes.length > 0) {
+                    countDisplay.textContent = selectedCheckboxes.length;
+                    countDisplay.style.display = "inline";
+                } else {
+                    countDisplay.style.display = "none";
+                }
+            }
+
+            const isOpen = dropdownSelect.style.display === "block";
+            dropdownSelect.style.display = isOpen ? "none" : "block";
+
+            // Close the dropdown when clicking outside of it
+            document.addEventListener("click", function (event) {
+                if (!dropdown.contains(event.target) && event.target !== button) {
+                    dropdownSelect.style.display = "none";
+                }
+            });
+
+
+        }
+        function filterItems(inputElement) {
+            const filter = inputElement.value.toLowerCase();
+            const dropdownSelect = inputElement.parentElement;
+            const checkboxes = dropdownSelect.querySelectorAll(".checkbox-label");
+            const resultsMessage = dropdownSelect.querySelector(".resultsMessage");
+            let found = false;
+
+            checkboxes.forEach(checkbox => {
+                const label = checkbox.textContent.toLowerCase();
+                if (label.includes(filter)) {
+                    checkbox.style.display = "block";
+                    found = true;
+                } else {
+                    checkbox.style.display = "none";
+                }
+            });
+
+            if (found) {
+                resultsMessage.style.display = "none";
+            } else {
+                resultsMessage.style.display = "block";
+            }
+        }
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

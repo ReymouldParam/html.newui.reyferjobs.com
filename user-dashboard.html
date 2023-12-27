@@ -50,7 +50,7 @@
                             <div class="nav-item ">
                                 <a href="#" class="nav-link">Seek jobs</a>
                                 <ul class="list-group nav-drop-down">
-                                    <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-solid fa-magnifying-glass"></i> Job Search</a></li>
+                                    <li class="list-group-item"><a href="job-search.html" class=" drop-nav-link"><i class="fa-solid fa-magnifying-glass"></i> Job Search</a></li>
                                     <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-regular fa-heart"></i> Saved Jobs</a></li>
                                     <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-solid fa-magnifying-glass"></i> Applied Jobs</a></li>
                                     <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-regular fa-bell"></i> Alerts and Notifications</a></li>
@@ -230,7 +230,7 @@
     <!--dashboard main Content -->
 
 
-    <main class="dashboard-main-section section">
+    <main class="dashboard-main-section section page-main-section">
         <!-- <button type="button" class="btn home-navigation-btn"><i class="fa-solid fa-arrow-left"></i> &nbsp; Back to Home</button> -->
 
         <!-- dashboard main containter -->
@@ -1240,96 +1240,15 @@
     <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Slick Carousel JavaScript -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
-    <script src="js/dashboard.js"></script>
+    
     <!-- Ionic icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-
-    <!-- owl-carousel -->
-    <script>
-///////////////////
-// recommended jobs slick causel
-//////////////////
-
-$(".recommended-jobs-owl-carousel-container").slick({
-    slidesToShow: 3, 
-    slidesToScroll: 1,
-    autoplay: true, 
-    autoplaySpeed: 5000,
-    centerPadding: '0',
-    pauseOnHover:true,
-    dots:false,
-    responsive: [
-        {
-          breakpoint: 1025,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            infinite: true
-          }
-        },
-        {
-          breakpoint: 800,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-})
-
-</script>
-
-<script>
-    // Expandable nav search bar
-
-    var navSearchContainer = $(".nav-search-container");
-    var navSearchForm = $(".nav-search-container > form");
-    var closeSearchNav = $(".nav-search-close-btn");
-    var navFormInput1 = $(".nav-search-container> form .input-1");
-    var navFormInput2 = $(".nav-search-container> form .input-2");
-    var navFormSubmitText = $(".nav-search-submit-label");
-
-    var navSearchShow = false;
-
-    navSearchForm.click(function(){
-        navSearchContainer.css("width","98%");
-        navSearchContainer.css("left","0");
-        navSearchForm.css("width","100%");
-        closeSearchNav.css("display","block")
-        navFormInput1.css("display","none");
-        navFormInput2.css("display","block");
-        navFormSubmitText.css("display","block");
-
-       if(!navSearchShow){
-        navFormInput2[0].focus();
-       }
-       navSearchShow = true;
-    });
-
-    closeSearchNav.click(function(){
-        navSearchContainer.css("width","");
-        navSearchContainer.css("left","");
-        navSearchForm.css("width","");
-        closeSearchNav.css("display","none")
-        navFormInput1.css("display","block");
-        navFormInput2.css("display","none");
-        navFormSubmitText.css("display","none");
-        navSearchShow = false;
-    })
-
-
-</script>
+    <!-- Slick Carousel JavaScript -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/dashboard.js"></script>
 
     
 
