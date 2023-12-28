@@ -65,7 +65,7 @@ $(".recommended-jobs-owl-carousel-container").slick({
           }
         },
         {
-          breakpoint: 530,
+          breakpoint: 540,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
