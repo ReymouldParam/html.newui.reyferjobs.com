@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reyferjobs</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css" type="text/css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css"
+        integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+    <!-- Owl Carousel CSS files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- slick carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet' type="text/css">
+
+    <!-- Custom style sheets -->
+    <link rel="stylesheet" href="style/dashboard.css" type="text/css">
+    <link rel="stylesheet" href="style/style.css" type="text/css" />
+    <link rel="stylesheet" href="style/home-page.css" type="text/css">
+</head>
+
+<body>
+
+
+    <!--Header start-->
+
+    <header class="fixed-top ">
+
+        <!-- second nav -->
+
+        <div class="search-click header">
+
+            <div class="second-navbar d-flex justify-content-between align-items section py-3">
+                <div class="logo-container ">
+                    <a href=""><img src="image/main-logo.png" alt="logo" style="height: 40px;" class="company-logo"></a>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between  w-75">
+                    <div class="w-95 d-flex align-items-center px-2 justify-content-between position-relative">
+                        <div class="d-flex justify-content-between w-35">
+                            <div class="nav-item ">
+                                <a href="user-dashboard.html" class="nav-link">Dashboard</a>
+                            </div>
+
+                            <div class="nav-item ">
+                                <a href="#" class="nav-link">Seek jobs</a>
+                                <ul class="list-group nav-drop-down">
+                                    <li class="list-group-item"><a href="job-search.html" class=" drop-nav-link"><i class="fa-solid fa-magnifying-glass"></i> Job Search</a></li>
+                                    <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-regular fa-heart"></i> Saved Jobs</a></li>
+                                    <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-solid fa-magnifying-glass"></i> Applied Jobs</a></li>
+                                    <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-regular fa-bell"></i> Alerts and Notifications</a></li>
+                                
+                                </ul>
+                            </div>
+
+                            <div class="nav-item ">
+                                <a href="#" class="nav-link">Reyfer jobs</a>
+                                <ul class="list-group nav-drop-down">
+                                    <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-solid fa-plus"></i> Post Jobs</a></li>
+                                    <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-regular fa-folder"></i> Manage Jobs</a></li>
+                                    <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-regular fa-heart"></i> Favorite Candidates</a></li>
+                                    <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-solid fa-circle-plus"></i> Bulk Jobs</a></li>
+                                
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Expandable nav search bar -->
+                        <div class="nav-search-container" >
+                            <form action="" class="p-1 px-3 h-100 rounded-pill d-flex align-items-center justify-content-between">
+                                <input type="text" placeholder="Search Job Here " class="border-0 w-75 input-1">
+                                <input type="text" placeholder="Search job title or keyword" class="input-2 w-35">
+                                <input type="text" placeholder="Location" class=" input-2 w-20">
+                                <input type="text" placeholder="Experience" class="border-0 input-2 w-20">
+                                <button type="submit" class="submit-btn d-flex align-items-center p-1 px-2 btn rounded-pill orange-filled-btn"><ion-icon name="search-outline"></ion-icon></i> <span class="nav-search-submit-label ms-1" style="display: none;">Submit</span></button>
+                            </form>
+                        </div>
+
+                        <div class="d-flex justify-content-around w-20 align-items-center">
+                            <button class="rounded-pill btn blue-filled-btn py-1 h-75">Post Jobs</button>
+                            <div class="nav-profile-dp">
+                                <img src="image/Avtar-1.jpg" alt="" class="dp rounded-circle" style="height: 30px;">
+
+                                <div class="nav-profile-hidden-container p-2 card">
+                                    <div class="row align-items-center">
+                                        <div class="col-3">
+                                            <img src="image/Avtar-1.jpg" alt="" class="dp rounded-circle" style="height: 60px;">
+                                        </div>
+                                        <div class="col">
+                                            <h4 class="title fw-bold fs-6 mb-1">Revanth Danduboina</h4>
+                                            <p class="sub-title">UI/UX Designer</p>
+                                            <p class="sub-title">@ Reymould Technology pvt.ltd</p>
+                                        </div>
+                                    </div>
+                                    <div class="py-3" style="border-bottom: 1px solid rgb(183, 183, 183);">
+                                        <button class="blue-filled-btn btn rounded-pill w-100">View Profile</button>
+                                    </div>
+                                    <div class="py-3">
+                                        <p class="fw-bold mb-0">Membership Account</p>
+                                        <a href="#" class="fs-8" style="color: red;">Upgrade Membership</a>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn">Sign Out</button>
+                                        <button class="blue-unfilled-btn border-0 anchor-color">Change Password</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-5 center-item position-relative">
+                        <button class="rounded-circle btn border-white round-icon-btn position-absolute"><ion-icon name="notifications-outline"></ion-icon></button>
+                        <button class="rounded-circle round-icon-btn-anchor position-absolute nav-search-close-btn" style="display: none;">x</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+        
+        </div>
+        <!-- Responsive Header -->
+
+        <div class="search-click-res navbar-res">
+            <nav class="logo">
+                <img src="image/logo.png" class="d-flex justify-items-center m-auto" alt="">
+            </nav>
+            <div>
+                <nav style="background-color: white;" class="navbar navbar-expand-lg py-3 section  ">
+                    <div class="container-fluid px-0">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                                <li class="nav-item active me-3">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link " href="#">About</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link " href="#">Services</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link " href="#">Term & Condition</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link " href="#">Help</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between nav-right">
+                            <div class="search-res">
+                                <div class="searchbar first-search-res">
+                                    <input id="first-search-input-res" class="search_input" type="text" name
+                                        placeholder="Search Job Here" />
+                                    <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                            <button type="button" class="btn text-white rounded-5 px-sm-3 mx-sm-0 mx-1 post-now">
+                                Post Now
+                            </button>
+                            <div class="px-sm-3">
+                                <span style="width: 40px; height: 40px;">
+                                    <i
+                                        class="fa-solid fa-user border border-black rounded-circle px-sm-2 py-sm-2 px-1 py-1 mx-sm-1"></i>
+                                </span>
+                                <span style="width: 40px; height: 40px;" class="me-sm-0 me-2">
+                                    <i
+                                        class="fa-regular fa-bell border border-black rounded-circle px-sm-2 py-sm-2 px-1 py-1 mx-sm-1  position-relative">
+                                        <span
+                                            class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
+                                            <span class="visually-hidden">New alerts</span>
+                                        </span>
+                                    </i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+                <div>
+                    <div class="secon-nav-search">
+                        <div class="bg-white second-search-res hidden">
+                            <div class="d-flex">
+                                <div class="col-md-4">
+                                    <div class="search-1 search-input-text"> <i class="fas fa-search ps-3"
+                                            style="color: #6666;"></i>
+                                        <input class="search_input" type="text" name
+                                            placeholder="Search job title or keyword" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="search-1 search-input-text"> <i class="fa-solid fa-location-dot ps-3"
+                                            style="color: #6666;"></i>
+                                        <input class="search_input" type="text" name placeholder="Location" />
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div>
+                                        <div class="search-2 search-input-text"><i class="fa-solid fa-suitcase ps-3"
+                                                style="color: #6666;"></i>
+                                            <input class="search_input" type="text" name placeholder="Experience" />
+                                            <button type="sub" id="search-jobs"
+                                                class="btn rounded-pill btn-primary">Search
+                                                jobs</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!--Header end-->
+
+    <!-- Content -->
+
+    <main class="page-main-section">
+
+        <div class="m-0 p-0 bg-theme-color-blue center-item">
+            <video class="banner-video" autoplay loop muted>
+                <source src="image/Home-page-imgs/banner-video-2.webm" type="video/mp4">
+                
+                Your browser does not support the video tag.
+              </video>
+        </div>
+
+        <div class="bg-theme-color-blue p-5 position-relative about-us-section">
+            <div class="w-50 m-auto text-center text-light home-content">
+                <h1 class="title fw-bolder">Reyfer Jobs</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo id nostrum perspiciatis nisi temporibus aliquam magni libero ab, ad alias voluptatibus obcaecati autem ipsam minus hic fugiat corporis, eos nihil rerum? Blanditiis id voluptas dolorem cum! Culpa quaerat vero quam mollitia aspernatur iure at veritatis officiis, magni alias! Perferendis, eveniet!</p>
+            </div>
+
+            <form action="#" class="home-search-form rounded-pill bg-light d-flex align-items-center justify-content-between box-shadow">
+                <input type="text" class="w-30" placeholder="Search job title or keyword">
+                <input type="text" class="w-20" placeholder="Location">
+                <input type="text" class="border-0 w-20" placeholder="Experience">
+                <button class="h-100 orange-filled-btn border-0 w-20 py-lg-2 py-2">Search</button>
+            </form>
+        </div>
+
+        <div class="container m-0 section mw-100">
+            <div class="row align-items-center">
+                <div class="col-md-3 col-12">
+                    <div class="w-100 m-auto center-item">
+                        <img src="image/Home-page-imgs/bee-1.webp" alt="" class="w-100 bee-img-1">
+                    </div>
+                </div>
+                <div class="col py-4">
+                    <h1 class="title theme-color-blue fs-2 text-center"> Recent Jobs </h1>
+                    <div class="w-90 m-auto card container box-shadow-20 position-relative">
+                        <div class="row">
+                            <div class="col-6 col-sm-4 p-1">
+                                <div class="card p-2 d-flex flex-row">
+                                    <div class="col-10">
+                                        <h1 class="fs-6 anchor-color fw-bold mb-1">Game Developer</h1>
+                                        <h2 class="fs-8">Reymould Technology Solutions</h2>
+                                        <p class="text-color mb-0 fs-8">Hyderabad, Telanagana, India</p>
+                                        <p class="text-color fs-8">Full-Time &middot; On-Site</p>
+                                        <div class="d-flex flex-wrap fs-8"><p class="text-color m-0 me-2"><ion-icon name="briefcase-outline"></ion-icon> 1-2 Years</p> <p class="text-color m-0"><ion-icon name="calendar-clear-outline"></ion-icon> 5days ago</p></div>
+                                    </div>
+                                    <div class="col d-flex flex-column justify-content-between">
+                                        <div class="d-flex justify-content-end">
+                                            <button class="unfilled-love-btn btn"><ion-icon name="heart-outline"></ion-icon></button>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 p-1">
+                                <div class="card p-2 d-flex flex-row">
+                                    <div class="col-10">
+                                        <h1 class="fs-6 anchor-color fw-bold mb-1">Game Developer</h1>
+                                        <h2 class="fs-8">Reymould Technology Solutions</h2>
+                                        <p class="text-color mb-0 fs-8">Hyderabad, Telanagana, India</p>
+                                        <p class="text-color fs-8">Full-Time &middot; On-Site</p>
+                                        <div class="d-flex flex-wrap fs-8"><p class="text-color m-0 me-2"><ion-icon name="briefcase-outline"></ion-icon> 1-2 Years</p> <p class="text-color m-0"><ion-icon name="calendar-clear-outline"></ion-icon> 5days ago</p></div>
+                                    </div>
+                                    <div class="col d-flex flex-column justify-content-between">
+                                        <div class="d-flex justify-content-end">
+                                            <button class="unfilled-love-btn btn"><ion-icon name="heart-outline"></ion-icon></button>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 p-1">
+                                <div class="card p-2 d-flex flex-row">
+                                    <div class="col-10">
+                                        <h1 class="fs-6 anchor-color fw-bold mb-1">Game Developer</h1>
+                                        <h2 class="fs-8">Reymould Technology Solutions</h2>
+                                        <p class="text-color mb-0 fs-8">Hyderabad, Telanagana, India</p>
+                                        <p class="text-color fs-8">Full-Time &middot; On-Site</p>
+                                        <div class="d-flex flex-wrap fs-8"><p class="text-color m-0 me-2"><ion-icon name="briefcase-outline"></ion-icon> 1-2 Years</p> <p class="text-color m-0"><ion-icon name="calendar-clear-outline"></ion-icon> 5days ago</p></div>
+                                    </div>
+                                    <div class="col d-flex flex-column justify-content-between">
+                                        <div class="d-flex justify-content-end">
+                                            <button class="unfilled-love-btn btn"><ion-icon name="heart-outline"></ion-icon></button>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 p-1">
+                                <div class="card p-2 d-flex flex-row">
+                                    <div class="col-10">
+                                        <h1 class="fs-6 anchor-color fw-bold mb-1">Game Developer</h1>
+                                        <h2 class="fs-8">Reymould Technology Solutions</h2>
+                                        <p class="text-color mb-0 fs-8">Hyderabad, Telanagana, India</p>
+                                        <p class="text-color fs-8">Full-Time &middot; On-Site</p>
+                                        <div class="d-flex flex-wrap fs-8"><p class="text-color m-0 me-2"><ion-icon name="briefcase-outline"></ion-icon> 1-2 Years</p> <p class="text-color m-0"><ion-icon name="calendar-clear-outline"></ion-icon> 5days ago</p></div>
+                                    </div>
+                                    <div class="col d-flex flex-column justify-content-between">
+                                        <div class="d-flex justify-content-end">
+                                            <button class="unfilled-love-btn btn"><ion-icon name="heart-outline"></ion-icon></button>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 p-1">
+                                <div class="card p-2 d-flex flex-row">
+                                    <div class="col-10">
+                                        <h1 class="fs-6 anchor-color fw-bold mb-1">Game Developer</h1>
+                                        <h2 class="fs-8">Reymould Technology Solutions</h2>
+                                        <p class="text-color mb-0 fs-8">Hyderabad, Telanagana, India</p>
+                                        <p class="text-color fs-8">Full-Time &middot; On-Site</p>
+                                        <div class="d-flex flex-wrap fs-8"><p class="text-color m-0 me-2"><ion-icon name="briefcase-outline"></ion-icon> 1-2 Years</p> <p class="text-color m-0"><ion-icon name="calendar-clear-outline"></ion-icon> 5days ago</p></div>
+                                    </div>
+                                    <div class="col d-flex flex-column justify-content-between">
+                                        <div class="d-flex justify-content-end">
+                                            <button class="unfilled-love-btn btn"><ion-icon name="heart-outline"></ion-icon></button>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 p-1">
+                                <div class="card p-2 d-flex flex-row">
+                                    <div class="col-10">
+                                        <h1 class="fs-6 anchor-color fw-bold mb-1">Game Developer</h1>
+                                        <h2 class="fs-8">Reymould Technology Solutions</h2>
+                                        <p class="text-color mb-0 fs-8">Hyderabad, Telanagana, India</p>
+                                        <p class="text-color fs-8">Full-Time &middot; On-Site</p>
+                                        <div class="d-flex flex-wrap fs-8"><p class="text-color m-0 me-2"><ion-icon name="briefcase-outline"></ion-icon> 1-2 Years</p> <p class="text-color m-0"><ion-icon name="calendar-clear-outline"></ion-icon> 5days ago</p></div>
+                                    </div>
+                                    <div class="col d-flex flex-column justify-content-between">
+                                        <div class="d-flex justify-content-end">
+                                            <button class="unfilled-love-btn btn"><ion-icon name="heart-outline"></ion-icon></button>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- absolute images -->
+                        <img src="image/Home-page-imgs/design3.webp" alt="img" class="hexagon-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-theme-color-blue p-5 position-relative">
+
+            <div class="container pt-7">
+                <!-- <div class="row w-75 m-auto">
+                    <div class="col-6">
+                        <p class="text-light text-center w-40 m-auto">Apply To Verified Job Posting</p>
+                    </div>
+                    <div class="col-6">
+                        <p class="text-light text-center w-40 m-auto">Refers To HR On Basis Of Matching Score</p>
+                    </div>
+                </div> -->
+                <div class="row position-relative">
+                    <div class="col-4 p-1 center-item">
+                        <img src="image/Home-page-imgs/person-1.webp" alt="" class="person-img w-80" style="position: relative; z-index: 2;">
+                    </div>
+                    <div class="col-4 p-1 center-item">
+                        <img src="image/Home-page-imgs/person-2.webp" alt="" class="person-img w-80" style="position: relative; z-index: 2;">
+                    </div>
+                    <div class="col-4 p-1 center-item">
+                        <img src="image/Home-page-imgs/person-3.webp" alt="" class="person-img w-80" style="position: relative; z-index: 2;">
+                    </div>
+
+                    <!-- absolute images -->
+                    <img src="image/Home-page-imgs/line-with-dots.webp" alt="img" class="curve-line-1">
+                </div>
+            </div>
+
+            <div class="w-50 m-auto text-center text-light home-content">
+                <h1 class="title fw-bolder">How It Works?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo id nostrum perspiciatis nisi temporibus aliquam magni libero ab, ad alias voluptatibus obcaecati autem ipsam minus hic fugiat corporis, eos nihil rerum? Blanditiis id voluptas dolorem cum! Culpa quaerat vero quam mollitia aspernatur iure at veritatis officiis, magni alias! Perferendis, eveniet!</p>
+            </div>
+
+            <!-- abosolute images -->
+            <img src="image/Home-page-imgs/design1.webp" alt="" class="hexagon-1">
+        </div>
+
+        <div class="section position-relative overflow-hidden">
+            <div class="title-container">
+                <h1 class="fs-1 fw-bold theme-color-blue text-center">Main Features</h1>
+            </div>
+            <div class="features-carousel-container my-2 w-80 m-auto">
+                <div class="carousel-item">
+                    <div class="hexagon d-flex justify-content-between flex-column">
+                        <h1 class="title fs-5 fw-400 text-light text-center w-80 m-auto my-0">Jobs Based On Sutability Score</h1>
+
+                        <div class="icon-container center-item">
+                            <!-- <ion-icon name="pie-chart-outline" class="features-icons"></ion-icon> -->
+                            <img src="image/Home-page-imgs/feature-1.png" alt="" class="w-25">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="hexagon d-flex justify-content-between flex-column">
+                        <h1 class="title fs-5 fw-400 text-light text-center w-80 m-auto my-0">All Job Posters Are Verified Users</h1>
+
+                        <div class="icon-container center-item">
+                            <!-- <ion-icon name="pie-chart-outline" class="features-icons"></ion-icon> -->
+                            <img src="image/Home-page-imgs/feature-3.png" alt="" class="w-25">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="hexagon d-flex justify-content-between flex-column">
+                        <h1 class="title fs-5 fw-400 text-light text-center w-80 m-auto my-0">Cost Effiecient</h1>
+
+                        <div class="icon-container center-item">
+                            <!-- <ion-icon name="pie-chart-outline" class="features-icons"></ion-icon> -->
+                            <img src="image/Home-page-imgs/feature-4.png" alt="" class="w-25">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="hexagon d-flex justify-content-between flex-column">
+                        <h1 class="title fs-5 fw-400 text-light text-center w-80 m-auto my-0">Single Login Multiple Activities</h1>
+
+                        <div class="icon-container center-item">
+                            <!-- <ion-icon name="pie-chart-outline" class="features-icons"></ion-icon> -->
+                            <img src="image/Home-page-imgs/feature-2.png" alt="" class="w-25">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="my-4">
+                <form action="#" class="home-search-form home-subscribe-form box-shadow rounded-pill bg-light d-flex align-items-center justify-content-between">
+                    <input type="text" class="w-80 border-0" placeholder="Enter Your Email ID">
+                    
+                    <button class="h-100 blue-filled-btn border-0 w-20 py-2">Subscribe</button>
+                </form>
+            </div>
+
+            <!-- absolute images -->
+            <img src="image/Home-page-imgs/design2.webp" alt="" class="hexagon-2">
+        </div>
+
+        <!-- Tablet & Mobile Footer Menu -->
+        <menu class="job-record-content-res ">
+            <section>
+                <div class="py-3 footer-nav section">
+                    <a href="" class="footer-nav-item"> <i class="fa-solid fa-house mb-1"></i>Home</a>
+                    <a href="user-dashboard.html" class="footer-nav-item"> <i class="fa-solid fa-table mb-1"></i>Dashboard</a>
+                    <a href="" class="footer-nav-item" id="seek-jobs"> <i class="fa-solid fa-suitcase mb-1"></i>Seek
+                        Jobs</a>
+                    <a href="" class="footer-nav-item" id="refer-jobs"> <i class="fa-solid fa-list mb-1"></i></i>Refer
+                        Jobs</a>
+                    <a href="" class="footer-nav-item" id="profile"> <i class="fa-solid fa-user mb-1"></i>Profile</a>
+                </div>
+            </section>
+        </menu>
+
+    </main>
+
+    <!--Footer starts-->
+    <footer class="text-white py-1 pt-2 footer-content" style="background-color:#00007C ;">
+        <div class="d-flex justify-content-lg-around justify-content-evenly">
+            <!-- <div>
+                <h4>Jobseekers</h4>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#"> Search
+                        Jobs</a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#"> Sign
+                        in</a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#"> Create Job
+                        alert</a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">
+                        Experience</a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">
+                        Education</a></span>
+            </div> -->
+            <div class="d-flex">
+                <!-- <h4>About Us</h4> -->
+                <span class="me-4" style="display: block;font-size: 17px;"><a class=" text-white" href="#">About Us
+                    </a></span>
+                <span class="me-4" style="display: block;font-size: 17px;"><a class=" text-white" href="#">How It Works
+                    </a></span>
+                <span class="me-4" style="display: block;font-size: 17px;"><a class=" text-white" href="#">FAQ
+                    </a></span>
+                <span class="me-4" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Privacy
+                        Policy
+                    </a></span>
+                <span class="me-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Contact us
+                    </a></span>
+                <!-- <span class="me-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Sitemap
+                    </a></span> -->
+            </div>
+            <!-- <div>
+                <h4>Quick Links</h4>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Saved Jobs
+                    </a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Companies
+                    </a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Career tools
+                    </a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Career
+                        Resources
+                    </a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Benefits
+                    </a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Post a Job
+                    </a></span>
+                <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Find a Job
+                    </a></span>
+            </div> -->
+            <div class="d-flex align-items-center">
+                <h4 class="m-0 me-2 fs-6">Follow Us</h4>
+                <div class="d-flex align-items-center">
+                    <ul class="footer-icon p-0 py-0 pb-1 d-flex m-0">
+                        <a href="#"></a>
+                        <li class="me-2"
+                            style="list-style: none; display: flex; justify-content: center;align-items: center; width: 30px; height: 30px; border: 2px solid #fff; border-radius: 50%;">
+                            <a style="color: white;" href="https://www.facebook.com/profile.php?id=61551817565990"><i class="fa-brands fa-facebook-f fs-8" style=" line-height: 10px;"></i></a>
+                        </li>
+                        </a>
+                        <a href="#"></a>
+                        <li class="me-2"
+                            style="list-style: none; display: flex; justify-content: center;align-items: center; width: 30px; height: 30px; border: 2px solid #fff; border-radius: 50%;">
+                            <a style="color: white;" href="https://www.instagram.com/reyferjobs/?fbclid=IwAR3Z6WzupVLt2Iga5ac_iHHhfEv63yhP2ARLdyp0P9q1-HAG0QvNgcB0JWw"><i class="fa-brands fa-instagram  fs-8" style=" line-height: 10px;"></i></a>
+                        </li>
+                        </a>
+                        <a href="#"></a>
+                        <li class="me-2"
+                            style="list-style: none; display: flex; justify-content: center;align-items: center; width: 30px; height: 30px; border: 2px solid #fff; border-radius: 50%;">
+                            
+                            <a style="color: white;" href="https://www.youtube.com/channel/UCLvPcg_t_YbG4Ez_EUWRaxQ"><i class="fa-brands fa-linkedin-in  fs-8" style=" line-height: 10px;"></i></a>
+                        </li>
+                        </a>
+                        <a href="#">
+                            <li class="me-2"
+                                style="list-style: none; display: flex; justify-content: center;align-items: center; width: 30px; height: 30px; border: 2px solid #fff; border-radius: 50%;">
+                                
+                                <a style="color: white;" href=""><i class="fa-brands fa-pinterest  fs-8" style=" line-height: 10px;"></i></a>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <!-- <div>
+                    <select
+                        style="width: 200px; padding: 8px 8px; outline: none; color: white; background-color: #657581; border: 1px solid #fff;"
+                        aria-label=" Default select example">
+                        <option selected>English</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div> -->
+            </div>
+        </div>
+        <div style="border-top: 1px solid #657581;"class="m-1">
+            <span class="d-flex justify-content-center mt-1">&copy; Copyright @ 2023 &middot; job Board Software by Reyferjobs.
+                All
+                Rights
+                Reserved</span>
+        </div>
+    </footer>
+    <!--Footer ends-->
+
+    <!-- All Script -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Ionic icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Slick Carousel JavaScript -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+    <script src="js/global.js"></script>
+
+    <!-- Slick caorusel-carousel -->
+    <script>
+        $(".features-carousel-container").slick({
+            slidesToShow: 3, 
+            slidesToScroll: 1,
+            autoplay: false, 
+            autoplaySpeed: 5000,
+            centerPadding: '0',
+            pauseOnHover:true,
+            infinite:true,
+            dots:false,
+            centerMode:true,
+            nextArrow:'<button class="nextBtn slick-btn"><i class="fa-solid fa-chevron-right"></i></button>',
+            prevArrow:'<button class="prevBtn slick-btn"><i class="fa-solid fa-chevron-left"></i></button>',
+            responsive: [
+                {
+                breakpoint: 1125,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true
+                }
+                },
+                {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                },
+                {
+                breakpoint: 740,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                }
+            ]
+        });
+    </script>
+
+    
+</body>
+
+</html>

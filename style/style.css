@@ -74,6 +74,10 @@ a {
   font-size: 0.4rem;
 }
 
+.pt-7{
+  padding-top: 100px;
+}
+
 .legend-bg-high{
   background-color: #82D09A;
   border-radius: 5px;
@@ -111,6 +115,10 @@ a {
   border-radius: 5px;
 }
 
+.box-shadow-20{
+  box-shadow: 0 0 20px #1e56cf43;
+}
+
 .absolute-center{
   position: absolute;
   top: 0;
@@ -136,6 +144,7 @@ a {
   --text-color1:#363636;
   --theme-color-gray:#3d3d3d;
   --border-radius20:20px;
+  --anchor-color:#1751D0;
 }
 
 /* 12-10 */
@@ -245,6 +254,12 @@ a {
 .share-icon {
   font-size: 25px;
 }
+.theme-color-blue{
+  color: var(--theme-color-blue);
+}
+.bg-theme-color-blue{
+  background-color: var(--theme-color-blue);
+}
 .blue-filled-btn{
   color: white;
   font-weight: 400;
@@ -316,6 +331,46 @@ a {
   border: 0;
 }
 
+/* ******
+Shapes
+****** */
+
+.hexagon {
+	position: relative;
+	width: 250px;
+	height: 140px;
+	background-color: var(--theme-color-blue);
+  margin: 100px auto;
+  transition: all 0.5s;
+}
+.hexagon:before {
+	position: absolute;
+  top: -69px;
+  left: 0;
+  width: 0;
+  height: 0;
+  content: "";
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+  border-bottom: 70px solid var(--theme-color-blue);
+  transition: all 0.5s;
+}
+
+.hexagon:after {
+	position: absolute;
+  bottom: -69px;
+  left: 0;
+  width: 0;
+  height: 0;
+  content: "";
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+  border-top: 70px solid var(--theme-color-blue);
+  transition: all 0.5s;
+}
+
+
+
 .ofcanvas-button {
   padding: 8px 70px;
   font-size: 18px;
@@ -377,6 +432,7 @@ a {
   left: 0;
   width: 100%;
   padding: 10px 0;
+  z-index: 10;
 }
 .footer-nav-item {
   color: #373737;
@@ -1295,6 +1351,9 @@ td {
 }
 
 @media (max-width: 59em) {
+  .pt-7{
+    padding-top: 50px;
+  }
   .search-2 input {
     height: 38px;
     border: none;
