@@ -136,6 +136,35 @@ body{
     right: 0;
     height: 50%;
 }
+
+.hexagon-4{
+    position: absolute;
+    width: 20%;
+    top: -5%;
+    left: -5%;
+    rotate: 25deg;
+}
+.hexagon-5{
+    position: absolute;
+    width: 20%;
+    top: 50%;
+    right: -5%;
+    rotate: 50deg;
+}
+
+.how-it-works-bee-1{
+    position: absolute;
+    width: 25%;
+    bottom: 10%;
+    left: 2%;
+}
+.how-it-works-bee-2{
+    position: absolute;
+    width: 20%;
+    top: 10px;
+    right: 0;
+}
+
 @media screen and (max-width:1400px) {
 
     .banner-video{
