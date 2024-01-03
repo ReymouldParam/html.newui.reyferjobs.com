@@ -83,7 +83,7 @@
                                 <input type="text" placeholder="Search job title or keyword" class="input-2 w-35">
                                 <input type="text" placeholder="Location" class=" input-2 w-20">
                                 <input type="text" placeholder="Experience" class="border-0 input-2 w-20">
-                                <button type="submit" class="submit-btn d-flex align-items-center p-1 px-2 btn rounded-pill orange-filled-btn"><ion-icon name="search-outline"></ion-icon></i> <span class="nav-search-submit-label ms-1" style="display: none;">Submit</span></button>
+                                <button type="submit" class="submit-btn d-flex align-items-center p-1 px-2 btn rounded-pill orange-filled-btn"><ion-icon name="search-outline"></ion-icon></i> <span class="nav-search-submit-label ms-1" style="display: none;">Search jobs</span></button>
                             </form>
                         </div>
 
@@ -238,7 +238,7 @@
     <main class="page-main-section">
 
         <div class="m-0 p-0 bg-theme-color-blue center-item">
-            <video class="banner-video" autoplay loop muted>
+            <video class="banner-video" id="banner-video" autoplay loop muted>
                 <source src="image/Home-page-imgs/banner-video-2.webm" type="video/mp4">
                 
                 Your browser does not support the video tag.
@@ -251,11 +251,11 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo id nostrum perspiciatis nisi temporibus aliquam magni libero ab, ad alias voluptatibus obcaecati autem ipsam minus hic fugiat corporis, eos nihil rerum? Blanditiis id voluptas dolorem cum! Culpa quaerat vero quam mollitia aspernatur iure at veritatis officiis, magni alias! Perferendis, eveniet!</p>
             </div>
 
-            <form action="#" class="home-search-form rounded-pill bg-light d-flex align-items-center justify-content-between box-shadow">
+            <form action="#" class="home-search-form rounded-pill bg-light d-flex align-items-center justify-content-between box-shadow py-1 pe-1">
                 <input type="text" class="w-30" placeholder="Search job title or keyword">
                 <input type="text" class="w-20" placeholder="Location">
                 <input type="text" class="border-0 w-20" placeholder="Experience">
-                <button class="h-100 orange-filled-btn border-0 w-20 py-lg-2 py-2">Search</button>
+                <button class="h-100 orange-filled-btn border-0 w-20 py-lg-2 py-2 rounded-pill">Search</button>
             </form>
         </div>
 
@@ -484,7 +484,7 @@
                 <form action="#" class="home-search-form home-subscribe-form box-shadow rounded-pill bg-light d-flex align-items-center justify-content-between">
                     <input type="text" class="w-80 border-0" placeholder="Enter Your Email ID">
                     
-                    <button class="h-100 blue-filled-btn border-0 w-20 py-2">Subscribe</button>
+                    <button class="h-100 blue-filled-btn border-0 w-20 py-2 rounded-pill">Subscribe</button>
                 </form>
             </div>
 
@@ -666,6 +666,10 @@
                 }
             ]
         });
+    </script>
+
+    <script>
+        document.getElementById("banner-video").playbackRate = 1.25;
     </script>
 
     
