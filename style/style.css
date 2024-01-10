@@ -972,6 +972,14 @@ td {
 .footer-icon li:hover {
   color: #1751d0;
   background-color: white;
+  
+}
+
+.footer-icon li a{
+  color: white;
+}
+.footer-icon li:hover a {
+  color: #1751d0;
   font-weight: 700;
 }
 
