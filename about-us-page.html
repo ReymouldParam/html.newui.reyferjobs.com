@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reyferjobs</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css" type="text/css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css"
+        integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+    <!-- Owl Carousel CSS files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- slick carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet' type="text/css">
+
+    <!-- Custom style sheets -->
+    <link rel="stylesheet" href="style/dashboard.css" type="text/css">
+    <link rel="stylesheet" href="style/style.css" type="text/css" />
+    <link rel="stylesheet" href="style/home-page.css" type="text/css">
+    <link rel="stylesheet" href="style/about-us.css">
+</head>
+<body>
+
+<!--Header start-->
+
+<header class="fixed-top ">
+
+    <!-- second nav -->
+
+    <div class="search-click header">
+
+        <div class="second-navbar d-flex justify-content-between align-items section py-3">
+            <div class="logo-container ">
+                <a href=""><img src="image/main-logo.png" alt="logo" style="height: 40px;" class="company-logo"></a>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-between  w-75">
+                <div class="w-95 d-flex align-items-center px-2 justify-content-between position-relative">
+                    <div class="d-flex justify-content-between w-35">
+                        <div class="nav-item ">
+                            <a href="user-dashboard.html" class="nav-link">Dashboard</a>
+                        </div>
+
+                        <div class="nav-item ">
+                            <a href="#" class="nav-link">Seek jobs</a>
+                            <ul class="list-group nav-drop-down">
+                                <li class="list-group-item"><a href="job-search.html" class=" drop-nav-link"><i class="fa-solid fa-magnifying-glass"></i> Job Search</a></li>
+                                <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-regular fa-heart"></i> Saved Jobs</a></li>
+                                <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-solid fa-magnifying-glass"></i> Applied Jobs</a></li>
+                                <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-regular fa-bell"></i> Alerts and Notifications</a></li>
+                            
+                            </ul>
+                        </div>
+
+                        <div class="nav-item ">
+                            <a href="#" class="nav-link">Reyfer jobs</a>
+                            <ul class="list-group nav-drop-down">
+                                <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-solid fa-plus"></i> Post Jobs</a></li>
+                                <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-regular fa-folder"></i> Manage Jobs</a></li>
+                                <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-regular fa-heart"></i> Favorite Candidates</a></li>
+                                <li class="list-group-item"><a href="#" class=" drop-nav-link"><i class="fa-solid fa-circle-plus"></i> Bulk Jobs</a></li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Expandable nav search bar -->
+                    <div class="nav-search-container" >
+                        <form action="" class="p-1 px-3 h-100 rounded-pill d-flex align-items-center justify-content-between">
+                            <input type="text" placeholder="Search Job Here " class="border-0 w-75 input-1">
+                            <input type="text" placeholder="Search job title or keyword" class="input-2 w-35">
+                            <input type="text" placeholder="Location" class=" input-2 w-20">
+                            <input type="text" placeholder="Experience" class="border-0 input-2 w-20">
+                            <button type="submit" class="submit-btn d-flex align-items-center p-1 px-2 btn rounded-pill orange-filled-btn"><ion-icon name="search-outline"></ion-icon></i> <span class="nav-search-submit-label ms-1" style="display: none;">Search jobs</span></button>
+                        </form>
+                    </div>
+
+                    <div class="d-flex justify-content-around w-20 align-items-center">
+                        <button class="rounded-pill btn blue-filled-btn py-1 h-75">Post Jobs</button>
+                        <div class="nav-profile-dp">
+                            <img src="image/Avtar-1.jpg" alt="" class="dp rounded-circle" style="height: 30px;">
+
+                            <div class="nav-profile-hidden-container p-2 card">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+                                        <img src="image/Avtar-1.jpg" alt="" class="dp rounded-circle" style="height: 60px;">
+                                    </div>
+                                    <div class="col">
+                                        <h4 class="title fw-bold fs-6 mb-1">Revanth Danduboina</h4>
+                                        <p class="sub-title">UI/UX Designer</p>
+                                        <p class="sub-title">@ Reymould Technology pvt.ltd</p>
+                                    </div>
+                                </div>
+                                <div class="py-3" style="border-bottom: 1px solid rgb(183, 183, 183);">
+                                    <button class="blue-filled-btn btn rounded-pill w-100">View Profile</button>
+                                </div>
+                                <div class="py-3">
+                                    <p class="fw-bold mb-0">Membership Account</p>
+                                    <a href="#" class="fs-8" style="color: red;">Upgrade Membership</a>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn">Sign Out</button>
+                                    <button class="blue-unfilled-btn border-0 anchor-color">Change Password</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-5 center-item position-relative">
+                    <button class="rounded-circle btn border-white round-icon-btn position-absolute"><ion-icon name="notifications-outline"></ion-icon></button>
+                    <button class="rounded-circle round-icon-btn-anchor position-absolute nav-search-close-btn" style="display: none;">x</button>
+                </div>
+                
+            </div>
+        </div>
+
+    
+    </div>
+    <!-- Responsive Header -->
+
+    <div class="search-click-res navbar-res">
+        <nav class="logo">
+            <img src="image/logo.png" class="d-flex justify-items-center m-auto" alt="">
+        </nav>
+        <div>
+            <nav style="background-color: white;" class="navbar navbar-expand-lg py-3 section  ">
+                <div class="container-fluid px-0">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                            <li class="nav-item active me-3">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link " href="#">About</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link " href="#">Services</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link " href="#">Term & Condition</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link " href="#">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-between nav-right">
+                        <div class="search-res">
+                            <div class="searchbar first-search-res">
+                                <input id="first-search-input-res" class="search_input" type="text" name
+                                    placeholder="Search Job Here" />
+                                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                        <button type="button" class="btn text-white rounded-5 px-sm-3 mx-sm-0 mx-1 post-now">
+                            Post Now
+                        </button>
+                        <div class="px-sm-3">
+                            <span style="width: 40px; height: 40px;">
+                                <i
+                                    class="fa-solid fa-user border border-black rounded-circle px-sm-2 py-sm-2 px-1 py-1 mx-sm-1"></i>
+                            </span>
+                            <span style="width: 40px; height: 40px;" class="me-sm-0 me-2">
+                                <i
+                                    class="fa-regular fa-bell border border-black rounded-circle px-sm-2 py-sm-2 px-1 py-1 mx-sm-1  position-relative">
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
+                                        <span class="visually-hidden">New alerts</span>
+                                    </span>
+                                </i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+            <div>
+                <div class="secon-nav-search">
+                    <div class="bg-white second-search-res hidden">
+                        <div class="d-flex">
+                            <div class="col-md-4">
+                                <div class="search-1 search-input-text"> <i class="fas fa-search ps-3"
+                                        style="color: #6666;"></i>
+                                    <input class="search_input" type="text" name
+                                        placeholder="Search job title or keyword" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="search-1 search-input-text"> <i class="fa-solid fa-location-dot ps-3"
+                                        style="color: #6666;"></i>
+                                    <input class="search_input" type="text" name placeholder="Location" />
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div>
+                                    <div class="search-2 search-input-text"><i class="fa-solid fa-suitcase ps-3"
+                                            style="color: #6666;"></i>
+                                        <input class="search_input" type="text" name placeholder="Experience" />
+                                        <button type="sub" id="search-jobs"
+                                            class="btn rounded-pill btn-primary">Search
+                                            jobs</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<!--Header end-->
+
+
+<main class="page-main-section">
+   
+
+    <section class="aboutus-section-2-main-container">
+        <div class="inner-container">
+            <!-- vision section -->
+            <div class="vision-main-container sub-section-main-container utility-section pt-5 pt-lg-4">
+                <div class="content-container">
+                    <h1 class="main-heading">Vision</h1>
+                    <p class="content">Facilitating Dreams, Forging Connections - Our vision at Reyfer Jobs is to empower individuals in discovering referrals for their dream jobs, creating a pathway for career aspirations to become a reality.</p>
+                </div>
+
+                <!-- absoulte images -->
+                <img src="image/about-us-imgs/bg-shapes/3.webp" alt="" class="vision-abs-img-right">
+            </div>
+
+
+            <!-- mission section -->
+            <div class="mission-main-container sub-section-main-container utility-section">
+                <div class="img-container">
+                    <img src="image/about-us-imgs/mission-img.webp" alt="image2" class="mission-img">
+                </div>
+                <div class="content-container">
+                    <h1 class="main-heading">Mission</h1>
+                    <p class="content">Revolutionizing Recruitment, One Connection at a Time - Reyfer Jobs is on a mission to transform the recruitment landscape by providing a secure and transparent platform. We facilitate employee-driven referrals, ensuring verified jobs and intelligent matchmaking for job seekers. Our mission is to bridge the gap, creating a collaborative space where every connection counts, and every career journey is enhanced.</p>
+                </div>
+
+                <!-- absoulte images -->
+                <img src="image/about-us-imgs/bg-shapes/4.webp" alt="" class="mission-abs-img-right">
+            </div>
+
+            <!-- Why refer jobs section -->
+            <div class="why-reyfer-main-container sub-section-main-container utility-section">
+                <div class="content-container">
+                    <h1 class="main-heading">Why Reyfer Jobs</h1>
+                    <p class="content">Reyfer Jobs operates as a secure and transparent platform, initiating with employee verification and posting of verified jobs. Job seekers benefit from insights into job suitability through our intelligent algorithm, while job posters receive suitability scores and comprehensive skill matching details. This transparency empowers job posters to make informed decisions on which applications to refer, fostering a collaborative and efficient referral process that elevates the quality of referrals for their organizations.</p>
+                </div>
+                <div class="img-container">
+                        <img src="image/about-us-imgs/bee-img-1.webp" alt="image" class="mission-img">
+
+                </div>
+            </div>
+
+            <!-- jobs section
+            <div class="why-reyfer-main-container sub-section-main-container utility-section">
+                <div class="content-container">
+                    <img src="image/about-us-imgs/image-3.webp" alt="" class="brain-img">
+                </div>
+                <div class="img-container">
+                    <img src="image/about-us-imgs/bee-img-1.webp" alt="image" class="bee-img-1">
+                </div>
+            </div> -->
+
+            <!-- benifits for users section -->
+            <div class="benifits-section-main-container">
+                <div class="title-container">
+                    <h1 class="title">Benifits for user</h1>
+                </div>
+                <div class="pole-main-container">
+                    <div class="pole-top-circle"></div>
+                    <div class="vertical-pole">
+                        <div class="pole-left-flags-container pole-flags-container">
+                            <div class="flag-item">
+                                <h1 class="benifit">Verifed Jobs</h1>
+                                <div class="triangle-shape"></div>
+                            </div>
+                            <div class="flag-item">
+                                <h1 class="benifit">cost Effictive</h1>
+                                <div class="triangle-shape"></div>
+                            </div>
+                            <div class="flag-item">
+                                <h1 class="benifit">referral bonus</h1>
+                                <div class="triangle-shape"></div>
+                            </div>
+                        </div>
+
+                        <div class="pole-right-flags-container pole-flags-container">
+                            <div class="flag-item">
+                                <h1 class="benifit">Networking</h1>
+                                <div class="triangle-shape"></div>
+                            </div>
+                            <div class="flag-item">
+                                <h1 class="benifit">unlimited jobs</h1>
+                                <div class="triangle-shape"></div>
+                            </div>
+                            <div class="flag-item">
+                                <h1 class="benifit">Quick hiring</h1>
+                                <div class="triangle-shape"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- absoulte images -->
+                <img src="image/about-us-imgs/bee-img-2.webp" alt="" class="abs-bee-img-left">
+            </div>
+        
+        </div>
+
+        <!-- aboslute images -->
+        <img src="image/about-us-imgs/bee-string.png" alt="img" id="stringBeeImg">
+    </section>
+
+    <!-- Tablet & Mobile Footer Menu -->
+    <menu class="job-record-content-res ">
+        <section>
+            <div class="py-3 footer-nav section">
+                <a href="" class="footer-nav-item"> <i class="fa-solid fa-house mb-1"></i>Home</a>
+                <a href="user-dashboard.html" class="footer-nav-item"> <i class="fa-solid fa-table mb-1"></i>Dashboard</a>
+                <a href="" class="footer-nav-item" id="seek-jobs"> <i class="fa-solid fa-suitcase mb-1"></i>Seek
+                    Jobs</a>
+                <a href="" class="footer-nav-item" id="refer-jobs"> <i class="fa-solid fa-list mb-1"></i></i>Refer
+                    Jobs</a>
+                <a href="" class="footer-nav-item" id="profile"> <i class="fa-solid fa-user mb-1"></i>Profile</a>
+            </div>
+        </section>
+    </menu>
+
+</main>
+
+<!--Footer starts-->
+<footer class="text-white py-1 pt-2 footer-content" style="background-color:#00007C ;">
+    <div class="d-flex justify-content-lg-around justify-content-evenly">
+        <!-- <div>
+            <h4>Jobseekers</h4>
+            <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#"> Search
+                    Jobs</a></span>
+            <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#"> Sign
+                    in</a></span>
+            <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#"> Create Job
+                    alert</a></span>
+            <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">
+                    Experience</a></span>
+            <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">
+                    Education</a></span>
+        </div> -->
+        <div class="d-flex">
+            <!-- <h4>About Us</h4> -->
+            <span class="me-4" style="display: block;font-size: 17px;"><a class=" text-white" href="#">About Us
+                </a></span>
+            <span class="me-4" style="display: block;font-size: 17px;"><a class=" text-white" href="#">How It Works
+                </a></span>
+            <span class="me-4" style="display: block;font-size: 17px;"><a class=" text-white" href="#">FAQ
+                </a></span>
+            <span class="me-4" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Privacy
+                    Policy
+                </a></span>
+            <span class="me-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Contact us
+                </a></span>
+            <!-- <span class="me-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Sitemap
+                </a></span> -->
+        </div>
+        <!-- <div>
+            <h4>Quick Links</h4>
+            <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Saved Jobs
+                </a></span>
+            <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Companies
+                </a></span>
+            <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Career tools
+                </a></span>
+            <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Career
+                    Resources
+                </a></span>
+            <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Benefits
+                </a></span>
+            <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Post a Job
+                </a></span>
+            <span class="mt-3" style="display: block;font-size: 17px;"><a class=" text-white" href="#">Find a Job
+                </a></span>
+        </div> -->
+        <div class="d-flex align-items-center">
+            <h4 class="m-0 me-2 fs-6">Follow Us</h4>
+            <div class="d-flex align-items-center">
+                <ul class="footer-icon p-0 py-0 pb-1 d-flex m-0">
+                    <a href="#"></a>
+                    <li class="me-2"
+                        style="list-style: none; display: flex; justify-content: center;align-items: center; width: 30px; height: 30px; border: 2px solid #fff; border-radius: 50%;">
+                        <a style="color: white;" href="https://www.facebook.com/profile.php?id=61551817565990"><i class="fa-brands fa-facebook-f fs-8" style=" line-height: 10px;"></i></a>
+                    </li>
+                    </a>
+                    <a href="#"></a>
+                    <li class="me-2"
+                        style="list-style: none; display: flex; justify-content: center;align-items: center; width: 30px; height: 30px; border: 2px solid #fff; border-radius: 50%;">
+                        <a style="color: white;" href="https://www.instagram.com/reyferjobs/?fbclid=IwAR3Z6WzupVLt2Iga5ac_iHHhfEv63yhP2ARLdyp0P9q1-HAG0QvNgcB0JWw"><i class="fa-brands fa-instagram  fs-8" style=" line-height: 10px;"></i></a>
+                    </li>
+                    </a>
+                    <a href="#"></a>
+                    <li class="me-2"
+                        style="list-style: none; display: flex; justify-content: center;align-items: center; width: 30px; height: 30px; border: 2px solid #fff; border-radius: 50%;">
+                        
+                        <a style="color: white;" href="https://www.youtube.com/channel/UCLvPcg_t_YbG4Ez_EUWRaxQ"><i class="fa-brands fa-linkedin-in  fs-8" style=" line-height: 10px;"></i></a>
+                    </li>
+                    </a>
+                    <a href="#">
+                        <li class="me-2"
+                            style="list-style: none; display: flex; justify-content: center;align-items: center; width: 30px; height: 30px; border: 2px solid #fff; border-radius: 50%;">
+                            
+                            <a style="color: white;" href=""><i class="fa-brands fa-pinterest  fs-8" style=" line-height: 10px;"></i></a>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <!-- <div>
+                <select
+                    style="width: 200px; padding: 8px 8px; outline: none; color: white; background-color: #657581; border: 1px solid #fff;"
+                    aria-label=" Default select example">
+                    <option selected>English</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div> -->
+        </div>
+    </div>
+    <div style="border-top: 1px solid #657581;"class="m-1">
+        <span class="d-flex justify-content-center mt-1">&copy; Copyright @ 2023 &middot; job Board Software by Reyferjobs.
+            All
+            Rights
+            Reserved</span>
+    </div>
+</footer>
+<!--Footer ends-->
+
+<!-- All Script -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Ionic icons -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- Slick Carousel JavaScript -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+<script src="js/global.js"></script>
+    
+</body>
+</html>
